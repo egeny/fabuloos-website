@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>{{ title }}</title>
+
+	<link rel="stylesheet" href="http://local.static.fabuloos.org/css/bootstrap.css" />
+	<link rel="stylesheet" href="http://local.static.fabuloos.org/css/website.css" />
+</head>
+
+<body>
+	<div class="container">
+		{% include "_masthead.html" %}
+
+		<!-- Jumbotron -->
+		<!--<div class="jumbotron">
+			<h1>Marketing stuff!</h1>
+			<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<a class="btn btn-large btn-success" href="#">Get started today</a>
+		</div>
+
+		<hr>-->
+
+		<!-- Example row of columns -->
+		<div class="row-fluid">
+			{% block content %}{% endblock %}
+		</div>
+
+		<hr>
+
+		<div class="footer">
+			<p>&copy; Company 2013</p>
+		</div>
+
+	</div> <!-- /container -->
+</body>
+</html>

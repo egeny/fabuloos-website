@@ -9,11 +9,11 @@ Many ways to contribute:
 
 Take part:
 
-* [JS](contribute/js)
-* [iOS](contribute/ios)
-* [Android](contribute/android)
-* [W8](contribute/w8)
-* [Documentation](contribute/documentation)
+* [JS](/contribute/js.html)
+* [iOS](/contribute/ios.html)
+* [Android](/contribute/android.html)
+* [W8](/contribute/w8.html)
+* [Documentation](/contribute/documentation.html)
 
 ## Team
 
