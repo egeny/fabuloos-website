@@ -1,3 +1,3 @@
 /build
-/nodes_modules/marked
-/nodes_modules/swig
+/node_modules/marked
+/node_modules/swig
