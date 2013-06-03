@@ -1,6 +1,8 @@
-# fabuloos
+# A simple way to play on all screens
 
 ## What is fabuloos?
+
+Introducing Fabuloos, the Framework that finally abstract the creation of video players, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.
 
 Framework to abstract the creation of video players.  
 Enhance existing native player.  
