@@ -12,13 +12,28 @@ body {
 	margin: 60px 0;
 }
 
+/* Logo */
+
+.logo img {
+	border:0;
+}
+
+/* Custom container */
+ .container-narrow {
+   margin: 0 auto;
+   max-width: 700px;
+ }
+ .container-narrow > hr {
+   margin: 30px 0;
+ }
+
 /* Main marketing message and sign up button */
 .jumbotron {
-	margin: 80px 0;
+	margin: 60px 0;
 	text-align: center;
 }
 .jumbotron h1 {
-	font-size: 100px;
+	font-size: 72px;
 	line-height: 1;
 }
 .jumbotron .lead {
