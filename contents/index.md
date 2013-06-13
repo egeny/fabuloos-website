@@ -1,6 +1,6 @@
 <div class="jumbotron">
         <h1>Simply Powerful</h1>
-        <p class="lead">Fabuloos® provides the next generation of media solution which simplifies the on-demand video to any Internet-connected device.</p>
+        <p class="lead">Fabuloos&trade; provides the next generation of media solution which simplifies the on-demand video to any Internet-connected device.</p>
         <a class="btn btn-large btn-success" href="http://fabuloos.ws/register">Sign up today</a>
       </div>
 
@@ -9,22 +9,23 @@
 <div class="row-fluid">
         <div class="span4">
           <h4>Play On Any Device</h4>
-          <p>Introducing Fabuloos, the Framework that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
-          <p><a class="btn" href="#">View details »</a></p>
+          <p>Fabuloos is a simple yet powerful solution that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
+          <p><a class="btn" href="#">Learn more »</a></p>
         </div>
         <div class="span4">
           <h4>Keep Full Control</h4>
-          <p>We provide the player, while you keep full control of your videos by freely using your preferred hosting and encoding service(s). Your videos can be hosted anywhere, including Ooyala, Vimeo, YouTube or your own server.</p>
-          <p><a class="btn" href="#">View details »</a></p>
+          <p>Fabuloos provides the player while you keep full control of your videos by freely using your preferred hosting and encoding service(s). Your videos can be hosted anywhere, including YouTube, Ooyala, Akamai or your own server.</p>
+          <p><a class="btn" href="#">Learn more »</a></p>
        </div>
         <div class="span4">
-          <h4>Design branded players</h4>
-          <p>Our Publishing Assistant lets you create, in few steps, a complete branded player with your logo on video.</p>
-          <p><a class="btn" href="#">View details »</a></p>
+          <h4>Tailor-Made Players</h4>
+          <p>Fabuloos includes a consistent set of player controls integrated to display a unified video experience across all devices and platforms. Customize your branded player with a unique look and feel and carry your identity in all embeds. </p>
+          <p><a class="btn" href="#">Learn more »</a></p>
         </div>
 </div>
 
 <hr />
+
 
 <img src="http://local.static.fabuloos.org/img/avatar.png" width="200" title="Fabuloos.org">
 
@@ -73,11 +74,48 @@ Fabuloos’s Big Data Architecture and powerful video analytics tools are the co
 
 # Demos
 
-<iframe src="http://fabuloos.ws/SpXhYq" width="640" height="360"></iframe>
+<iframe src="http://fabuloos.ws/A7KSe1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
 
 # Try Fabuloos free today
 
+Ready to spread your last supreme creation? Try Fabuloos free today.
+
+FORM 
+Simply paste your video URL here : 
+
+Example :
+
 # Pricing
+
+With Fabuloos, you only pay for what you use
+
+### Start
+
+Up to 1,000 video pageviews per month
+
+Standard Video Player
+
+### Basic
+
+Up to 100,000 video pageviews per month
+
+Branded Video Player
+
+### Plus
+
+Up to 1,000,000 video pageviews per month
+
+Branded Video Player
+
+Ad Exchange Support
+
+### Premium
+
+Unlimited video pageviews per month
+
+Request a price
+
+Ad Exchange Support
 
 # How it works?
 
