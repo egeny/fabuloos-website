@@ -1,3 +1,5 @@
+# Sponsors and friends
+
 # Branding
 
 Styles guides for fabuloos' branding.

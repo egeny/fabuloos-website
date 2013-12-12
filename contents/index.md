@@ -1,80 +1,40 @@
-<ul class="nav nav-tabs">
-  <li><a href="#demo1" data-toggle="tab">1</a></li>
-  <li><a href="#demo2" data-toggle="tab">2</a></li>
-  <li><a href="#demo3" data-toggle="tab">3</a></li>
-</ul>
-
-<div class="tab-content">
-	<div class="tab-pane active" id="demo1">
-		<div class="jumbotron">
-		        <h1>Simply Powerful</h1>
-		        <p class="lead">Fabuloos&trade; provides the next generation of media solution which simplifies the on-demand video to any Internet-connected device.</p>
-		</div>
-	</div>
-	<div class="tab-pane" id="demo2">
-		<iframe src="http://fabuloos.ws/SpXhYq" width="100%" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
-	</div>
-	<div class="tab-pane" id="demo3">
-		<h1>Try Fabuloos free today</h1>
-		<p class="lead">Enter the URL of the video you want to play</p>
-
-		<form class="form-inline" method="post" action="http://fabuloos.ws/create">
-			<input id="URI" name="URI" type="text" class="input-xxlarge" placeholder="∞" required="">
-			<button type="submit" class="btn btn-primary"><span><span class="for-reader">Start</span></span></button>
-			<br/>
-			<label class="checkbox">
-		    <input type="checkbox"> I agree to the <a href="terms.html">Terms & Conditions</a>
-		  </label>
-		</form>
-
-		<p>Need Help ? Try to play this url <a href="#">http://labs.egeny.fr/fabuloos/avatar.mp4</a></p>
-	</div>
+<div class="jumbotron">
+<div class="content">
+  <h1>Play On Any Device</h1>
+  <p class="lead">Any browser. Same UI. Free. Open Source. </p>
+  <p><a class="btn btn-primary btn-lg" role="button">Download</a></p>
+  <p>Version - Date</p>
+ </div>
 </div>
-<script>
-  $(function () {
-    $('#myTab a:last').tab('show');
-  })
-</script>
+
 <hr/>
+
 <div class="row-fluid">
 	<ul class="thumbnails">
-	              <li class="span3">
+	              <li class="span4">
 	                <div class="thumbnail">
 	                  <img data-src="holder.js/300x200" alt="300x200" src="http://local.static.fabuloos.org/img/thumb.png">
 	                  <div class="caption">
-				          <h4>Play On Any Device</h4>
+				          <h4>Play your videos anywhere</h4>
 				          <p>Fabuloos is a simple yet powerful solution that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
-				          <p><a class="btn" href="/tour.html">Learn more »</a></p>
 	                  </div>
 	                </div>
 	              </li>
-	              <li class="span3">
+	              <li class="span4">
 	                <div class="thumbnail">
 	                  <img data-src="holder.js/300x200" alt="300x200" src="http://local.static.fabuloos.org/img/thumb.png">
 	                  <div class="caption">
-				         <h4>Keep Full Control</h4>
-				          <p>Fabuloos provides the player while you keep full control of your videos by freely using your preferred hosting and encoding service(s). Your videos can be hosted anywhere, including YouTube, Akamai or your own server.</p>
-				          <p><a class="btn" href="/tour.html">Learn more »</a></p>
+				          <h4>Simply Plug-and-Play</h4>
+				          <p>It couldn’t be simpler to integrate fabuloos into your site, just add a single line of code to enable it on your page.</p>
 	                  </div>
 	                </div>
 	              </li>
-	              <li class="span3">
-	                <div class="thumbnail">
-	                  <img data-src="holder.js/300x200" alt="300x200" src="http://local.static.fabuloos.org/img/thumb.png">
-	                  <div class="caption">
-				          <h4>Tailor-Made Players</h4>
-				          <p>Fabuloos includes a consistent set of player controls integrated to display a unified video experience across all devices and platforms. Customize your branded player with a unique look and feel. </p>
-				          <p><a class="btn" href="/tour.html">Learn more »</a></p>
-	                  </div>
-	                </div>
-	              </li>
-	              <li class="span3">
+	              <li class="span4">
 	                <div class="thumbnail">
 	                  <img data-src="holder.js/300x200" alt="300x200" src="http://local.static.fabuloos.org/img/thumb.png">
 	                  <div class="caption">
 						<h4>Enhance Experience</h4>
 						<p>Use Fabuloos to tell stories and create interactive programs, web documentaries, and more. Videos are dynamics, full of content from across the web, and unique each time you watch them.</p>
-			          <p><a class="btn" href="/tour.html">Learn more »</a></p>
 	                  </div>
 	                </div>
 	              </li>	
@@ -82,16 +42,63 @@
 
 </div>
 
-<h2>Demos</h2>
+<hr/>
 
+<h2>Set Up in few secondes</h2>
 
+<p>Just add Fabuloos.js to your web pages</p>
+
+<pre>
+&lt;script src="http://fabuloos.org/js/fabuloos.js"&gt;&lt;/script&gt;
+</pre>
+
+You can also download the latest source code from http://github.com/egeny/fabuloos/
+
+<p>Prepare your media files</p>
 
 <hr />
 
+<h2>Demos</h2>
 
-# They love using Fabuloos
+<iframe src="http://fabuloos.ws/SpXhYq" width="100%" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
+
+<hr />
+
+<h2>Philosophy</h2>
+
+<p>Fabuloos' philosophy is pretty simple when it comes down to it: make it easy for people to work the way they want to work, wherever and with whomever. The last thing we want is to force... We care deeply about the Web and are committed to making contributions that push it forward.</p>
+
+<p>We build a framework that hide all this complexity and heterogeneity from the developer to play video and media on any device.</p>
+
+<p>Fabuloos enables HTML5 Video with invisible Flash fallback based on browser/device capabilities and specific media type. Wide mobile device support allows your videos to play seamlessly on iPhones, iPads, Android, Windows and almost any other platforms.</p>
+
+<p>Fabuloos framework have the following characteristics:</p>
+
+<dl>
+  <dt>Abstraction</dt>
+  <dd>It should provide a new level of abstraction which would hide all the complexity of various web technologies. In other words, the developer should no longer worry about which web technology he should use to have his player running on any browsing platform.</dd>
+
+  <dt>Single codebase</dt>
+  <dd>The framework should provide the developer or the designer with a simple way to program his player just once using a single JavaScript codebase which works on absolutely any platform, either desktop or touch, without the need for modifications or hacks. Simply the Holy Grail for any developer.</dd>
+
+  <dt>Technologies harmonization</dt>
+  <dd>It should have the knowledge to automatically and transparently use every appropriate technology on any browser to perform any action necessary, such as drawing a button, playing a video; absolutely any action and with no limitations, from the old IE6 to modern tablets such as the Nexus or the iPad.</dd>
+
+  <dt>Fully Modular</dt>
+  <dd>Its architecture should be modular in order to allow the creation of any new functionality in the form of a plug-in.</dd>
+
+</dl>
+
+<p>Fabuloos framework is the ultimate solution to solve the huge problem of devices, browsers and web technologies fragmentation, and more importantly, it could solve them in a fully scalable way, leading to the possibility of quickly producing and easily maintaining hundreds of different state-of-the-art video players.</p>
+
+<h2>Who's using Fabuloos?</h2>
 
 * France Télévisions (French public national television broadcaster)
 * TV5 Monde (Global television network)
 * Paris Saint-Germain Football Club (Professional football club based in Paris)
 * Chanel (Fashion and haute couture company)
+
+<hr />
+
+
+
