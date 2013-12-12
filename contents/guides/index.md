@@ -1,6 +1,6 @@
-<h2>Support</h2>
+<h2>Guides</h2>
 
-(Ordre de l'information : du plus simple au plus complet; permettre à quelqu'un ayant peu de connaissance de tout de même contribuer.)
+<p>Welcome to the Fabuloos.js guides! This documentation will take you from total beginner to Fabuloos expert. It is designed to start from the basics, and slowly increase to more sophisticated concepts until you know everything there is to know about building awesome video players.</p>
 
 <h3>Documentation</h3>
 <p>First of all, You may want to read to the <a href="/support/documentation.html">Documentation</a>.</p>

@@ -3,7 +3,7 @@ body {
 	padding-bottom: 60px;
 }
 
-/* Custom container */
+/* Custom container 
 .container {
 	margin: 0 auto;
 	max-width: 1000px;
@@ -11,15 +11,7 @@ body {
 .container > hr {
 	margin: 60px 0;
 }
-
-/* Custom container */
- .container-narrow {
-   margin: 0 auto;
-   max-width: 700px;
- }
- .container-narrow > hr {
-   margin: 30px 0;
- }
+*/
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -27,7 +19,8 @@ body {
 	text-align: center;
 }
 .jumbotron h1 {
-	font-size: 72px;
+	font-size: 60px;
+	font-weight: lighter;
 	line-height: 1;
 }
 .jumbotron .lead {
@@ -53,32 +46,30 @@ body {
 .thumbnail {border:none;}
 .caption p {text-align:justify;}
 
-/* Custom table */
-
-table { table-layout: fixed; }
-table th, table td { overflow: hidden; }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
-	background-image:-webkit-linear-gradient(top, #595959, #323232);
-	padding-left:6px;
+	background-image:-webkit-linear-gradient(top, #FFF, #EEE);
+	padding:4px;
 	margin-top:10px;
-	text-transform: uppercase;
 }
 
 .nav li {
+padding:0 10px;
 line-height: 26px;
 }
 
 .navbar .nav > li > a {
-color: #ffffff;
+color: #333;
+font-size: 1.1em;
+font-weight: lighter;
+text-transform: uppercase;
 text-decoration: none;
-text-shadow: 0 1px 0 #000000;
 }
 
 .navbar .brand {
 padding: 10px 20px 0px;
-margin-left: -20px;
+margin-left: -10px;
 }
 
 .navbar .divider-vertical {
@@ -87,22 +78,42 @@ margin: 0 9px;
 border-right: 1px solid #ffffff;
 }
 
-/* Usermenu */
-
-.usermenu .usermenu-inner {
-	padding: 0;
-	margin-top:10px;
-}
-
-.usermenu .nav {
-display: block;
-list-style: none;
-margin: 0 10px 0 0;
-	}
 
 /* Footer */
 .footer {
 font-size:10px;
 }
 
+/* */
+#footer .twitter, #footer .github, #footer .googleplus {
+    font-size: 33px;
+    line-height: 35px;
+    color: #464646;
+    height: 35px;
+    width: 35px;
+    display: inline-block
+}
 
+#download .social {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    height: 20px
+}
+
+#download .social > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    font-size: 11px
+}
+
+#download .social a:hover {
+    border: none
+}
+
+#download .social img {
+    vertical-align: middle
+}
