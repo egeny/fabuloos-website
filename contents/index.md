@@ -1,4 +1,4 @@
-<iframe src="http://fabuloos.ws/SpXhYq" width="100%" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
+<iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
 
 
 <div class="jumbotron">
@@ -27,21 +27,32 @@
 
 <hr/>
 
+
 <div class="row-fluid">
-	<ul class="thumbnails">
-	              <li class="span4">
-				          <h4>Play your videos anywhere</h4>
-				          <p>Fabuloos is a simple yet powerful solution that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
-	              </li>
-	              <li class="span4">
-				          <h4>Simply Plug-and-Play</h4>
-				          <p>Crazy fast, less than 100k, it can take a matter of seconds to get fabuloos up and working on your web page. Get started building video players and make the difference.</p>
-	              </li>
-	              <li class="span4">
-						<h4>Enhance Experience</h4>
-						<p>Use Fabuloos to tell stories and create interactive programs, web documentaries, and more. The Fabuloos API gives you the ability to control the player via JavaScript and easily implement custom and advanced functionality.</p>
-	              </li>	
-	            </ul>
+	<div class="span4">
+		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/icons-devices.png">
+			<div class="caption">
+				<h4>Play Videos Anywhere</h4>
+				<p>Fabuloos is a simple yet powerful video framework that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
+			</div>
+		</div>
+	</div>
+	<div class="span4">
+		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/icons-devices.png">
+			<div class="caption">
+				<h4>Simply Plug-and-Play</h4>
+				<p>Crazy fast, less than 100k, it can take a matter of seconds to get Fabuloos up and working on your web page. Fabuloos is fully modular and allows you to assemble exactly the player you need, so get started making the difference.</p>
+			</div>
+		</div>
+	</div>
+	<div class="span4">
+		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/icons-devices.png">
+			<div class="caption">
+				<h4>Enhance Experience</h4>
+				<p>Tell Fabuloos stories and create interactive programs, web documentaries, and more. The Fabuloos API gives you the ability to control the player via JavaScript and easily implement custom and advanced functionality.</p>
+			</div>
+		</div>
+	</div>
 
 </div>
 
