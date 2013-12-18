@@ -115,14 +115,14 @@ window.addEventListener('load', function (event) { prettyPrint() }, false);
 
 		<p>Create video players is a repetitive and boring work because it takes time and energy to code and debug. The Flash-based players like JW Player are outdated solutions because they can't play on any device. Unfortunately, HTML5 Video isn't easy to implement properly while each device and browser uses a different implementation.</p>
 
-		<p>This complexity makes it totally unfeasible for the majority of developers to code and maintain their own video player. Worth, it limits the creativity of designers to create and produce original and interactives experiences.</p>
+		<p>This complexity makes it totally unfeasible for the majority of developers to code and maintain their own video player. Worth, it limits the creativity of designers to create or produce original and interactives experiences.</p>
 
 		<p>We have learned and solved this issue during last years working for television companies. Then, we started again on a blank page and built from scratch a new framework that hide all the complexity and heterogeneity to play video on any device.</p>
 
 	</div>
 	<div class="span6">
 
-	<p> Fabuloos enables HTML5 Video with invisible Flash fallback based on browser/device capabilities and specific media type. The rendering of every control and UI element is resolution independent (responsive) and delivers a pixel-perfect rendering on Retina displays.</p>
+	<p> Fabuloos enables HTML5 Video with invisible Flash fallback based on browser/device capabilities and specific media type. The rendering of every control and UI element is resolution independent to provide a pixel-perfect rendering and an optimal viewing experience.</p>
 	
 	<p>Fabuloos is the ultimate framework to solve the huge problem of devices, browsers and web technologies fragmentation, and more importantly, it could solve them in a fully scalable way, leading to the possibility of quickly producing and easily maintaining hundreds of different state-of-the-art video players.</p>
 	
@@ -143,10 +143,13 @@ window.addEventListener('load', function (event) { prettyPrint() }, false);
 </blockquote></div>
 </div>
 
-
-
+<hr />
 
 <h2>Donate to the project</h2>
+
+<p class="lead">Your support is critical to our success.</p>
+
+<p>When you click the PayPal icon, you will be taken to the PayPal website where you will be able to donate any amount up to ten thousand US dollars (or the equivalent in another currency) to the Fabuloos project. Note that you do not have to create a PayPal account in order to donate money. Please make sure you have read the legal notice at the bottom of this page. </p>
 
 <hr />
 
