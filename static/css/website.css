@@ -80,18 +80,19 @@ border-right: 1px solid #ffffff;
 
 
 /* Footer */
-.footer {
+#footer {
 font-size:10px;
+color: #464646;
 }
 
-/* */
-#footer .twitter, #footer .github, #footer .googleplus {
-    font-size: 33px;
-    line-height: 35px;
-    color: #464646;
-    height: 35px;
-    width: 35px;
-    display: inline-block
+#footer .notice {
+	font-size: 12px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#footer .social {
+	text-align: center;
 }
 
 #download .social {

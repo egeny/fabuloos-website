@@ -30,7 +30,7 @@
 
 <div class="row-fluid">
 	<div class="span4">
-		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/icons-devices.png">
+		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/anydevice.png">
 			<div class="caption">
 				<h4>Play Videos Anywhere</h4>
 				<p>Fabuloos is a simple yet powerful video framework that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	<div class="span4">
-		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/icons-devices.png">
+		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/plugandplay.png">
 			<div class="caption">
 				<h4>Simply Plug-and-Play</h4>
 				<p>Crazy fast, less than 100k, it can take a matter of seconds to get Fabuloos up and working on your web page. Fabuloos is fully modular and allows you to assemble exactly the player you need, so get started making the difference.</p>
@@ -46,7 +46,7 @@
 		</div>
 	</div>
 	<div class="span4">
-		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/icons-devices.png">
+		<div class="thumbnail">	<img data-src="holder.js/300x100" alt="300x100" src="http://local.static.fabuloos.org/img/experience.png">
 			<div class="caption">
 				<h4>Enhance Experience</h4>
 				<p>Tell Fabuloos stories and create interactive programs, web documentaries, and more. The Fabuloos API gives you the ability to control the player via JavaScript and easily implement custom and advanced functionality.</p>
@@ -58,13 +58,19 @@
 
 <hr/>
 
-<h2>How it works?</h2>
+<h2>How It Works</h2>
+
+<script>
+
+window.addEventListener('load', function (event) { prettyPrint() }, false); 
+
+</script>
 
 <h4>Step 1: Include the Fabuloos.js Javascript in your page</h4>
 
 <p>You can download the Fabuloos.js source and host it on your own servers, or use the free CDN hosted version. It's often recommended now to put JavaScript before the end body tag (</body>) instead of the head (<head>).</p>
 
-<pre>
+<pre class="prettyprint">
 &lt;script src="http://fabuloos.org/js/fabuloos.js"&gt;&lt;/script&gt;
 </pre>
 
@@ -72,9 +78,9 @@
 
 <p>With Fabuloos.js you just use an HTML5 video tag to embed a video. Fabuloos.js will then read the tag and make it work in all browsers, not just ones that support HTML5 video.</p>
 
-<pre>
+<pre class="prettyprint">
 &lt;video id="example_video" class="video-fab"
-  controls preload="auto" width="640" height="360"
+  controls preload="auto" width="640" height="360"&gt;
 &lt;source src="http://fabuloos.org/clip.mp4" type='video/mp4' /&gt;
 &lt;/video&gt;
 </pre>
@@ -83,7 +89,7 @@
 
 <p>Beyond the basic markup, Fabuloos.js needs a few extra pieces.</p>
 
-<pre>
+<pre class="prettyprint">
 &lt;video id="example_video" class="video-fab"
   controls preload="auto" width="640" height="360"
   poster="http://fabuloos.org/preview.png"
@@ -94,52 +100,53 @@
 
 <hr />
 
-<h2>Demos</h2>
+<h2>Why Fabuloos</h2>
 
-
-<hr />
-
-<h2>Why Fabuloos?</h2>
-
-<div class="content">
-
-	<p class="lead">We build a framework that hide all this complexity and heterogeneity from the developer to play video and media on any device.</p>
-
-	<p>Fabuloos' philosophy is pretty simple when it comes down to it: make it easy for people to work the way they want to work, wherever and with whomever.</p>
-
-	<p> Fabuloos' Framework abstracts the creation of video players and enhance existing natives players.</p>
-
-	<p> It's Multi-platform consistent. Fabuloos enables HTML5 Video with invisible Flash fallback based on browser/device capabilities and specific media type. Wide mobile device support allows your videos to play seamlessly on iPhones, iPads, Android, Windows and almost any other platforms.</p>
-
-	<p>Fabuloos framework have the following characteristics:</p>
-
-	<dl>
-	  <dt>Abstraction</dt>
-	  <dd>It should provide a new level of abstraction which would hide all the complexity of various web technologies. In other words, the developer should no longer worry about which web technology he should use to have his player running on any browsing platform.</dd>
-
-	  <dt>Single codebase</dt>
-	  <dd>The framework should provide the developer or the designer with a simple way to program his player just once using a single JavaScript codebase which works on absolutely any platform, either desktop or touch, without the need for modifications or hacks. Simply the Holy Grail for any developer.</dd>
-
-	  <dt>Technologies harmonization</dt>
-	  <dd>It should have the knowledge to automatically and transparently use every appropriate technology on any browser to perform any action necessary, such as drawing a button, playing a video; absolutely any action and with no limitations, from the old IE6 to modern tablets such as the Nexus or the iPad.</dd>
-
-	  <dt>Fully Modular</dt>
-	  <dd>Its architecture should be modular in order to allow the creation of any new functionality in the form of a plug-in.</dd>
-
-	  <dt>Support standards</dt>
-	  <dd>We care deeply about the Web and are committed to making contributions that push it forward.</dd>
-
-	</dl>
-
-	<p>Fabuloos framework is the ultimate solution to solve the huge problem of devices, browsers and web technologies fragmentation, and more importantly, it could solve them in a fully scalable way, leading to the possibility of quickly producing and easily maintaining hundreds of different state-of-the-art video players.</p>
+<div class="row-fluid">
+	<div class="span6">
+		<p class="lead">Keep It Simple, Stupide</p>
+	</div>
+	<div class="span6"></div>
 </div>
 
-<h2>Who's using Fabuloos?</h2>
+<div class="row-fluid">
+	<div class="span6">
+		<p>Fabuloos' philosophy is pretty simple when it comes down to it: make it easy for people to work the way they want to work, wherever and with whomever.</p>
 
-* France Télévisions (French public national television broadcaster)
-* TV5 Monde (Global television network)
-* Paris Saint-Germain Football Club (Professional football club based in Paris)
-* Chanel (Fashion and haute couture company)
+		<p>Create video players is a repetitive and boring work because it takes time and energy to code and debug. The Flash-based players like JW Player are outdated solutions because they can't play on any device. Unfortunately, HTML5 Video isn't easy to implement properly while each device and browser uses a different implementation.</p>
+
+		<p>This complexity makes it totally unfeasible for the majority of developers to code and maintain their own video player. Worth, it limits the creativity of designers to create and produce original and interactives experiences.</p>
+
+		<p>We have learned and solved this issue during last years working for television companies. Then, we started again on a blank page and built from scratch a new framework that hide all the complexity and heterogeneity to play video on any device.</p>
+
+	</div>
+	<div class="span6">
+
+	<p> Fabuloos enables HTML5 Video with invisible Flash fallback based on browser/device capabilities and specific media type. The rendering of every control and UI element is resolution independent (responsive) and delivers a pixel-perfect rendering on Retina displays.</p>
+	
+	<p>Fabuloos is the ultimate framework to solve the huge problem of devices, browsers and web technologies fragmentation, and more importantly, it could solve them in a fully scalable way, leading to the possibility of quickly producing and easily maintaining hundreds of different state-of-the-art video players.</p>
+	
+	<p>We care deeply about the Web and are committed to making contributions that push it forward. Genius technologies and great initiatives have inspired us for many years. Now it's time for us to share you all the best we have accomplished.</p>
+
+	<p>We'd love to hear from you! Join our Community.</p>
+
+	</div>
+
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+	</div>
+	<div class="span6"><blockquote class="pull-right">
+  <p>If it can be written, or thought, it can be filmed.</p>
+  <small>Stanley Kubrick</small>
+</blockquote></div>
+</div>
+
+
+
+
+<h2>Donate to the project</h2>
 
 <hr />
 
