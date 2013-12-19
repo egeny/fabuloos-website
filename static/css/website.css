@@ -3,23 +3,35 @@ body {
 	padding-bottom: 60px;
 }
 
-/* Custom container 
+a {
+  color: #669966;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #33CC33;
+  text-decoration: underline;
+}
+
+
+/* Custom container */
 .container {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 960px;
 }
-.container > hr {
+/*.container > hr {
 	margin: 60px 0;
-}
-*/
+}*/
+
 
 /* Main marketing message and sign up button */
 .jumbotron {
-	margin: 40px 0;
+	margin: 20px 0;
 	text-align: center;
 }
 .jumbotron h1 {
-	font-size: 60px;
+	font-size: 52px;
 	font-weight: lighter;
 	line-height: 1;
 }
@@ -28,8 +40,8 @@ body {
 	line-height: 1.25;
 }
 .jumbotron .btn {
-	font-size: 21px;
-	padding: 14px 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 /* Supporting marketing content */
@@ -50,12 +62,12 @@ body {
 /* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
 	background-image:-webkit-linear-gradient(top, #FFF, #EEE);
-	padding:4px;
+	padding:2px;
 	margin-top:10px;
 }
 
 .nav li {
-padding:0 10px;
+padding:0 4px;
 line-height: 26px;
 }
 
@@ -67,9 +79,12 @@ text-transform: uppercase;
 text-decoration: none;
 }
 
+
 .navbar .brand {
-padding: 10px 20px 0px;
-margin-left: -10px;
+  display: block;
+  float: left;
+  padding: 4px 20px 0px;
+  margin-left: -10px;
 }
 
 .navbar .divider-vertical {
@@ -86,13 +101,45 @@ color: #464646;
 }
 
 #footer .notice {
-	font-size: 12px;
-	font-weight: bolder;
+	font-size: 10px;
+	line-height: 30px;	
 	text-align: center;
+	text-transform: uppercase;
 }
 
-#footer .social {
-	text-align: center;
+#footer .social ul {
+	display: inline;
+	margin:0;
+	padding: 0;
+}
+
+#footer .social li {
+	list-style-type: none;
+	float: right;
+
+}
+
+#footer .social li a{
+display: block;
+width: 25px;
+height: 30px;
+margin-left: 5px;
+margin-right: 0;
+}
+
+a.twitter {
+	background: url('http://local.static.fabuloos.org/img/twitter.png') no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.googleplus {
+	background: url('http://local.static.fabuloos.org/img/googleplus.png') no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.github {
+	background: url('http://local.static.fabuloos.org/img/github.png') no-repeat 0 0;
+	background-size: 100%;
 }
 
 #download .social {

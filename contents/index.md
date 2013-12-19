@@ -5,28 +5,13 @@
 <div id="download">
   <h1>Play On Any Device</h1>
   <p class="lead">Any browser. Same UI. Free. Open Source. </p>
-  <p><a class="btn btn-primary btn-lg" role="button">Download</a></p>
-  <p>Version - Date</p>
+  <p><a class="btn btn-success" role="button">Download the starter kit</a></p>
+  <p>0.1.0 : production (min + gzip 15kb)</p>
 
-<ul class="social">
-    <li class="twitter">
-      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1384994725.html#_=1386853116727&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=_fbjs&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 100px; height: 20px;"></iframe>
-    </li>
-
-    <li class="gplus">
-      <a href="https://plus.google.com/101668252557697758617" rel="publisher">
-        Follow on
-        <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:20px;height:20px;">
-      </a>
-    </li>
-
-  </ul>
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1384994725.html#_=1386853116727&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=_fbjs&amp;show_count=false&amp;show_screen_name=true&amp;size=s" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 100px; height: 20px;"></iframe>
 
  </div>
 </div>
-
-<hr/>
-
 
 <div class="row-fluid">
 	<div class="span4">
@@ -104,7 +89,7 @@ window.addEventListener('load', function (event) { prettyPrint() }, false);
 
 <div class="row-fluid">
 	<div class="span6">
-		<p class="lead">Keep It Simple, Stupide</p>
+		<p class="lead">Keep It Simple, Stupid</p>
 	</div>
 	<div class="span6"></div>
 </div>
@@ -124,7 +109,7 @@ window.addEventListener('load', function (event) { prettyPrint() }, false);
 
 	<p> Fabuloos enables HTML5 Video with invisible Flash fallback based on browser/device capabilities and specific media type. The rendering of every control and UI element is resolution independent to provide a pixel-perfect rendering and an optimal viewing experience.</p>
 	
-	<p>Fabuloos is the ultimate framework to solve the huge problem of devices, browsers and web technologies fragmentation, and more importantly, it could solve them in a fully scalable way, leading to the possibility of quickly producing and easily maintaining hundreds of different state-of-the-art video players.</p>
+	<p>This is the ultimate framework to solve the huge problem of devices, browsers and web technologies fragmentation, and more importantly, it solve them in a fully scalable way, leading to the possibility of quickly producing and easily maintaining hundreds of different state-of-the-art video players.</p>
 	
 	<p>We care deeply about the Web and are committed to making contributions that push it forward. Genius technologies and great initiatives have inspired us for many years. Now it's time for us to share you all the best we have accomplished.</p>
 
@@ -147,7 +132,7 @@ window.addEventListener('load', function (event) { prettyPrint() }, false);
 
 <h2>Donate to the project</h2>
 
-<p class="lead">Your support is critical to our success.</p>
+<p class="lead">Your support is critical to our success</p>
 
 <p>When you click the PayPal icon, you will be taken to the PayPal website where you will be able to donate any amount up to ten thousand US dollars (or the equivalent in another currency) to the Fabuloos project. Note that you do not have to create a PayPal account in order to donate money. Please make sure you have read the legal notice at the bottom of this page. </p>
 
