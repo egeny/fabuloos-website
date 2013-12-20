@@ -1,3 +1,5 @@
 /build
 /node_modules/marked
 /node_modules/swig
+
+.DS_Store
