@@ -1,5 +1,0 @@
-(menu)
-
-* Download
-* Contribute
-* Donate?

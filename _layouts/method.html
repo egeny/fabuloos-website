@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h1 class="page-header">.{{ page.method }}()<span> — {{ page.description }}</span></h1>
+
+{% if page.signatures %}
+<div id="signatures">
+	{% for signature in page.signatures %}
+	<div class="signature">
+		{% highlight js %} .{{ page.method }}({% for param in signature.params %}{% if param.optional %}[{{ param.name }}]{% else %}{{ param.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}){% endhighlight %}
+		{% if signature.params.size > 0 %}
+		<ul class="params">
+		{% for param in signature.params %}
+			<li><strong>{% if param.optional %}[{{ param.name }}]{% else %}{{ param.name }}{% endif %}</strong> ({{ param.types }}) — {{ param.description }}</li>
+		{% endfor %}
+		</ul><!-- end of .params -->
+		{% endif %}
+		<p class="return"><span>{{ signature.return.type }}</span> {{ signature.return.description }}</p>
+	</div><!-- end of .signature -->
+	{% endfor %}
+</div><!-- end of #signatures -->
+{% endif %}
+
+<div class="content">{{ content }}</div>
