@@ -1,10 +1,10 @@
 body {
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 60px;
 }
 
 a {
-  color: #669966;
+  color: #d21f2c;
   text-decoration: none;
 }
 
@@ -15,11 +15,6 @@ a:focus {
 }
 
 
-/* Custom container */
-.container {
-	margin: 0 auto;
-	max-width: 960px;
-}
 /*.container > hr {
 	margin: 60px 0;
 }*/
@@ -27,29 +22,33 @@ a:focus {
 /* Navigation */
 
 .navbar .navbar-inner {
-	background-image:-webkit-linear-gradient(top, #000, #333);
+	background-image:-webkit-linear-gradient(top, #333, #111);
 	padding:2px;
 	margin-top:0px;
+	border-radius: 0px;
 }
 
 .nav li {
 padding:0 4px;
-line-height: 16px;
+line-height: 21px;
 }
 
 .navbar .nav > li > a {
 color: #EEE;
 font-size: 1em;
-font-weight: lighter;
 text-transform: uppercase;
 text-decoration: none;
-text-shadow: 0 1px 0 #333;
+text-shadow: none;
+}
+
+.navbar .nav > li > a:hover {
+color: #333;
 }
 
 .navbar .brand {
   display: block;
   float: left;
-  padding: 4px 20px 0px;
+  padding: 5px 20px 0px;
   margin-left: -10px;
 }
 
@@ -81,7 +80,7 @@ border-right: 1px solid #ffffff;
 
 .spacer {
 display: inline-block;
-width: 4em;
+width: 3em;
 height: 2em;
 }
 
@@ -139,6 +138,21 @@ a.googleplus {
 
 a.github {
 	background: url(img/github.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.apple {
+	background: url(img/apple.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.android {
+	background: url(img/android.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.windows {
+	background: url(img/windows.png) no-repeat 0 0;
 	background-size: 100%;
 }
 
