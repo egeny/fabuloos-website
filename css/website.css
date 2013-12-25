@@ -24,61 +24,27 @@ a:focus {
 	margin: 60px 0;
 }*/
 
+/* Navigation */
 
-/* Main marketing message and sign up button */
-.jumbotron {
-	margin: 20px 0;
-	text-align: center;
-}
-.jumbotron h1 {
-	font-size: 52px;
-	font-weight: lighter;
-	line-height: 1;
-}
-.jumbotron .lead {
-	font-size: 24px;
-	line-height: 1.25;
-}
-.jumbotron .btn {
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-/* Supporting marketing content */
-.marketing {
-	margin: 60px 0;
-}
-.marketing p + h4 {
-	margin-top: 28px;
-}
-
-
-/* Custom thumbnail */
-
-.thumbnail {border:none;}
-.caption p {text-align:justify;}
-
-
-/* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
-	background-image:-webkit-linear-gradient(top, #FFF, #EEE);
+	background-image:-webkit-linear-gradient(top, #000, #333);
 	padding:2px;
-	margin-top:10px;
+	margin-top:0px;
 }
 
 .nav li {
 padding:0 4px;
-line-height: 26px;
+line-height: 16px;
 }
 
 .navbar .nav > li > a {
-color: #333;
-font-size: 1.1em;
+color: #EEE;
+font-size: 1em;
 font-weight: lighter;
 text-transform: uppercase;
 text-decoration: none;
+text-shadow: 0 1px 0 #333;
 }
-
 
 .navbar .brand {
   display: block;
@@ -92,6 +58,40 @@ height: 30px;
 margin: 0 9px;
 border-right: 1px solid #ffffff;
 }
+
+
+/* Main marketing message and download button */
+
+.jumbotron {
+	margin: 40px 0;
+	padding: 20px;
+	background-color: #EEE;
+}
+.jumbotron h1 {
+	font-size: 24px;
+	font-weight: lighter;
+	line-height: 1;
+	margin: 28px 0;
+}
+
+.center {
+	margin: 30px 0;
+	text-align: center;
+}
+
+.spacer {
+display: inline-block;
+width: 4em;
+height: 2em;
+}
+
+
+/* Custom thumbnail */
+
+.thumbnail {border:none;}
+.caption p {text-align:justify;}
+
+
 
 
 /* Footer */
