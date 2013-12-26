@@ -1,10 +1,10 @@
 ---
 layout: method
-method: autoplay
+name: autoplay
 description: Get or set the player's autoplay value
 signatures:
   -
-    params: []
+    params: ~
     return:
       type: boolean
       description: Return the current autoplay value

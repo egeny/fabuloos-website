@@ -1,8 +1,8 @@
 This method allows you to get the `buffered` property of the player.
 
-<div class="alert">
-	<strong>Warning!</strong> This property isn't available on all renderers.
-</div>
+{% alert %}
+For now, this property isn't available on all renderers.
+{% endalert %}
 
 ## Example:
 ```js

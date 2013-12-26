@@ -1,10 +1,10 @@
 ---
 layout: method
-method: attach
+name: attach
 description: Attach all listeners to the renderer
 signatures:
   -
-    params: []
+    params: ~
     return:
       type: fabuloos
       description: Return the current instance of the player to allow chaining
@@ -12,9 +12,9 @@ signatures:
 
 This method attach all registered listeners to the current renderer.
 
-<div class="alert">
-	<strong>Warning!</strong> You shouldn't call this method, its purpose is for internal use only.
-</div>
+{% alert %}
+You shouldn't call this method, its purpose is for internal use only.
+{% endalert %}
 
 ## Example:
 ```js

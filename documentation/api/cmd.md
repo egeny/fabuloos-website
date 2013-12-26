@@ -1,6 +1,6 @@
 ---
 layout: method
-method: cmd
+name: cmd
 description: Launch a command on the instance
 signatures:
   -

@@ -1,6 +1,6 @@
 ---
 layout: method
-method: closure
+name: closure
 description: Create a closure to launch a command
 signatures:
   -

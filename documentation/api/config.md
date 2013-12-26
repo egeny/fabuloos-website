@@ -1,10 +1,10 @@
 ---
 layout: method
-method: config
+name: config
 description: Get or set the configuration
 signatures:
   -
-    params: []
+    params: ~
     return:
       type: object
       description: Return the player's configuration
