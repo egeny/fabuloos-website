@@ -1,10 +1,10 @@
 body {
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 60px;
 }
 
 a {
-  color: #669966;
+  color: #d21f2c;
   text-decoration: none;
 }
 
@@ -15,41 +15,73 @@ a:focus {
 }
 
 
-/* Custom container */
-.container {
-	margin: 0 auto;
-	max-width: 960px;
-}
 /*.container > hr {
 	margin: 60px 0;
 }*/
 
+/* Navigation */
 
-/* Main marketing message and sign up button */
+.navbar .navbar-inner {
+	background-image:-webkit-linear-gradient(top, #333, #111);
+	padding:2px;
+	margin-top:0px;
+	border-radius: 0px;
+}
+
+.nav li {
+padding:0 4px;
+line-height: 21px;
+}
+
+.navbar .nav > li > a {
+color: #EEE;
+font-size: 1em;
+text-transform: uppercase;
+text-decoration: none;
+text-shadow: none;
+}
+
+.navbar .nav > li > a:hover {
+color: #333;
+}
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 5px 20px 0px;
+  margin-left: -10px;
+}
+
+.navbar .divider-vertical {
+height: 30px;
+margin: 0 9px;
+border-right: 1px solid #ffffff;
+}
+
+
+/* Main marketing message and download button */
+
 .jumbotron {
-	margin: 20px 0;
-	text-align: center;
+	margin: 40px 0;
+	padding: 20px;
+	background-color: #EEE;
 }
 .jumbotron h1 {
-	font-size: 52px;
+	font-size: 24px;
 	font-weight: lighter;
 	line-height: 1;
-}
-.jumbotron .lead {
-	font-size: 24px;
-	line-height: 1.25;
-}
-.jumbotron .btn {
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	margin: 28px 0;
 }
 
-/* Supporting marketing content */
-.marketing {
-	margin: 60px 0;
+.center {
+	margin: 30px 0;
+	text-align: center;
 }
-.marketing p + h4 {
-	margin-top: 28px;
+
+.spacer {
+display: inline-block;
+width: 3em;
+height: 2em;
 }
 
 
@@ -59,39 +91,6 @@ a:focus {
 .caption p {text-align:justify;}
 
 
-/* Customize the navbar links to be fill the entire space of the .navbar */
-.navbar .navbar-inner {
-	background-image:-webkit-linear-gradient(top, #FFF, #EEE);
-	padding:2px;
-	margin-top:10px;
-}
-
-.nav li {
-padding:0 4px;
-line-height: 26px;
-}
-
-.navbar .nav > li > a {
-color: #333;
-font-size: 1.1em;
-font-weight: lighter;
-text-transform: uppercase;
-text-decoration: none;
-}
-
-
-.navbar .brand {
-  display: block;
-  float: left;
-  padding: 4px 20px 0px;
-  margin-left: -10px;
-}
-
-.navbar .divider-vertical {
-height: 30px;
-margin: 0 9px;
-border-right: 1px solid #ffffff;
-}
 
 
 /* Footer */
@@ -139,6 +138,21 @@ a.googleplus {
 
 a.github {
 	background: url(img/github.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.apple {
+	background: url(img/apple.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.android {
+	background: url(img/android.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+a.windows {
+	background: url(img/windows.png) no-repeat 0 0;
 	background-size: 100%;
 }
 
