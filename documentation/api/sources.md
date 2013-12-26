@@ -2,6 +2,7 @@
 layout: method
 name: sources
 description: Analyze the sources against the renderers
+tags: core, sources
 signatures:
   -
     params:

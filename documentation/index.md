@@ -4,8 +4,17 @@ layout: default
 
 # Documentation
 
-* [attach](api/attach.html)
-* [autoplay](api/autoplay.html)
-* [closure](api/closure.html)
-* [cmd](api/cmd.html)
-* [config](api/config.html)
+{% for page in site.pages %}
+{% if page.layout == "method" or page.layout == "function" %}
+* [{{ page.name }}]({{ page.url }})
+{% endif %}
+{% endfor %}
+
+{% comment %}
+## Core
+{% for page in site.pages %}
+{% if page.tags contains "core" %}
+[{{ page.name }}]({{ page.url }})
+{% endif %}
+{% endfor %}
+{% endcomment %}

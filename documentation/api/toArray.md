@@ -2,6 +2,7 @@
 layout: function
 name: fab.toArray
 description: A simple useful wrapper to cast to array
+tags: utility
 signatures:
   -
     params:

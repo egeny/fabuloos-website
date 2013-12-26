@@ -2,6 +2,7 @@
 layout: method
 name: element
 description: Getter and setter for the current element
+tags: core, element
 signatures:
   -
     params:
