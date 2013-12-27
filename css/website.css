@@ -21,9 +21,10 @@ a:focus {
 
 /* Navigation */
 
+
 .navbar .navbar-inner {
-	background-image:-webkit-linear-gradient(top, #333, #111);
-	padding:2px;
+	background-image:-webkit-linear-gradient(top, #D21F2C, #AE2A2C);
+	padding:0px;
 	margin-top:0px;
 	border-radius: 0px;
 }
@@ -31,11 +32,13 @@ a:focus {
 .nav li {
 padding:0 4px;
 line-height: 21px;
+display: inline-block;
 }
 
 .navbar .nav > li > a {
 color: #EEE;
-font-size: 1em;
+font: inherit;
+font-size: 0.9em;
 text-transform: uppercase;
 text-decoration: none;
 text-shadow: none;
@@ -53,9 +56,10 @@ color: #333;
 }
 
 .navbar .divider-vertical {
-height: 30px;
-margin: 0 9px;
+height: 40px;
+margin: 0px;
 border-right: 1px solid #ffffff;
+overflow: hidden;
 }
 
 
@@ -84,6 +88,32 @@ width: 3em;
 height: 2em;
 }
 
+.btn-download {
+  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
+  background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
+  background-repeat: repeat-x;
+  border-color: #b92c28;
+  color: #FFF;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-download:hover,
+.btn-download:focus {
+  background-color: #c12e2a;
+  background-position: 0 -15px;
+}
+
+.btn-download:active,
+.btn-download.active {
+  background-color: #c12e2a;
+  border-color: #b92c28;
+}
+
+.modal-dialog {
+width: 760px;
+margin: 30px auto;
+}
 
 /* Custom thumbnail */
 

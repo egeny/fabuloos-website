@@ -2,16 +2,37 @@
 layout: default
 ---
 
-<!--<iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>-->
-
 <div class="jumbotron">
 
 <div class="center">
- <img src="/img/fabuloos.png" width="320" title="Fabuloos.org" />
+ <img src="/img/fabuloos.png" width="400" title="Fabuloos.org" />
  </div>
  <div class="center">
   <h1>Any Device. Unified API. Same UI. Open Source.</h1>
-  <p><a href="https://github.com/egeny/" class="btn btn-lg btn-default" role="button"><span class="glyphicon glyphicon-eye-open"></span> View on Github</a><span class="spacer"></span><a href="download" class="btn btn-lg btn-primary" role="button"><span class="glyphicon glyphicon-download-alt"></span> Download</a></p>
+	  <p>
+		<!-- Button trigger modal -->
+		<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">
+  			<span class="glyphicon glyphicon-eye-open"></span> View a Demo</a>
+		</button>
+		<span class="spacer"></span>
+		<a href="download" class="btn btn-lg btn-download" role="button">
+			<span class="glyphicon glyphicon-download-alt"></span> Download</a>
+		</p>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Demo</h4>
+      </div>
+      <div class="modal-body">
+		<!-- <iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>-->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		
  </div>
  <div class="center">
     <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1384994725.html#_=1386853116727&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=_fabuloos&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 120px; height: 20px;"></iframe>
@@ -39,107 +60,6 @@ layout: default
 </div>
 
 <hr />
-
-<section>
-
-<h1>Why Fabuloos</h1>
-
-<div class="row">
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/api-unified.png" class="img-circle" width="200px" style="background-color:#93d43c;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>Unified API to save time and energy</h2>
-		<p class="lead">The fabuloos initiative intent to create a common API for media player no matter the development environment.</p>
-		<p>You have an incredible list of options to play a media (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain.</p>
-		<p>After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player. Fabuloos abstract the player, you code once, you can change from Youtube to something else with no pain. We don't hope you'll become a “fabuloos expert”, we want you to add a “media specialist” to your skills. There is a big difference.</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-8">
-		<h2>For the web and the others</h2>
-		<p class="lead">Lead</p>
-		<p>We think it is important to provide the same experience to the non-web part (such as desktop or mobile applications). The debate of the platform doesn't matter, the time you spend not thinking about your product and the experience you want to offer to your user is (and should always be) your first concern. Regardless of the platform, we find a common problem: different implementations in the eco-system. This fragmentation leads to an huge waste of time and some complex workaround to achieve simple things. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, that's a polyfill).</p>
-	</div>
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/any-device.png" class="img-rounded" width="200px" style="background-color:#9DB5B5;">
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/html5-enhanced.png" class="img-rounded" width="200px" style="background-color:#eee;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>Standard</h2>
-		<p class="lead">Lead</p>
-		<p>Our starting point was the W3C's HTML5 specification about the media element. We extended it and thunk it for the developpers (W3C specifications' target are mostly browsers vendors). Our goal is the same behaviour no matter the coding langage. This mean an unique and intuitive API and some shared concepts.</p>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-8">
-		<h2>No dependency</h2>
-		<p>Your project is well-started and you decide to add a component you found online. Except that it requires some libraries which goes in conflict with the one you are already using. Wrong dependency version? New version conflicting with something else? Sometimes components use just a few percent of the dependencies, surcharging the memory. Coding was about efficiency, but now the overall complexity make you lose time on thing you don't want to focus on.</p>
-	</div>
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/no-dependency.png" class="img-circle" width="200px" style="background-color:#D2202C;">
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
-		</div>	
-	</div>
-	<div class="col-md-8">
-		<h2>Skin</h2>
-		<p class="lead">Lead</p>
-		<p>Some solutions embed the skin and give you some options to tweak it. This is nice but it won't fit with your design. We think skins are an essential aspect of a media player and should be treated like it deserve.</p>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-8">
-		<h2>Unified documentation</h2>
-		<p>Encyclopedia and references are a blessing. Most of technical documentation describe how to use a product although it should describe what should be done, no matter the product. A documentation should teach you to do things, not to use things. We're trying to build the most complete documentation on ”how you should build a player” (featuring guides on encoding, UI good practices and of course the available fabuloos' API).</p>
-	</div>
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
-		</div>	
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>Open Source</h2>
-		<p class="lead">Lead</p>
-		<p>Of course it is lightweight, fast and have a low footprint.</p>	
-	</div>
-</div>
-
-<hr/>
-
-<span class="spacer"></span>
-<blockquote>
-  <p>If it can be written, or thought, it can be filmed.</p>
-  <small>Stanley Kubrick</small>
-</blockquote>
-<span class="spacer"></span>
-
-</section>
-
 
 <section>
 <h2>How It Works</h2>
@@ -190,6 +110,104 @@ fab("example").at("1m20", function() {
 	
 </section>
 
-<hr>
+<hr />
 
+<section>
 
+<h1>Why Fabuloos</h1>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/api-unified.png" class="img-rounded" width="300px" style="background-color:#fff;">
+		</div>
+	</div>
+	<div class="col-md-8">
+		<h2>Unified API to save time and energy</h2>
+		<p class="lead">The fabuloos initiative intent to create a common API for media player no matter the development environment.</p>
+		<p>You have an incredible list of options to play a media (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain.</p>
+		<p>After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player. Fabuloos abstract the player, you code once, you can change from Youtube to something else with no pain. We don't hope you'll become a “fabuloos expert”, we want you to add a “media specialist” to your skills. There is a big difference.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+		<h2>For the web and the others</h2>
+		<p class="lead">Lead</p>
+		<p>We think it is important to provide the same experience to the non-web part (such as desktop or mobile applications). The debate of the platform doesn't matter, the time you spend not thinking about your product and the experience you want to offer to your user is (and should always be) your first concern. Regardless of the platform, we find a common problem: different implementations in the eco-system. This fragmentation leads to an huge waste of time and some complex workaround to achieve simple things. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, that's a polyfill).</p>
+	</div>
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/any-device.png" class="img-rounded" width="200px">
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/html5-enhanced.png" class="img-rounded" width="300px" style="background-color:#eee;">
+		</div>
+	</div>
+	<div class="col-md-8">
+		<h2>Standard</h2>
+		<p class="lead">Lead</p>
+		<p>Our starting point was the W3C's HTML5 specification about the media element. We extended it and thunk it for the developpers (W3C specifications' target are mostly browsers vendors). Our goal is the same behaviour no matter the coding langage. This mean an unique and intuitive API and some shared concepts.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<h2>No dependency</h2>
+		<p>Your project is well-started and you decide to add a component you found online. Except that it requires some libraries which goes in conflict with the one you are already using. Wrong dependency version? New version conflicting with something else? Sometimes components use just a few percent of the dependencies, surcharging the memory. Coding was about efficiency, but now the overall complexity make you lose time on thing you don't want to focus on.</p>
+	</div>
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/no-dependency.png" class="img-circle" width="300px" style="background-color:#D2202C;">
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/default.png" class="img-circle" width="300px" style="background-color:#eee;">
+		</div>	
+	</div>
+	<div class="col-md-8">
+		<h2>Skin</h2>
+		<p class="lead">Lead</p>
+		<p>Some solutions embed the skin and give you some options to tweak it. This is nice but it won't fit with your design. We think skins are an essential aspect of a media player and should be treated like it deserve.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<h2>Unified documentation</h2>
+		<p>Encyclopedia and references are a blessing. Most of technical documentation describe how to use a product although it should describe what should be done, no matter the product. A documentation should teach you to do things, not to use things. We're trying to build the most complete documentation on ”how you should build a player” (featuring guides on encoding, UI good practices and of course the available fabuloos' API).</p>
+	</div>
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
+		</div>	
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
+		</div>
+	</div>
+	<div class="col-md-8">
+		<h2>Open Source</h2>
+		<p class="lead">Lead</p>
+		<p>Of course it is lightweight, fast and have a low footprint.</p>	
+	</div>
+</div>
+
+<hr/>
+
+<span class="spacer"></span>
+<blockquote>
+  <p>If it can be written, or thought, it can be filmed.</p>
+  <small>Stanley Kubrick</small>
+</blockquote>
+<span class="spacer"></span>
+
+</section>
