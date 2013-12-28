@@ -44,9 +44,39 @@
 				</div><!-- end of .navbar-inner -->
 			</div><!-- end of .navbar -->
 </div><!-- end of .masthead -->
-
+<!-- Sub Header -->
+<div id="subhead">
+	<div class="container">
+		<h1><span class="glyphicon glyphicon-book"></span> Documentation</h1>
+		<p class="lead">lead</p>
+	</div>
+</div>
+<!-- end of .subhead -->
 <div class="container">
-			{{ content }}
+<div class="row">
+  <div class="col-md-4 col-xs-3">
+		  	<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Documentation</div>
+		  <div class="panel-body">
+		    <p>...</p>
+		  </div>
+
+		  <!-- List group -->
+		  <ul class="list-group">
+		    <li class="list-group-item">Cras justo odio</li>
+		    <li class="list-group-item">Dapibus ac facilisis in</li>
+		    <li class="list-group-item">Morbi leo risus</li>
+		    <li class="list-group-item">Porta ac consectetur ac</li>
+		    <li class="list-group-item">Vestibulum at eros</li>
+		  </ul>
+		</div>
+  </div>
+  <div class="col-md-8 col-xs-9">
+  {{ content }}
+  </div>
+</div>
+			
 </div> <!-- /container -->
 
 

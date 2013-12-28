@@ -8,12 +8,6 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: #33CC33;
-  text-decoration: underline;
-}
-
 
 /*.container > hr {
 	margin: 60px 0;
@@ -21,25 +15,28 @@ a:focus {
 
 /* Navigation */
 
+.navbar {
+	border: none;
+}
 
 .navbar .navbar-inner {
 	background-image:-webkit-linear-gradient(top, #D21F2C, #AE2A2C);
 	padding:0px;
 	margin-top:0px;
 	border-radius: 0px;
+	height: 56px;
 }
 
 .nav li {
 padding:0 4px;
-line-height: 21px;
+line-height: 36px;
 display: inline-block;
 }
 
 .navbar .nav > li > a {
 color: #EEE;
 font: inherit;
-font-size: 0.9em;
-text-transform: uppercase;
+font-size: 1.1em;
 text-decoration: none;
 text-shadow: none;
 }
@@ -51,8 +48,8 @@ color: #333;
 .navbar .brand {
   display: block;
   float: left;
-  padding: 5px 20px 0px;
-  margin-left: -10px;
+  padding: 12px 20px 0px;
+  margin-left: -20px;
 }
 
 .navbar .divider-vertical {
@@ -62,6 +59,22 @@ border-right: 1px solid #ffffff;
 overflow: hidden;
 }
 
+.navbar-toggle {
+position: relative;
+float: right;
+padding: 9px 10px;
+margin-top: 8px;
+margin-right: 15px;
+margin-bottom: 8px;
+background-color: #fff;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+background-color: #d21f2c;
+}
 
 /* Main marketing message and download button */
 
@@ -120,20 +133,81 @@ margin: 30px auto;
 .thumbnail {border:none;}
 .caption p {text-align:justify;}
 
+.nav-tabs a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-tabs a:hover,
+.nav-tabs a:focus {
+  color: #111;
+  text-decoration: none;
+}
 
 
+/* Sub Header */
+#subhead {
+min-height: 100px;
+background-image:-webkit-linear-gradient(top, #fff, #ededed);
+border-bottom: 1px solid #cccccc;
+padding:0px;
+margin-top:0px;
+margin-bottom:20px;
+border-radius: 0px;
+}
+
+/* News */
+
+article > h1 {
+font-size: 36px;
+font-weight: lighter;
+}
+
+article > p {
+font-size: 18px;
+}
+
+article > hr {
+	margin: 60px 0;
+	border-top: 1px dotted #eee;
+}
 
 /* Footer */
 #footer {
 font-size:10px;
 color: #464646;
+min-height: 100px;
+background-image:-webkit-linear-gradient(top, #ededed, #ffffff);
+border-top: 1px solid #cccccc;
+padding:0px;
+margin-top:0px;
+border-radius: 0px;
+}
+
+#footer .row {
+margin-top:30px;
+}
+
+#footer a{
+text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:focus {
+  color: #d21f2c;
+  text-decoration: none;
 }
 
 #footer .notice {
 	font-size: 10px;
-	line-height: 30px;	
+	line-height: 20px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+#footer .notice a {
+	color: #555;
+	border-bottom : 1px dotted #555;
 }
 
 #footer .social ul {
@@ -143,47 +217,25 @@ color: #464646;
 }
 
 #footer .social li {
+	font-size:18px;
 	list-style-type: none;
 	float: right;
-
 }
 
 #footer .social li a{
+color: #555;
 display: block;
+text-decoration: none;
 width: 25px;
 height: 30px;
 margin-left: 5px;
 margin-right: 0;
 }
 
-a.twitter {
-	background: url(img/twitter.png) no-repeat 0 0;
-	background-size: 100%;
-}
-
-a.googleplus {
-	background: url(img/googleplus.png) no-repeat 0 0;
-	background-size: 100%;
-}
-
-a.github {
-	background: url(img/github.png) no-repeat 0 0;
-	background-size: 100%;
-}
-
-a.apple {
-	background: url(img/apple.png) no-repeat 0 0;
-	background-size: 100%;
-}
-
-a.android {
-	background: url(img/android.png) no-repeat 0 0;
-	background-size: 100%;
-}
-
-a.windows {
-	background: url(img/windows.png) no-repeat 0 0;
-	background-size: 100%;
+#footer .social li a:hover,
+#footer .social li a:focus {
+  color: #d21f2c;
+  text-decoration: none;
 }
 
 #download .social {
@@ -295,3 +347,236 @@ h1.page-header span {
 			font-size: .917em;
 			color: #FFF;
 		}
+
+/* Special characters for Fabuloos UI - from http://icomoon.io/app/ */
+
+
+@font-face {
+	font-family: 'uifab';
+	src:url('/fonts/uifab.eot');
+	src:url('/fonts/uifab.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/uifab.ttf') format('truetype'),
+		url('/fonts/uifab.woff') format('woff'),
+		url('/fonts/uifab.svg#uifab') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'uifab';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apple:before {
+	content: "\e601";
+}
+.icon-android:before {
+	content: "\e600";
+}
+.icon-windows8:before {
+	content: "\e602";
+}
+.icon-github:before {
+	content: "\e603";
+}
+.icon-html5:before {
+	content: "\e604";
+}
+.icon-user:before {
+	content: "\e605";
+}
+.icon-bug:before {
+	content: "\e606";
+}
+.icon-earth:before {
+	content: "\e607";
+}
+.icon-cloud:before {
+	content: "\e608";
+}
+.icon-play:before {
+	content: "\e609";
+}
+.icon-pause:before {
+	content: "\e60a";
+}
+.icon-stop:before {
+	content: "\e60b";
+}
+.icon-backward:before {
+	content: "\e60c";
+}
+.icon-forward:before {
+	content: "\e60d";
+}
+.icon-close:before {
+	content: "\e60e";
+}
+.icon-checkmark:before {
+	content: "\e60f";
+}
+.icon-volume-mute:before {
+	content: "\e610";
+}
+.icon-volume-mute2:before {
+	content: "\e611";
+}
+.icon-spinner:before {
+	content: "\e612";
+}
+.icon-tv:before {
+	content: "\e613";
+}
+.icon-screen:before {
+	content: "\e614";
+}
+.icon-laptop:before {
+	content: "\e615";
+}
+.icon-mobile:before {
+	content: "\e616";
+}
+.icon-mobile2:before {
+	content: "\e617";
+}
+.icon-tablet:before {
+	content: "\e618";
+}
+.icon-twitter:before {
+	content: "\e619";
+}
+.icon-youtube:before {
+	content: "\e61a";
+}
+.icon-youtube2:before {
+	content: "\e61b";
+}
+.icon-feed:before {
+	content: "\e61c";
+}
+.icon-github:before {
+	content: "\e61d";
+}
+.icon-github2:before {
+	content: "\e61e";
+}
+.icon-file-pdf:before {
+	content: "\e61f";
+}
+.icon-firefox:before {
+	content: "\e620";
+}
+.icon-IE:before {
+	content: "\e621";
+}
+.icon-opera:before {
+	content: "\e622";
+}
+.icon-safari:before {
+	content: "\e623";
+}
+.icon-chrome:before {
+	content: "\e624";
+}
+.icon-html5:before {
+	content: "\e625";
+}
+.icon-file-css:before {
+	content: "\e626";
+}
+.icon-file-xml:before {
+	content: "\e627";
+}
+.icon-console:before {
+	content: "\e628";
+}
+.icon-mail:before {
+	content: "\e629";
+}
+.icon-google-drive:before {
+	content: "\e62a";
+}
+.icon-google-plus:before {
+	content: "\e62b";
+}
+.icon-code:before {
+	content: "\e62c";
+}
+.icon-dashboard:before {
+	content: "\e62d";
+}
+.icon-search:before {
+	content: "\e62e";
+}
+.icon-contract:before {
+	content: "\e62f";
+}
+.icon-expand:before {
+	content: "\e630";
+}
+.icon-lock:before {
+	content: "\e631";
+}
+.icon-unlocked:before {
+	content: "\e632";
+}
+.icon-contract2:before {
+	content: "\e633";
+}
+.icon-expand2:before {
+	content: "\e634";
+}
+.icon-redo:before {
+	content: "\e635";
+}
+.icon-images:before {
+	content: "\e636";
+}
+.icon-music:before {
+	content: "\e637";
+}
+.icon-headphones:before {
+	content: "\e638";
+}
+.icon-play2:before {
+	content: "\e639";
+}
+.icon-film:before {
+	content: "\e63a";
+}
+.icon-compass:before {
+	content: "\e63b";
+}
+.icon-user2:before {
+	content: "\e63c";
+}
+.icon-users:before {
+	content: "\e63d";
+}
+.icon-power-cord:before {
+	content: "\e63e";
+}
+.icon-bookmark:before {
+	content: "\e63f";
+}
+.icon-eye:before {
+	content: "\e640";
+}
+.icon-checkmark-circle:before {
+	content: "\e641";
+}
+.icon-cancel-circle:before {
+	content: "\e642";
+}
+.icon-facebook:before {
+	content: "\e643";
+}

@@ -12,7 +12,7 @@ layout: default
 	  <p>
 		<!-- Button trigger modal -->
 		<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">
-  			<span class="glyphicon glyphicon-eye-open"></span> View a Demo</a>
+  			<span class="icon-play"></span>  Lauch a Demo</a>
 		</button>
 		<span class="spacer"></span>
 		<a href="download" class="btn btn-lg btn-download" role="button">
@@ -24,10 +24,10 @@ layout: default
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Demo</h4>
+        <h4 class="modal-title" id="myModalLabel">Kubrick // One-Point Perspective</h4>
       </div>
       <div class="modal-body">
-		<!-- <iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>-->
+		<iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -43,16 +43,16 @@ layout: default
 
 
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-4">
 				<h3>Play Videos Anywhere</h3>
 				<p>Fabuloos is a simple yet powerful video framework that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
 
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-4">
 				<h3>Simply Plug-and-Play</h3>
 				<p>Crazy fast, less than 100k, it can take a matter of seconds to get Fabuloos up and working on your web page. Fabuloos is fully modular and allows you to assemble exactly the player you need, so get started making the difference.</p>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-4">
 				<h3>Enhance Experience</h3>
 				<p>Tell Fabuloos stories and create interactive programs, web documentaries, and more. The Fabuloos API gives you the ability to control the player via JavaScript and easily implement custom and advanced functionality.</p>
 	</div>
@@ -64,28 +64,40 @@ layout: default
 <section>
 <h2>How It Works</h2>
 
-<ul class="nav nav-tabs ">
-  <li><a href="#browser" data-toggle="tab">For Browsers</a></li>
-  <li><a href="#ios" data-toggle="tab" class="apple">For iOS</a></li>
-  <li><a href="#android" data-toggle="tab" class="android">For Android</a></li>
-  <li><a href="#windows" data-toggle="tab" class="windows">For WindowsPhone</a></li>
+<ul class="nav nav-tabs">
+  <li><a href="#browser" data-toggle="tab"><span class="icon-html5"></span> For Browsers</a></li>
+  <li><a href="#ios" data-toggle="tab"><span class="icon-apple"></span>  For iOS</a></li>
+  <li><a href="#android" data-toggle="tab"><span class="icon-android"></span> For Android</a></li>
+  <li><a href="#windows" data-toggle="tab"><span class="icon-windows8"></span> For WindowsPhone</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="browser">...</div>
-  <div class="tab-pane" id="ios">...</div>
-  <div class="tab-pane" id="android">...</div>
+  <div class="tab-pane fade in active" id="browser">
+  <h3>Step 1: Include the Fabuloos.js Javascript in your page</h3>
+  </div>
+  <div class="tab-pane" id="ios">
+  	<h3>Step 1: </h3>
+  	<h3>Step 2: </h3>
+  	<h3>Step 3: </h3>
+  </div>
+  <div class="tab-pane" id="android">
+  	<h3>Step 1: </h3>
+  	<h3>Step 2: </h3>
+  	<h3>Step 3: </h3>
+  </div>
   <div class="tab-pane" id="windows">...</div>
 </div>
 
 <script>
+
+$('#myTab a:first').tab('show') // Select first tab
+
 $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
-</script>
-### Step 1: Include the Fabuloos.js Javascript in your page
 
+</script>
 You can download the Fabuloos.js source and host it on your own servers, or use the free CDN hosted version. It's often recommended now to put JavaScript before the end body tag (`</body>`) instead of the head (`<head>`).
 
 ```html
@@ -145,7 +157,7 @@ fab("example").at("1m20", function() {
 <div class="row">
 	<div class="col-md-4">
 		<div class="center">
-		<img src="/img/html5-enhanced.png" class="img-rounded" width="300px" style="background-color:#eee;">
+		<img src="/img/html5-enhanced.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>
 	</div>
 	<div class="col-md-8">
@@ -161,14 +173,14 @@ fab("example").at("1m20", function() {
 	</div>
 	<div class="col-md-4">
 		<div class="center">
-		<img src="/img/no-dependency.png" class="img-circle" width="300px" style="background-color:#D2202C;">
+		<img src="/img/no-dependency.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>
 	</div>
 </div>
 <div class="row">
 	<div class="col-md-4">
 		<div class="center">
-		<img src="/img/default.png" class="img-circle" width="300px" style="background-color:#eee;">
+		<img src="/img/skin.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>	
 	</div>
 	<div class="col-md-8">
@@ -184,14 +196,14 @@ fab("example").at("1m20", function() {
 	</div>
 	<div class="col-md-4">
 		<div class="center">
-		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
+		<img src="/img/documentation.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>	
 	</div>
 </div>
 <div class="row">
 	<div class="col-md-4">
 		<div class="center">
-		<img src="/img/default.png" class="img-circle" width="200px" style="background-color:#eee;">
+		<img src="/img/open.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>
 	</div>
 	<div class="col-md-8">
