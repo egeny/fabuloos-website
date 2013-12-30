@@ -8,7 +8,7 @@ signatures:
     params:
     -
       name: obj
-      types: "*"
+      type: "*"
       description: The object to cast to array.
     return:
       type: array

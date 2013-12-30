@@ -8,7 +8,7 @@ signatures:
     params:
     -
       name: id
-      types: string
+      type: string
       description: The ID attribute of the element to enhance (might be `<audio>`, `<video>` or any element).
     return:
       type: fabuloos
@@ -17,7 +17,7 @@ signatures:
     params:
     -
       name: element
-      types: Element
+      type: Element
       description: The element to enhance (might be `<audio>`, `<video>` or any element).
     return:
       type: fabuloos

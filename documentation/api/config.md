@@ -12,7 +12,7 @@ signatures:
     params:
     -
       name: value
-      types: object
+      type: object
       description: The configuration to apply to the player
     return:
       type: fabuloos

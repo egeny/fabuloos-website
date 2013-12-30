@@ -8,7 +8,7 @@ signatures:
     params:
     -
       name: obj
-      types: object
+      type: object
       description: The object to merge to the prototype.
     return:
       type: undefined
@@ -17,7 +17,7 @@ signatures:
     params:
     -
       name: ...
-      types: object
+      type: object
       description: The objects to merge together.
     return:
       type: undefined

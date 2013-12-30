@@ -12,7 +12,7 @@ signatures:
     params:
     -
       name: value
-      types: boolean
+      type: boolean
       description: The new autoplay value
     return:
       type: fabuloos

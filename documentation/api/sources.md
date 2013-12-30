@@ -8,7 +8,7 @@ signatures:
     params:
     -
       name: value
-      types: string
+      type: string
       description: The URL to analyze.
     return:
       type: fabuloos
@@ -17,7 +17,7 @@ signatures:
     params:
     -
       name: value
-      types: object
+      type: object
       description: An object literal representing the source (might have additional properties).
     return:
       type: fabuloos
@@ -26,7 +26,7 @@ signatures:
     params:
     -
       name: value
-      types: array
+      type: array
       description: A list of source to analyze (items can be string or object as described above).
     return:
       type: fabuloos

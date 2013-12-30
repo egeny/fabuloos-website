@@ -8,7 +8,7 @@ signatures:
     params:
     -
       name: config
-      types: object
+      type: object
       optional: true
       description: See [`.config()`](/documentation/api/config.html).
     return:

@@ -12,7 +12,7 @@ layout: default
 		{% if signature.params.size > 0 %}
 		<ul class="params">
 		{% for param in signature.params %}
-			<li><strong>{% if param.optional %}[{{ param.name }}]{% else %}{{ param.name }}{% endif %}</strong> ({{ param.types }}) — {{ param.description | markdownify_inline }}</li>
+			<li><strong>{% if param.optional %}[{{ param.name }}]{% else %}{{ param.name }}{% endif %}</strong> ({{ param.type }}) — {{ param.description | markdownify_inline }}</li>
 		{% endfor %}
 		</ul><!-- end of .params -->
 		{% endif %}
