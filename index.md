@@ -5,10 +5,10 @@ layout: default
 <div class="jumbotron">
 
 <div class="center">
- <img src="/img/fabuloos.png" width="400" title="Fabuloos.org" />
+ <img src="/img/fabuloos.png" width="380" title="Fabuloos.org" />
  </div>
  <div class="center">
-  <h1>Any Device. Unified API. Same UI. Open Source.</h1>
+  <h1>A better way to build media players!</h1>
 	  <p>
 		<!-- Button trigger modal -->
 		<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">
@@ -44,25 +44,24 @@ layout: default
 
 <div class="row">
 	<div class="col-md-4 col-sm-4">
-				<h3>Play Videos Anywhere</h3>
-				<p>Fabuloos is a simple yet powerful video framework that finally sparks the HTML5 Video revolution, by enabling full graphic freedom and features modularity, working perfectly on any browser and the latest mobile platforms.</p>
+				<h3>Any Device</h3>
+				<p>Fabuloos offers a radically faster, cleaner and simpler approach to build top-quality media players in a fraction of the time, whether you're an expert developer or just getting started. It works perfectly on any browser and any device.</p>
 
 	</div>
 	<div class="col-md-4 col-sm-4">
-				<h3>Simply Plug-and-Play</h3>
-				<p>Crazy fast, less than 100k, it can take a matter of seconds to get Fabuloos up and working on your web page. Fabuloos is fully modular and allows you to assemble exactly the player you need, so get started making the difference.</p>
+				<h3>Unified API</h3>
+				<p>Fabuloos is a toolset for building the media framework most suited to your application development. It is fully modular, works with your prefered hosted service, and gives you the ability to assemble exactly the player you need and to control it easily.</p>
 	</div>
 	<div class="col-md-4 col-sm-4">
-				<h3>Enhance Experience</h3>
-				<p>Tell Fabuloos stories and create interactive programs, web documentaries, and more. The Fabuloos API gives you the ability to control the player via JavaScript and easily implement custom and advanced functionality.</p>
+				<h3>Interactive Experience</h3>
+				<p>Tell Fabuloos stories and create web documentaries, slides alongside a video, second screen apps and more. You can program an infinity of interactions between video and others components.</p>
 	</div>
-
 </div>
 
-<hr />
+<hr class="section-line" />
 
 <section>
-<h2>How It Works</h2>
+<h1>How It Works</h1>
 
 <ul class="nav nav-tabs">
   <li><a href="#browser" data-toggle="tab"><span class="icon-html5"></span> For Browsers</a></li>
@@ -122,12 +121,25 @@ fab("example").at("1m20", function() {
 	
 </section>
 
-<hr />
+<hr class="section-line" />
 
 <section>
 
 <h1>Why Fabuloos</h1>
-
+<div class="row">
+	<div class="col-md-8">
+	<h2>An initiative for standardizing media playback.</h2>
+		<p>You have an incredible list of options to play a media (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain. After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player. </p>
+		<p>We think it is important to provide the same experience any where, any time, any device. The debate of the platform doesn't matter, the time you spend not thinking about your product and the experience you want to offer to your user is (and should always be) your first concern. Regardless of the platform, we find a common problem: different implementations in the eco-system. This fragmentation leads to an huge waste of time and some complex workaround to achieve simple things. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, that's a polyfill).</p>
+		<p>Fabuloos offers you a new way to build top-quality media players. No more browser plugins, no librairies dependencies, no proprietary platforms. You only need to use one method for embedding a video, based on open standards, and it works everywhere. This is actually a big step forward for standardizing video playback across web browsers and devices.</p>
+	</div>
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/any-device.png" class="img-rounded" width="300px">
+		</div>
+	</div>
+</div>
+<hr />
 <div class="row">
 	<div class="col-md-4">
 		<div class="center">
@@ -135,64 +147,46 @@ fab("example").at("1m20", function() {
 		</div>
 	</div>
 	<div class="col-md-8">
-		<h2>Unified API to save time and energy</h2>
-		<p class="lead">The fabuloos initiative intent to create a common API for media player no matter the development environment.</p>
-		<p>You have an incredible list of options to play a media (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain.</p>
-		<p>After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player. Fabuloos abstract the player, you code once, you can change from Youtube to something else with no pain. We don't hope you'll become a “fabuloos expert”, we want you to add a “media specialist” to your skills. There is a big difference.</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-8">
-		<h2>For the web and the others</h2>
-		<p class="lead">Lead</p>
-		<p>We think it is important to provide the same experience to the non-web part (such as desktop or mobile applications). The debate of the platform doesn't matter, the time you spend not thinking about your product and the experience you want to offer to your user is (and should always be) your first concern. Regardless of the platform, we find a common problem: different implementations in the eco-system. This fragmentation leads to an huge waste of time and some complex workaround to achieve simple things. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, that's a polyfill).</p>
-	</div>
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/any-device.png" class="img-rounded" width="200px">
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/html5-enhanced.png" class="img-rounded" width="200px" style="background-color:#fff;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>Standard</h2>
-		<p class="lead">Lead</p>
+		<h2>One API to create an infinity of interactions.</h2>
+		<p>The fabuloos initiative intent to create a unique and intuitive API for media playback no matter the development environment.</p>
 		<p>Our starting point was the W3C's HTML5 specification about the media element. We extended it and thunk it for the developpers (W3C specifications' target are mostly browsers vendors). Our goal is the same behaviour no matter the coding langage. This mean an unique and intuitive API and some shared concepts.</p>
+		<p>Fabulloos is fully modular and provide a new level of abstraction which hide all the complexity of various technologies. It allows you to assemble exactly the player you need, in a fastest and reliable way. You keep full control of your videos by freely using your preferred hosting and encoding service(s). You code once, you can change from Youtube to something else with no pain.</p>
+		<p>Fabuloos includes an advanced event system for creating interactions between video and other elements on the page. Once loaded, Fabuloos Player instantiates a unique API object called fabuloos. Event-handler routines handle the events to which the media player respond and find DOM nodes by selector.</p>
 	</div>
 </div>
+<hr />
 <div class="row">
 	<div class="col-md-8">
-		<h2>No dependency</h2>
-		<p>Your project is well-started and you decide to add a component you found online. Except that it requires some libraries which goes in conflict with the one you are already using. Wrong dependency version? New version conflicting with something else? Sometimes components use just a few percent of the dependencies, surcharging the memory. Coding was about efficiency, but now the overall complexity make you lose time on thing you don't want to focus on.</p>
+		<h2>A pixel perfect graphic engine.</h2>
+		<p>Some solutions embed the skin and give you some options to tweak it. This is nice but it won't fit with your design. We think skins are an essential aspect of a media player and should be treated like it deserve.</p> 
+		<p>Fabuloos comes with a custom set of controls over top of the video element to provide a consistent look between any environement. The rendering of every control and UI element is resolution independent and delivers a pixel-perfect rendering on Retina displays. It fixs many cross browser bugs or inconsistencies and adding new features that haven't been implemented by all browsers (like fullscreen and subtitles).</p>
+
 	</div>
-	<div class="col-md-4">
-		<div class="center">
-		<img src="/img/no-dependency.png" class="img-rounded" width="200px" style="background-color:#fff;">
-		</div>
-	</div>
-</div>
-<div class="row">
 	<div class="col-md-4">
 		<div class="center">
 		<img src="/img/skin.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>	
 	</div>
+</div>
+<hr />
+<div class="row">
+	<div class="col-md-4">
+		<div class="center">
+		<img src="/img/no-dependency.png" class="img-rounded" width="200px" style="background-color:#fff;">
+		</div>
+	</div>
 	<div class="col-md-8">
-		<h2>Skin</h2>
-		<p class="lead">Lead</p>
-		<p>Some solutions embed the skin and give you some options to tweak it. This is nice but it won't fit with your design. We think skins are an essential aspect of a media player and should be treated like it deserve.</p>
+		<h2>Pure Javascript.</h2>
+		<p>Your project is well-started and you decide to add a component you found online. Except that it requires some libraries which goes in conflict with the one you are already using. Wrong dependency version? New version conflicting with something else? Sometimes components use just a few percent of the dependencies, surcharging the memory. Coding was about efficiency, but now the overall complexity make you lose time on thing you don't want to focus on.</p>
 	</div>
 </div>
+<hr />
+
 <div class="row">
 	<div class="col-md-8">
 		<h2>Unified documentation</h2>
 		<p>Encyclopedia and references are a blessing. Most of technical documentation describe how to use a product although it should describe what should be done, no matter the product. A documentation should teach you to do things, not to use things. We're trying to build the most complete documentation on ”how you should build a player” (featuring guides on encoding, UI good practices and of course the available fabuloos' API).</p>
+		<p>We don't hope you'll become a “fabuloos expert”, we want you to add a “media specialist” to your skills. There is a big difference.</p>
 	</div>
 	<div class="col-md-4">
 		<div class="center">
@@ -200,6 +194,7 @@ fab("example").at("1m20", function() {
 		</div>	
 	</div>
 </div>
+<hr />
 <div class="row">
 	<div class="col-md-4">
 		<div class="center">
@@ -207,7 +202,7 @@ fab("example").at("1m20", function() {
 		</div>
 	</div>
 	<div class="col-md-8">
-		<h2>Open Source</h2>
+		<h2>Free,Open Source and always will be</h2>
 		<p class="lead">Lead</p>
 		<p>Of course it is lightweight, fast and have a low footprint.</p>	
 	</div>
