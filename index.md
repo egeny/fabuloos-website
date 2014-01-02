@@ -27,7 +27,7 @@ layout: default
         <h4 class="modal-title" id="myModalLabel">Kubrick // One-Point Perspective</h4>
       </div>
       <div class="modal-body">
-		<iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
+		<iframe src="http://fabuloos.ws/xw5Gyt" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -45,7 +45,7 @@ layout: default
 <div class="row">
 	<div class="col-md-4 col-sm-4">
 				<h3>Any Device</h3>
-				<p>Fabuloos offers a radically faster, cleaner and simpler approach to build top-quality media players in a fraction of the time, whether you're an expert developer or just getting started. It works perfectly on any browser and any device.</p>
+				<p>Fabuloos offers a radically faster, cleaner and simpler approach to set-up top-quality media players in a fraction of the time, whether you're an expert developer or just getting started. It works perfectly on any browser and any device.</p>
 
 	</div>
 	<div class="col-md-4 col-sm-4">
@@ -129,11 +129,11 @@ fab("example").at("1m20", function() {
 <div class="row">
 	<div class="col-md-8">
 	<h2>An initiative for standardizing media playback.</h2>
-		<p>You have an incredible list of options to play a media (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain. After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player. </p>
+		<p>You have an incredible list of options to play a video (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain. After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player.</p>
 		<p>We think it is important to provide the same experience any where, any time, any device. The debate of the platform doesn't matter, the time you spend not thinking about your product and the experience you want to offer to your user is (and should always be) your first concern. Regardless of the platform, we find a common problem: different implementations in the eco-system. This fragmentation leads to an huge waste of time and some complex workaround to achieve simple things. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, that's a polyfill).</p>
 		<p>Fabuloos offers you a new way to build top-quality media players. No more browser plugins, no librairies dependencies, no proprietary platforms. You only need to use one method for embedding a video, based on open standards, and it works everywhere. This is actually a big step forward for standardizing video playback across web browsers and devices.</p>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 hidden-xs">
 		<div class="center">
 		<img src="/img/any-device.png" class="img-rounded" width="300px">
 		</div>
@@ -141,7 +141,7 @@ fab("example").at("1m20", function() {
 </div>
 <hr />
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-4 hidden-xs">
 		<div class="center">
 		<img src="/img/api-unified.png" class="img-rounded" width="300px" style="background-color:#fff;">
 		</div>
@@ -162,15 +162,15 @@ fab("example").at("1m20", function() {
 		<p>Fabuloos comes with a custom set of controls over top of the video element to provide a consistent look between any environement. The rendering of every control and UI element is resolution independent and delivers a pixel-perfect rendering on Retina displays. It fixs many cross browser bugs or inconsistencies and adding new features that haven't been implemented by all browsers (like fullscreen and subtitles).</p>
 
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 hidden-xs">
 		<div class="center">
-		<img src="/img/skin.png" class="img-rounded" width="200px" style="background-color:#fff;">
+		<img src="/img/skin.png" class="img-rounded" width="300px" style="background-color:#fff;">
 		</div>	
 	</div>
 </div>
 <hr />
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-4 hidden-xs">
 		<div class="center">
 		<img src="/img/no-dependency.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>
@@ -188,7 +188,7 @@ fab("example").at("1m20", function() {
 		<p>Encyclopedia and references are a blessing. Most of technical documentation describe how to use a product although it should describe what should be done, no matter the product. A documentation should teach you to do things, not to use things. We're trying to build the most complete documentation on ”how you should build a player” (featuring guides on encoding, UI good practices and of course the available fabuloos' API).</p>
 		<p>We don't hope you'll become a “fabuloos expert”, we want you to add a “media specialist” to your skills. There is a big difference.</p>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 hidden-xs">
 		<div class="center">
 		<img src="/img/documentation.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>	
@@ -196,7 +196,7 @@ fab("example").at("1m20", function() {
 </div>
 <hr />
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-4 hidden-xs">
 		<div class="center">
 		<img src="/img/open.png" class="img-rounded" width="200px" style="background-color:#fff;">
 		</div>
