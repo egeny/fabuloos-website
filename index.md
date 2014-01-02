@@ -7,17 +7,17 @@ layout: default
 <div class="center">
  <img src="/img/fabuloos.png" width="380" title="Fabuloos.org" />
  </div>
+  <h1>Unique, intuitive and powerful framework for faster and easier media playback.</h1>
  <div class="center">
-  <h1>A better way to build media players!</h1>
-	  <p>
-		<!-- Button trigger modal -->
-		<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">
-  			<span class="icon-play"></span>  Lauch a Demo</a>
-		</button>
-		<span class="spacer"></span>
-		<a href="download" class="btn btn-lg btn-download" role="button">
-			<span class="glyphicon glyphicon-download-alt"></span> Download</a>
-		</p>
+<p>
+<!-- Button trigger modal -->
+	<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">
+		<span class="icon-play"></span>  Lauch a Demo</a>
+	</button>
+	<span class="spacer"></span>
+	<a href="download" class="btn btn-lg btn-download" role="button">
+	<span class="glyphicon glyphicon-download-alt"></span> Download</a>
+</p>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -34,23 +34,18 @@ layout: default
 </div><!-- /.modal -->
 		
  </div>
- <div class="center">
-    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1384994725.html#_=1386853116727&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=_fabuloos&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 120px; height: 20px;"></iframe>
-	<span class="spacer"></span>
-    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1387492107.html#_=1387827273221&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Ffabuloos.org%2F&amp;size=m&amp;text=Fabuloos%20-%20Ultimate%20Player%20for%20Any%20Device&amp;url=http%3A%2F%2Ffabuloos.org&amp;via=fabuloos" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 80px; height: 20px;"></iframe>
- </div>
 </div>
 
 
 <div class="row">
 	<div class="col-md-4 col-sm-4">
 				<h3>Any Device</h3>
-				<p>Fabuloos offers a radically faster, cleaner and simpler approach to set-up top-quality media players in a fraction of the time, whether you're an expert developer or just getting started. It works perfectly on any browser and any device.</p>
+				<p>Fabuloos is a radically faster, cleaner and simpler approach to set-up top-quality media players in a fraction of the time, whether you're an expert developer or just getting started. It works perfectly on any browser and any device.</p>
 
 	</div>
 	<div class="col-md-4 col-sm-4">
 				<h3>Unified API</h3>
-				<p>Fabuloos is a toolset for building the media framework most suited to your application development. It is fully modular, works with your prefered hosted service, and gives you the ability to assemble exactly the player you need and to control it easily.</p>
+				<p>Fabuloos offers a toolset for building the media framework most suited to your development. It's fully modular, works with your prefered hosted service, and gives you the ability to assemble exactly the player you need.</p>
 	</div>
 	<div class="col-md-4 col-sm-4">
 				<h3>Interactive Experience</h3>
