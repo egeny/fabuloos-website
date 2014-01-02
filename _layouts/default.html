@@ -45,8 +45,19 @@
 			</div><!-- end of .navbar -->
 </div><!-- end of .masthead -->
 
+{% if page.lead %}
+<!-- Sub Header -->
+<div id="subhead" style="margin-top: 60px;">
+	<div class="container">
+		<h1><span class="glyphicon glyphicon-bullhorn"></span> {{ page.lead }}</h1>
+		<p class="lead">lead</p>
+	</div>
+</div>
+<!-- end of .subhead -->
+{% endif %}
+
 <div class="container" style="margin-top:40px">
-			{{ content }}
+	{{ content }}
 </div> <!-- /container -->
 
 

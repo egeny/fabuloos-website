@@ -1,0 +1,18 @@
+---
+layout: default
+lead: News
+---
+
+{% for post in site.posts %}
+	<article>
+		<div class="info pull-left" style="margin-right:40px">
+			<ul class="list-group">
+				<li class="list-group-item">{{ post.date | date_to_long_string }}</li>
+				<li class="list-group-item"><a href="#">Comments <span class="badge">42</span></a></li>
+			</ul>
+		</div>
+		<h1>{{ post.title }} <span class="label label-default">New</span></h1>
+		<p>{{ post.content }}</p>
+		<hr/>
+	</article>
+{% endfor %}
