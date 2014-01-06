@@ -12,7 +12,7 @@ layout: default
 <p>
 <!-- Button trigger modal -->
 	<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">
-		<span class="icon-play"></span>  Lauch a Demo</a>
+		<span class="icon-play"></span>  Lauch a Demo
 	</button>
 	<span class="spacer"></span>
 	<a href="download" class="btn btn-lg btn-download" role="button">
@@ -27,7 +27,7 @@ layout: default
         <h4 class="modal-title" id="myModalLabel">Kubrick // One-Point Perspective</h4>
       </div>
       <div class="modal-body">
-		<iframe src="http://fabuloos.ws/xw5Gyt" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
+		<iframe src="http://fabuloos.ws/U73ldn" width="100%" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen msallowfullscreen allowfullscreen></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -40,12 +40,12 @@ layout: default
 <div class="row">
 	<div class="col-md-4 col-sm-4">
 				<h3>Any Device</h3>
-				<p>Fabuloos is a radically faster, cleaner and simpler approach to set-up top-quality media players in a fraction of the time, whether you're an expert developer or just getting started. It works perfectly on any browser and any device.</p>
+				<p>Fabuloos is a radically faster, cleaner and simpler approach to set-up top-quality media players in a fraction of the time. Whether you're an expert developer or just getting started, it plays perfectly on any browser and any device.</p>
 
 	</div>
 	<div class="col-md-4 col-sm-4">
 				<h3>Unified API</h3>
-				<p>Fabuloos offers a toolset for building the media framework most suited to your development. It's fully modular, works with your prefered hosted service, and gives you the ability to assemble exactly the player you need.</p>
+				<p>Fabuloos offers a toolset for building the media player most suited to your development. The API is fully modular, works with your prefered hosted service, and gives you the ability to assemble exactly the player you need.</p>
 	</div>
 	<div class="col-md-4 col-sm-4">
 				<h3>Interactive Experience</h3>
@@ -66,20 +66,10 @@ layout: default
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane fade in active" id="browser">
-  <h3>Step 1: Include the Fabuloos.js Javascript in your page</h3>
-  </div>
-  <div class="tab-pane" id="ios">
-  	<h3>Step 1: </h3>
-  	<h3>Step 2: </h3>
-  	<h3>Step 3: </h3>
-  </div>
-  <div class="tab-pane" id="android">
-  	<h3>Step 1: </h3>
-  	<h3>Step 2: </h3>
-  	<h3>Step 3: </h3>
-  </div>
-  <div class="tab-pane" id="windows">...</div>
+  <div class="tab-pane fade in active" id="browser"></div>
+  <div class="tab-pane" id="ios"></div>
+  <div class="tab-pane" id="android"></div>
+  <div class="tab-pane" id="windows"></div>
 </div>
 
 <script>
@@ -92,6 +82,7 @@ $('#myTab a').click(function (e) {
 })
 
 </script>
+<h3>Step 1: Include the Fabuloos.js Javascript in your page</h3>
 You can download the Fabuloos.js source and host it on your own servers, or use the free CDN hosted version. It's often recommended now to put JavaScript before the end body tag (`</body>`) instead of the head (`<head>`).
 
 ```html
@@ -163,53 +154,5 @@ fab("example").at("1m20", function() {
 		</div>	
 	</div>
 </div>
-<hr />
-<div class="row">
-	<div class="col-md-4 hidden-xs">
-		<div class="center">
-		<img src="/img/no-dependency.png" class="img-rounded" width="200px" style="background-color:#fff;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>Pure Javascript.</h2>
-		<p>Your project is well-started and you decide to add a component you found online. Except that it requires some libraries which goes in conflict with the one you are already using. Wrong dependency version? New version conflicting with something else? Sometimes components use just a few percent of the dependencies, surcharging the memory. Coding was about efficiency, but now the overall complexity make you lose time on thing you don't want to focus on.</p>
-	</div>
-</div>
-<hr />
-
-<div class="row">
-	<div class="col-md-8">
-		<h2>Unified documentation</h2>
-		<p>Encyclopedia and references are a blessing. Most of technical documentation describe how to use a product although it should describe what should be done, no matter the product. A documentation should teach you to do things, not to use things. We're trying to build the most complete documentation on ”how you should build a player” (featuring guides on encoding, UI good practices and of course the available fabuloos' API).</p>
-		<p>We don't hope you'll become a “fabuloos expert”, we want you to add a “media specialist” to your skills. There is a big difference.</p>
-	</div>
-	<div class="col-md-4 hidden-xs">
-		<div class="center">
-		<img src="/img/documentation.png" class="img-rounded" width="200px" style="background-color:#fff;">
-		</div>	
-	</div>
-</div>
-<hr />
-<div class="row">
-	<div class="col-md-4 hidden-xs">
-		<div class="center">
-		<img src="/img/open.png" class="img-rounded" width="200px" style="background-color:#fff;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>Free,Open Source and always will be</h2>
-		<p class="lead">Lead</p>
-		<p>Of course it is lightweight, fast and have a low footprint.</p>	
-	</div>
-</div>
-
-<hr/>
-
-<span class="spacer"></span>
-<blockquote>
-  <p>If it can be written, or thought, it can be filmed.</p>
-  <small>Stanley Kubrick</small>
-</blockquote>
-<span class="spacer"></span>
 
 </section>
