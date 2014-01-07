@@ -8,6 +8,40 @@ a {
   text-decoration: none;
 }
 
+#why section h1 { font-size: 30px; }
+
+#why section {
+	background-repeat: no-repeat;
+
+	min-height: 300px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #EEE;
+	margin: 20px 0;
+}
+
+#why section:nth-child(even) {
+	background-position: right;
+	padding-right: 33.33333333333333%;
+}
+
+#why section:nth-child(odd) {
+	background-position: left;
+	padding-left:  33.33333333333333%;
+}
+
+#why section:last-child { border: 0; }
+
+#initiative { background-image: url(/img/any-device.png); }
+#api        { background-image: url(/img/api-unified.png); }
+#skin       { background-image: url(/img/skin.png); }
+
+#ios,
+#android,
+#windows {
+	margin: 1.5em 0;
+	text-align: center;
+	font-size: 3em;
+}
 
 /*.container > hr {
 	margin: 60px 0;

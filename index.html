@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="jumbotron">
+<div class="jumbotron" style="display: none;">
 
 <div class="center">
  <img src="/img/fabuloos.png" width="380" title="Fabuloos.org" />
@@ -37,7 +37,7 @@ layout: default
 </div>
 
 
-<div class="row">
+<div class="row" style="display: none;">
 	<div class="col-md-4 col-sm-4">
 				<h3>Any Device</h3>
 				<p>Fabuloos is a radically faster, cleaner and simpler approach to set-up top-quality media players in a fraction of the time. Whether you're an expert developer or just getting started, it plays perfectly on any browser and any device.</p>
@@ -55,104 +55,79 @@ layout: default
 
 <hr class="section-line" />
 
-<section>
-<h1>How It Works</h1>
+<section id="how">
+	<h1>How it works?</h1>
 
-<ul class="nav nav-tabs">
-  <li><a href="#browser" data-toggle="tab"><span class="icon-html5"></span> For Browsers</a></li>
-  <li><a href="#ios" data-toggle="tab"><span class="icon-apple"></span>  For iOS</a></li>
-  <li><a href="#android" data-toggle="tab"><span class="icon-android"></span> For Android</a></li>
-  <li><a href="#windows" data-toggle="tab"><span class="icon-windows8"></span> For WindowsPhone</a></li>
-</ul>
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#browser"><span class="icon-html5"></span> Browsers</a></li>
+		<li><a data-toggle="tab" href="#ios"><span class="icon-apple"></span> iOS</a></li>
+		<li><a data-toggle="tab" href="#android"><span class="icon-android"></span> Android</a></li>
+		<li><a data-toggle="tab" href="#windows"><span class="icon-windows8"></span> Windows</a></li>
+	</ul>
 
-<div class="tab-content">
-  <div class="tab-pane fade in active" id="browser"></div>
-  <div class="tab-pane" id="ios"></div>
-  <div class="tab-pane" id="android"></div>
-  <div class="tab-pane" id="windows"></div>
-</div>
+	<div class="tab-content">
+		<div class="tab-pane active" id="browser">
+			<ol>
+				<li>
+					<h2>Include fabuloos to your project</h2>
+					<p>Download <a href="#">fabuloos.js</a> and host it on your server. Insert the <code>&lt;script&gt;</code> when needed or just before the <code>&lt;/body&gt;</code>.
+					{% highlight html %}<script src="http://fabuloos.org/js/fabuloos-min.js"></script>{% endhighlight %}
+				</li>
+				<li>
+					<h2>Add an HTML5 player (<code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code>)</h2>
+					<p>Semantic is important, fabuloos will extend HTML5's media tags.</p>
+					{% highlight html %}<video id="example" width="640" height="360" src="http://fabuloos.org/clip.mp4" controls></video>{% endhighlight %}
+				</li>
+				<li>
+					<h2>Enjoy!</h2>
+					<p>Add interactivity, build something beautiful, </p>
+{% highlight js %}fab("example").at("1m20", function() {
+	alert("Awesome!");
+});{% endhighlight %}
+				</li>
+			</ol>
+		</div>
+		<div class="tab-pane" id="ios">
+			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
+		</div>
+		<div class="tab-pane" id="android">
+			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
+		</div>
+		<div class="tab-pane" id="windows">
+			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
+		</div>
+	</div>
 
-<script>
-
-$('#myTab a:first').tab('show') // Select first tab
-
-$('#myTab a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
-</script>
-<h3>Step 1: Include the Fabuloos.js Javascript in your page</h3>
-You can download the Fabuloos.js source and host it on your own servers, or use the free CDN hosted version. It's often recommended now to put JavaScript before the end body tag (`</body>`) instead of the head (`<head>`).
-
-```html
-<script src="http://fabuloos.org/js/fabuloos-min.js"></script>
-```
-
-### Step 2: Add an HTML5 video tag to your page
-
-With Fabuloos.js you just use an HTML5 video tag to embed a video. Fabuloos.js will then read the tag and make it work in all browsers, not just ones that support HTML5 video.
-
-```html
-<video id="example" width="640" height="360" src="http://fabuloos.org/clip.mp4" controls></video>
-```
-
-### Step 3: Enjoy
-
-```js
-fab("example").at("1m20", function() {
-	alert("hello");
-});
-```
-	
-</section>
+	<script>
+		$("#how ul.nav a").click(function (e) {
+			e.preventDefault();
+			$(this).tab("show");
+		});
+	</script>
+</section><!-- end of #how -->
 
 <hr class="section-line" />
 
-<section>
+<section id="why">
+	<h1>Why Fabuloos?</h1>
 
-<h1>Why Fabuloos</h1>
-<div class="row">
-	<div class="col-md-8">
-	<h2>An initiative for standardizing media playback.</h2>
+	<section id="initiative">
+		<h1>An initiative for standardizing media playback</h1>
 		<p>You have an incredible list of options to play a video (JWPlayer, VideoJS, OSMF, Media Player Framework, Youtube, HTML5, using the player provided by your CDN or even proprietary solutions). In a way, that's a good thing, but you'll waste time benchmarking all this solutions to find the one for your project. Then, you'll have to dive into its documentation. Long story short, you waste time, energy, you have to learn new things even before starting to use a component. All of this increase the complexity, developping a so old and in-place thing such as a player had become a hard and boring task, sometimes painful to maintain. After that, you're in a closed garden, you have mastered a specific API and you'll have to start over if you want to change your player.</p>
 		<p>We think it is important to provide the same experience any where, any time, any device. The debate of the platform doesn't matter, the time you spend not thinking about your product and the experience you want to offer to your user is (and should always be) your first concern. Regardless of the platform, we find a common problem: different implementations in the eco-system. This fragmentation leads to an huge waste of time and some complex workaround to achieve simple things. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, that's a polyfill).</p>
 		<p>Fabuloos offers you a new way to build top-quality media players. No more browser plugins, no librairies dependencies, no proprietary platforms. You only need to use one method for embedding a video, based on open standards, and it works everywhere. This is actually a big step forward for standardizing video playback across web browsers and devices.</p>
-	</div>
-	<div class="col-md-4 hidden-xs">
-		<div class="center">
-		<img src="/img/any-device.png" class="img-rounded" width="300px">
-		</div>
-	</div>
-</div>
-<hr />
-<div class="row">
-	<div class="col-md-4 hidden-xs">
-		<div class="center">
-		<img src="/img/api-unified.png" class="img-rounded" width="300px" style="background-color:#fff;">
-		</div>
-	</div>
-	<div class="col-md-8">
-		<h2>One API to create an infinity of interactions.</h2>
+	</section>
+
+	<section id="api">
+		<h1>One API to create an infinity of interactions</h1>
 		<p>The fabuloos initiative intent to create a unique and intuitive API for media playback no matter the development environment.</p>
 		<p>Our starting point was the W3C's HTML5 specification about the media element. We extended it and thunk it for the developpers (W3C specifications' target are mostly browsers vendors). Our goal is the same behaviour no matter the coding langage. This mean an unique and intuitive API and some shared concepts.</p>
 		<p>Fabulloos is fully modular and provide a new level of abstraction which hide all the complexity of various technologies. It allows you to assemble exactly the player you need, in a fastest and reliable way. You keep full control of your videos by freely using your preferred hosting and encoding service(s). You code once, you can change from Youtube to something else with no pain.</p>
 		<p>Fabuloos includes an advanced event system for creating interactions between video and other elements on the page. Once loaded, Fabuloos Player instantiates a unique API object called fabuloos. Event-handler routines handle the events to which the media player respond and find DOM nodes by selector.</p>
-	</div>
-</div>
-<hr />
-<div class="row">
-	<div class="col-md-8">
-		<h2>A pixel perfect graphic engine.</h2>
+	</section>
+	<section id="skin">
+		<h1>A pixel perfect graphic engine</h1>
 		<p>Some solutions embed the skin and give you some options to tweak it. This is nice but it won't fit with your design. We think skins are an essential aspect of a media player and should be treated like it deserve.</p> 
 		<p>Fabuloos comes with a custom set of controls over top of the video element to provide a consistent look between any environement. The rendering of every control and UI element is resolution independent and delivers a pixel-perfect rendering on Retina displays. It fixs many cross browser bugs or inconsistencies and adding new features that haven't been implemented by all browsers (like fullscreen and subtitles).</p>
-
-	</div>
-	<div class="col-md-4 hidden-xs">
-		<div class="center">
-		<img src="/img/skin.png" class="img-rounded" width="300px" style="background-color:#fff;">
-		</div>	
-	</div>
-</div>
-
-</section>
+	</section>
+</section><!-- end of #why -->
