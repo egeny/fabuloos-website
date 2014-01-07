@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 7]><html class="IE IE7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="IE IE8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="IE IE9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<meta charset="UTF-8" />
 	<title>{{ title }}</title>
@@ -10,12 +13,9 @@
 
 	<script src="/js/jquery-1.10.2.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body>
-
 <!-- Header -->
 <div class="masthead" role="navigation">
 			<div class="navbar navbar-fixed-top">
@@ -34,10 +34,10 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="menu">
 					<ul class="nav navbar-nav">
-						<li><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
-						<li><a href="/#/"><span class="glyphicon glyphicon-download"></span>&nbsp;&nbsp;Download</a></li>
-						<li><a href="/documentation/"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;Documentation</a></li>
-						<li><a href="/#/"><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;&nbsp;News</a></li>
+						<li><a href="/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+						<li><a href="/download/"><i class="glyphicon glyphicon-download"></i> Download</a></li>
+						<li><a href="/documentation/"><i class="glyphicon glyphicon-book"></i> Documentation</a></li>
+						<li><a href="/news/"><i class="glyphicon glyphicon-bullhorn"></i> News</a></li>
 					</ul>
 					</div>
 				</div><!-- end of .container -->
@@ -56,35 +56,20 @@
 <!-- end of .subhead -->
 {% endif %}
 
-<div class="container" style="margin-top:40px">
-	{{ content }}
-</div> <!-- /container -->
-
-
-<div id="footer">
 <div class="container">
-	<div class="row">
-		<div class="col-md-3 col-sm-3">
-			<a href="/" class="brand"><img src="/img/egeny.png" width="120" title="eGeny.net" /></a>
-		</div>
-		<div class="col-md-6 col-sm-6">
-			<div class="notice">Copyright&nbsp;<a href="http://egeny.net">eGeny&nbsp;Inc</a>, Fabuloos is a trademark of eGeny&nbsp;Inc. View <a href="https://github.com/egeny/fabuloos-js/blob/master/LICENCE">licence</a>.</div>
-		</div>
-		<div class="col-md-3 col-sm-3">
-			<ul class="social inline">
-				<li><a href="http://twitter.com/_fabuloos"><span class="icon-twitter"></span></a></li>
-				<li><a href="https://github.com/egeny/"><span class="icon-github"></span></a></li>
-				<li><a href="https://redmine.egeny.fr/"><span class="icon-bug"></span></a></li>
-			</ul>
-		</div>
-	</div><!-- end of .row-fluid -->
-</div><!-- end of #container -->
-</div><!-- end of #footer -->
+	{{ content }}
+</div><!-- end of .container -->
 
-
-
-
-
-
+<footer id="footer">
+	<div class="container">
+		<a href="http://egeny.fr" class="pull-left"><img width="120" src="/img/egeny.png" alt="eGeny.fr" /></a>
+		<p>Fabuloos is a trademark of <a href="#">eGeny, Inc.</a></p>
+		<ul class="pull-right list-inline">
+			<li><a href="https://github.com/egeny/fabuloos-js/issues"><i class="icon-bug"></i><span class="for-reader"> Report a bug</span></a></li>
+			<li><a href="https://github.com/egeny/"><i class="icon-github"></i><span class="for-reader"> GitHub account</span></a></li>
+			<li><a href="http://twitter.com/_fabuloos"><i class="icon-twitter"></i><span class="for-reader"> Twitter account</span></a></li>
+		</ul>
+	</div>
+</footer><!-- end of #footer -->
 </body>
 </html>
