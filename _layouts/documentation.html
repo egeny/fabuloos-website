@@ -1,109 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>{{ title }}</title>
+---
+layout: default
+lead: Documentation
+toc:
+  -
+    label: Introduction
+    url: index.html
+  -
+    label: Getting started
+    url: getting-started.html
+  -
+    label: Renderers
+    url: renderers.html
+  -
+    label: Skins
+    url: skins.html
+  -
+    label: Properties
+    url: properties.html
+  -
+    label: Events
+    url: events.html
+  -
+    label: API
+    url: api/index.html
+---
 
-	<link rel="stylesheet" href="/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="/css/bootstrap-theme.css" />
-	<link rel="stylesheet" href="/css/website.css" />
-
-	<script src="/js/jquery-1.10.2.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-
-
-</head>
-
-<body>
-
-<!-- Header -->
-<div class="masthead" role="navigation">
-			<div class="navbar navbar-fixed-top">
-				<div class="navbar-inner">
-				<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-				      <span class="sr-only">Toggle navigation</span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				    </button>
-					<a href="/" class="brand"><img src="/img/fabuloos-logo.png" width="120" title="Fabuloos.org" /></a>
-					</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="menu">
-					<ul class="nav navbar-nav">
-						<li><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
-						<li><a href="/download/"><span class="glyphicon glyphicon-download"></span>&nbsp;&nbsp;Download</a></li>
-						<li><a href="/documentation/"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;Documentation</a></li>
-						<li><a href="/news/"><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;&nbsp;News</a></li>
-					</ul>
-					</div>
-				</div><!-- end of .container -->
-				</div><!-- end of .navbar-inner -->
-			</div><!-- end of .navbar -->
-</div><!-- end of .masthead -->
-<!-- Sub Header -->
-<div id="subhead" style="margin-top:60px">
-	<div class="container">
-		<h1><span class="glyphicon glyphicon-book"></span> Documentation</h1>
-		<p class="lead">lead</p>
-	</div>
-</div>
-<!-- end of .subhead -->
-<div class="container">
 <div class="row">
-  <div class="col-md-4 col-xs-3">
-		  	<div class="panel panel-default">
-		  <!-- Default panel contents -->
-		  <div class="panel-heading">Documentation</div>
-		  <div class="panel-body">
-		    <p>...</p>
-		  </div>
+	<div class="col-md-4 col-xs-3">
+		<div class="panel panel-default">
+			<div class="panel-heading">Table of contents</div>
+			<ul class="list-group">
+			{% for item in page.toc %}
+				{% assign url = item.url | prepend: "/documentation/" %}
+				{% if page.url == url %}
+					{% assign active = true %}
+				{% elsif page.url contains "api/" and item.url contains "api/" %}
+					{% assign active = true %}
+				{% else %}
+					{% assign active = false %}
+				{% endif %}
 
-		  <!-- List group -->
-		  <ul class="list-group">
-		    <li class="list-group-item">Cras justo odio</li>
-		    <li class="list-group-item">Dapibus ac facilisis in</li>
-		    <li class="list-group-item">Morbi leo risus</li>
-		    <li class="list-group-item">Porta ac consectetur ac</li>
-		    <li class="list-group-item">Vestibulum at eros</li>
-		  </ul>
-		</div>
-  </div>
-  <div class="col-md-8 col-xs-9">
-  {{ content }}
-  </div>
-</div>
-			
-</div> <!-- /container -->
-
-
-<div id="footer">
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<a href="/" class="brand"><img src="/img/egeny.png" width="120" title="eGeny.net" /></a>
-		</div>
-		<div class="col-md-6">
-			<div class="notice">Copyright&nbsp;<a href="http://egeny.net">eGeny&nbsp;Inc</a>, Fabuloos is a trademark of eGeny&nbsp;Inc. View <a href="https://github.com/egeny/fabuloos-js/blob/master/LICENSE">licence</a>.</div>
-		</div>
-		<div class="col-md-3">
-			<ul class="social inline">
-				<li><a href="http://twitter.com/_fabuloos"><span class="icon-twitter"></span></a></li>
-				<li><a href="https://github.com/egeny/"><span class="icon-github"></span></a></li>
-				<li><a href="https://redmine.egeny.fr/"><span class="icon-bug"></span></a></li>
+				{% assign url = url | remove: "index.html" %}
+				<li class="list-group-item{% if active %} active{% endif %}"><a href="{{ url }}">{{ item.label }}</a></li>
+			{% endfor %}
 			</ul>
 		</div>
-	</div><!-- end of .row-fluid -->
-</div><!-- end of #container -->
-</div><!-- end of #footer -->
+	</div>
 
-
-
-
-
-
-</body>
-</html>
+	<div class="col-md-8 col-xs-9">
+		{{ content }}
+	</div>
+</div><!-- end of .row -->
