@@ -1,0 +1,30 @@
+---
+layout: documentation
+---
+
+<h2>API</h2>
+
+<p>
+{% for page in site.pages %}
+{% if page.layout == "method" %}
+<a href="{{ page.url }}">{{ page.name }}</a>, 
+{% endif %}
+{% endfor %}
+<p>
+
+<p>
+{% for page in site.pages %}
+{% if page.layout == "function" %}
+<a href="{{ page.url }}">{{ page.name }}</a>, 
+{% endif %}
+{% endfor %}
+</p>
+
+{% comment %}
+## Core
+{% for page in site.pages %}
+{% if page.tags contains "core" %}
+[{{ page.name }}]({{ page.url }})
+{% endif %}
+{% endfor %}
+{% endcomment %}
