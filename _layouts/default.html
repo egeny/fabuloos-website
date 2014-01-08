@@ -1,3 +1,18 @@
+---
+menu:
+  -
+    label: Home
+    url: /index.html
+  -
+    label: Download
+    url: /download/
+  -
+    label: Documentation
+    url: /documentation/
+  -
+    label: News
+    url: /news/
+---
 <!DOCTYPE html>
 <!--[if IE 7]><html class="IE IE7" lang="en"><![endif]-->
 <!--[if IE 8]><html class="IE IE8" lang="en"><![endif]-->
@@ -16,34 +31,36 @@
 </head>
 
 <body>
-<!-- Header -->
-<div class="masthead" role="navigation">
-			<div class="navbar navbar-fixed-top">
-				<div class="navbar-inner">
-				<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-				      <span class="sr-only">Toggle navigation</span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				    </button>
-					<a href="/" class="brand"><img src="/img/fabuloos-logo.png" width="120" title="Fabuloos.org" /></a>
-					</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="menu">
-					<ul class="nav navbar-nav">
-						<li><a href="/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-						<li><a href="/download/"><i class="glyphicon glyphicon-download"></i> Download</a></li>
-						<li><a href="/documentation/"><i class="glyphicon glyphicon-book"></i> Documentation</a></li>
-						<li><a href="/news/"><i class="glyphicon glyphicon-bullhorn"></i> News</a></li>
-					</ul>
-					</div>
-				</div><!-- end of .container -->
-				</div><!-- end of .navbar-inner -->
-			</div><!-- end of .navbar -->
-</div><!-- end of .masthead -->
+	<header id="header" class="navbar navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<h1><a href="/"><img width="120" height="34" src="/img/logo.png" alt="Fabuloos.org" /></a></h1>
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					<i class="icon-bug"></i>
+					<span class="for-reader">Toggle navigation</span>
+				</button>
+			</div>
+
+			<nav id="menu" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+				{% for item in page.menu %}
+					{% assign url = item.url %}
+					{% if page.url == url %}
+						{% assign active = true %}
+					{% elsif item.label != "Home" and page.url contains item.url %}
+						{% assign active = true %}
+					{% else %}
+						{% assign active = false %}
+					{% endif %}
+
+					{% assign url = url | remove: "index.html" %}
+					<li{% if active %} class="active"{% endif %}><a href="{{ url }}"><i class="glyphicon glyphicon-{{ item.label | downcase }}"></i> {{ item.label }}</a></li>
+				{% endfor %}
+				</ul>
+			</nav>
+		</div><!-- end of .container -->
+	</header><!-- end of #header -->
 
 {% if page.lead %}
 <!-- Sub Header -->
