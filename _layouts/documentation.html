@@ -49,5 +49,9 @@ toc:
 
 	<div class="col-md-8 col-xs-9">
 		{{ content }}
+
+		{% if page.next %}
+		<a href="/documentation/{{ page.next.url }}">{{ page.next.label }}</a>
+		{% endif %}
 	</div>
 </div><!-- end of .row -->

@@ -2,6 +2,7 @@
 layout: method
 name: "on"
 description: Register an handler for a given event
+related: ["off", trigger]
 signatures:
   -
     params:
