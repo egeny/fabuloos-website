@@ -5,4 +5,4 @@ next:
   url: getting-started.html
 ---
 
-# Documentation
+# Introduction
