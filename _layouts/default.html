@@ -72,7 +72,7 @@ menu:
 		</div><!-- end of .container -->
 	</header><!-- end of #header -->
 
-{% if page.url == "/download/index.html" or page.url contains "/documentation/" or page.url contains "/news/" %}
+{% if page.url == "/download/index.html" or page.url contains "/documentation/" or page.url contains "/news/" or page.url == "/404.html" %}
 <div id="subheader">
 	<div class="container">
 	{% if page.url == "/download/index.html" %}
@@ -84,14 +84,21 @@ menu:
 	{% elsif page.url contains "/news/" %}
 		<h2>News</h2>
 		<p class="lead">Dive into our QuickStart guide and integrate with your app in minutes</p>
+	{% elsif page.url == "/404.html" %}
+		<h2>404</h2>
+		<p class="lead">“Houston, we've had a problem here”</p>
 	{% endif %}
 	</div>
 </div><!-- end of #subheader -->
 {% endif %}
 
+{% if page.url == "/404.html" %}
+	{{ content }}
+{% else %}
 <div class="container">
 	{{ content }}
 </div><!-- end of .container -->
+{% endif %}
 
 <footer id="footer">
 	<div class="container">
