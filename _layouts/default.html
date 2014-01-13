@@ -21,19 +21,28 @@ menu:
 <head>
 	<meta charset="UTF-8" />
 	<title>{{ title }}</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
 	<link rel="stylesheet" href="/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/css/website.css" />
 
 	<script src="/js/jquery-1.10.2.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+
+	<script>
+		// A small utility function to swap a SVG with a PNG in case of error
+		function swap(img) {
+			img.onerror = null;
+			img.src     = img.src.replace(".svg", ".png");
+		}
+	</script>
 </head>
 
 <body>
 	<header id="header" class="navbar" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<h1><a href="/"><img width="120" height="40" src="/img/logo.png" alt="Fabuloos.org" /></a></h1>
+				<h1><a href="/"><img width="120" height="40" src="/img/fabuloos-white.svg" alt="Fabuloos.org" onerror="swap(this)" /></a></h1>
 
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 					<i class="icon-bug"></i>
@@ -61,15 +70,21 @@ menu:
 		</div><!-- end of .container -->
 	</header><!-- end of #header -->
 
-{% if page.lead %}
-<!-- Sub Header -->
-<div id="subhead">
+{% if page.url == "/download/index.html" or page.url contains "/documentation/" or page.url contains "/news/" %}
+<div id="subheader">
 	<div class="container">
-		<h1>{{ page.lead }}</h1>
+	{% if page.url == "/download/index.html" %}
+		<h2>Download</h2>
 		<p class="lead">Dive into our QuickStart guide and integrate with your app in minutes</p>
+	{% elsif page.url contains "/documentation/" %}
+		<h2>Documentation</h2>
+		<p class="lead">Dive into our QuickStart guide and integrate with your app in minutes</p>
+	{% elsif page.url contains "/news/" %}
+		<h2>News</h2>
+		<p class="lead">Dive into our QuickStart guide and integrate with your app in minutes</p>
+	{% endif %}
 	</div>
-</div>
-<!-- end of .subhead -->
+</div><!-- end of #subheader -->
 {% endif %}
 
 <div class="container">
@@ -78,8 +93,8 @@ menu:
 
 <footer id="footer">
 	<div class="container">
-		<a href="http://egeny.fr" class="pull-left"><img width="120" src="/img/egeny.png" alt="eGeny.fr" /></a>
-		<p>Fabuloos is a trademark of <a href="#">eGeny, Inc.</a></p>
+		<a href="http://egeny.fr" class="pull-left"><img width="120" height="17" src="/img/egeny.svg" alt="eGeny.fr" onerror="swap(this)" /></a>
+		<p>Fabuloos is a trademark of eGeny, Inc.</p>
 		<ul class="pull-right list-inline">
 			<li><a href="https://github.com/egeny/fabuloos-js/issues"><i class="icon-bug"></i><span class="for-reader"> Report a bug</span></a></li>
 			<li><a href="https://github.com/egeny/"><i class="icon-github"></i><span class="for-reader"> GitHub account</span></a></li>
