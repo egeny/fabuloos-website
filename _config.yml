@@ -1,3 +1,5 @@
 name: fabuloos
+url: http://fabuloos.org
+author: eGeny
 exclude: ["README.md"]
 markdown: redcarpet
