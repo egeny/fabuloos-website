@@ -4,14 +4,11 @@ layout: default
 
 {% for post in site.posts %}
 	<article>
-		<div class="info pull-left" style="margin-right:40px">
-			<ul class="list-group">
-				<li class="list-group-item">{{ post.date | date_to_long_string }}</li>
-				<li class="list-group-item">Posted by: <a href="#">Admin</a></li>
-			</ul>
-		</div>
-		<h1>{{ post.title }} <span class="label label-default">New</span></h1>
-		<p>{{ post.content }}</p>
-		<hr/>
+		<header>
+			<h1>{{ post.title }}</h1>
+			<p><span class="for-reader">Published the </span><span class="date">{{ post.date | date_to_long_string }}</span>{% if post.author %} ● <span class="for-reader">by </span><a class="author" href="{{ post.author.url }}">{{ post.author.name }}</a>{% endif %}</p>
+		</header>
+
+		{{ post.content }}
 	</article>
 {% endfor %}

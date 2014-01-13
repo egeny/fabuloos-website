@@ -63,7 +63,7 @@ menu:
 					{% endif %}
 
 					{% assign url = url | remove: "index.html" %}
-					<li{% if active %} class="active"{% endif %}><a href="{{ url }}"><i class="glyphicon glyphicon-{{ item.label | downcase }}"></i> {{ item.label }}</a></li>
+					<li{% if active %} class="active"{% endif %}><a href="{{ url }}"><i class="icon-{{ item.label | downcase }}"></i> {{ item.label }}</a></li>
 				{% endfor %}
 				</ul>
 			</nav>
