@@ -1,5 +1,6 @@
 name: fabuloos
 url: http://fabuloos.org
 author: eGeny
+permalink: /news/:title.html
 exclude: ["README.md"]
 markdown: redcarpet
