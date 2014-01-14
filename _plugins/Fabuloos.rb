@@ -40,8 +40,26 @@ module Fabuloos
 				Jekyll::Tags::IncludeTag.new("include", @file, nil).render(context)
 			end
 		end
+
+		class AsideBlock < Liquid::Block
+			include Liquid::StandardFilters
+
+			def render(context)
+				site      = context.registers[:site]
+				converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+
+				# Almost the same as markdownify_inline
+				content   = super.strip
+				content   = converter.convert(content)
+				content   = replace(content, '<p>', '')
+				content   = replace(content, '</p>', '')
+
+				'<aside class="lead">' + content + "</aside>"
+			end
+		end
 	end
 end
 
 Liquid::Template.register_tag("alert", Fabuloos::Tags::AlertBlock)
+Liquid::Template.register_tag("aside", Fabuloos::Tags::AsideBlock)
 Liquid::Template.register_filter(Fabuloos::Filters)
