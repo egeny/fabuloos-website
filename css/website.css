@@ -293,64 +293,50 @@ a {
 
 /* @end of #how */
 
-/* @group #why */
+/* @group #documentation */
 
-	#why section {
-		background-repeat: no-repeat;
-
-		min-height: 300px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid #EEE;
-		margin: 20px 0;
+	section .lead {
+		margin: 1.5em;
+		font-style: italic;
 	}
 
-	#why section:nth-child(even) {
-		background-position: right;
-		padding-right: 320px;
-	}
+	.next { text-align: right; }
 
-	#why section:nth-child(odd) {
-		background-position: left;
-		padding-left: 320px;
-	}
+		.next a:hover,
+		.next a:focus { text-decoration: none; }
 
-	#why section:last-child { border: 0; }
+		.next a:hover span,
+		.next a:focus span { text-decoration: underline; }
 
-		#why section h1 { font-size: 30px; }
+	/* @group #signatures */
 
-		#initiative { background-image: url(img/devices.svg); }
-		#api        { background-image: url(img/api.svg); }
-		#skin       { background-image: url(img/skins.svg); }
+		.page-header { margin-top: 0; }
 
-/* @end of #why */
-
-/* @group #signatures */
-
-	.page-header { margin-top: 0; }
-
-		.page-header span {
-			font-size: 18px;
-			font-weight: normal;
-			vertical-align: middle;
-		}
-
-	#signatures { margin-bottom: 2em; }
-
-		.signature { margin-bottom: 1.5em; }
-
-			.signature .return span {
-				background: #3A87AD;
-
-				padding: 2px 4px;
-				border-radius: 4px;
-
-				display: inline-block;
-
-				font-size: .917em;
-				color: #FFF;
+			.page-header span {
+				font-size: 18px;
+				font-weight: normal;
+				vertical-align: middle;
 			}
 
-/* @end of #signatures */
+		#signatures { margin-bottom: 2em; }
+
+			.signature { margin-bottom: 1.5em; }
+
+				.signature .return span {
+					background: #3A87AD;
+
+					padding: 2px 4px;
+					border-radius: 4px;
+
+					display: inline-block;
+
+					font-size: .917em;
+					color: #FFF;
+				}
+
+	/* @end of #signatures */
+
+/* @end of #documentation */
 
 /* @group #news */
 
@@ -393,6 +379,7 @@ a {
 		min-height: 100px;
 		padding-top: 30px;
 		border-top: 1px solid #CCC;
+		margin-top: 20px;
 
 		font-size: 10px;
 		color: #464646;

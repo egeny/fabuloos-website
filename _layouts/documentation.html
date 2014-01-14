@@ -49,11 +49,11 @@ toc:
 		</div>
 	</div>
 
-	<div class="col-md-8 col-xs-9">
+	<section class="col-md-8 col-xs-9">
 		{{ content }}
 
 		{% if page.next %}
-		<a href="/documentation/{{ page.next.url }}">{{ page.next.label }}</a>
+		<p class="next"><span class="for-reader">Continue to </span><a href="/documentation/{{ page.next.url }}"><span>{{ page.next.label }}</span> &rarr;</a></p>
 		{% endif %}
-	</div>
+	</section>
 </div><!-- end of .row -->
