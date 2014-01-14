@@ -173,7 +173,7 @@ a {
 
 				display: inline-block;
 
-				line-height: 50px;
+				line-height: 60px;
 				font-size: 1em;
 			}
 
@@ -436,4 +436,18 @@ a {
 
 #download .social img {
     vertical-align: middle
+}
+
+#download .btn {
+	background: -webkit-linear-gradient(top, #D21F2C, #AE2A2C);
+	background:         linear-gradient(to bottom, #D21F2C, #AE2A2C);
+	background-repeat: repeat-x;
+	border-color: #B92C28;
+	color: #FFF;
+}
+
+#download .btn:hover,
+#download .btn:focus {
+	background: -webkit-linear-gradient(bottom, #D21F2C, #AE2A2C);
+	background:         linear-gradient(to top, #D21F2C, #AE2A2C);
 }
