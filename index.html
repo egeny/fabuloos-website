@@ -34,14 +34,14 @@ layout: default
 	<h1>How it works</h1>
 
 	<ul class="nav nav-tabs">
-		<li class="active"><a data-toggle="tab" href="#browser"><span class="icon-html5"></span> Browsers</a></li>
-		<li><a data-toggle="tab" href="#ios"><span class="icon-apple"></span> iOS</a></li>
-		<li><a data-toggle="tab" href="#android"><span class="icon-android"></span> Android</a></li>
-		<li><a data-toggle="tab" href="#windows"><span class="icon-windows"></span> Windows</a></li>
+		<li class="active"><a data-toggle="tab" href="#browsers"><i class="icon-html5"></i> Browsers</a></li>
+		<li><a data-toggle="tab" href="#ios"><i class="icon-apple"></i> iOS</a></li>
+		<li><a data-toggle="tab" href="#android"><i class="icon-android"></i> Android</a></li>
+		<li><a data-toggle="tab" href="#windows"><i class="icon-windows"></i> Windows</a></li>
 	</ul>
 
 	<div class="tab-content">
-		<div class="tab-pane active" id="browser">
+		<div class="tab-pane active" id="browsers">
 			<ol>
 				<li>
 					<h2>Include fabuloos to your project</h2>
@@ -72,12 +72,4 @@ layout: default
 			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
 		</div>
 	</div>
-
-	<script>
-		$("#how ul.nav a").click(function (e) {
-			e.preventDefault();
-			$(this).tab("show");
-		});
-	</script>
 </section><!-- end of #how -->
-
