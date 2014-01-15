@@ -1,4 +1,4 @@
-body { min-width: 740px; }
+body { min-width: 740px; background-color: #f2f2f2;}
 
 a {
 	text-decoration: none;
@@ -173,7 +173,7 @@ a {
 
 				display: inline-block;
 
-				line-height: 60px;
+				line-height: 50px;
 				font-size: 1em;
 			}
 
@@ -381,7 +381,7 @@ a {
 		border-top: 1px solid #CCC;
 		margin-top: 20px;
 
-		font-size: 10px;
+		font-size: 0.7em;
 		color: #464646;
 	}
 
