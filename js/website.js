@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var
-		$links    = $("ul.nav-tabs a, div.platform a.btn"),
+		$links    = $("ul.nav-tabs a, div.platform-chooser a.btn"),
 		preferred = window.localStorage ? window.localStorage.getItem("preferred") : undefined;
 
 	$links.click(function () {
