@@ -46,36 +46,5 @@ layout: default
 		<li><a data-toggle="tab" href="#windows"><i class="icon-windows"></i> Windows</a></li>
 	</ul>
 
-	<div class="tab-content">
-		<div class="tab-pane active" id="browsers">
-			<ol>
-				<li>
-					<h2>Include fabuloos to your project</h2>
-					<p>Download <a href="#">fabuloos.js</a> and host it on your server. Insert the <code>&lt;script&gt;</code> when needed or just before the <code>&lt;/body&gt;</code>.
-					{% highlight html %}<script src="http://fabuloos.org/js/fabuloos-min.js"></script>{% endhighlight %}
-				</li>
-				<li>
-					<h2>Add an HTML5 player (<code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code>)</h2>
-					<p>Semantic is important, fabuloos will extend HTML5's media tags.</p>
-					{% highlight html %}<video id="example" width="640" height="360" src="http://fabuloos.org/clip.mp4" controls></video>{% endhighlight %}
-				</li>
-				<li>
-					<h2>Enjoy!</h2>
-					<p>Add interactivity, build something beautiful, and spread the world.</p>
-{% highlight js %}fab("example").at("1m20", function() {
-	alert("Awesome!");
-});{% endhighlight %}
-				</li>
-			</ol>
-		</div>
-		<div class="tab-pane" id="ios">
-			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
-		</div>
-		<div class="tab-pane" id="android">
-			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
-		</div>
-		<div class="tab-pane" id="windows">
-			<span>Coming soon, <a href="/news/">stay tuned</a>!</span>
-		</div>
-	</div>
+	{% include getting-started.html %}
 </section><!-- end of #how -->

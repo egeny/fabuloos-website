@@ -1,0 +1,40 @@
+<div id="getting-started" class="tab-content">
+	<div id="browsers" class="tab-pane active">
+		<ol>
+			<li>
+				<h2>Include fabuloos to your project</h2>
+				<p><a href="/download/">Download fabuloos</a> and host it on your server.<br/>Insert the <code>&lt;script&gt;</code> when needed or just before the <code>&lt;/body&gt;</code>.
+				{% highlight html %}<script src="/js/fabuloos.min.js"></script>{% endhighlight %}
+			</li>
+			<li>
+				<h2>Add an HTML5 player <small>(<code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code>)</small></h2>
+				<p>Semantic is important, fabuloos will extend HTML5's media tags.</p>
+				{% highlight html %}<video id="example" width="640" height="360" src="/videos/clip.mp4" controls></video>{% endhighlight %}
+				{% alert info %}
+					In some few cases, you will want to replace something else than a `<video>` or `<audio>` or even create a player from scratch.  
+					Have a look to the [`fab()`](/documentation/api/fab.html) function in the documentation, every use cases are explained.
+				{% endalert %}
+			</li>
+			<li>
+				<h2>Enjoy!</h2>
+				<p>Discover the <a href="/documentation/api/">fabuloos API</a>, add interactivity to your medias and build something beautiful!</p>
+				{% highlight js %}fab("example").at("1m20", function() {
+	alert("Awesome!");
+});{% endhighlight %}
+				{% alert %}
+					Fabuloos doesn't wait for the DOM to be ready.  
+					Create your player after the markup or use your beloved library to wait for the DOM to be ready.
+				{% endalert %}
+			</li>
+		</ol>
+	</div>
+	<div id="ios" class="tab-pane">
+		<p class="alert alert-warning soon"><img class="fabuloos-inline" src="/img/fabuloos.svg" alt="fabuloos" onerror="swap(this)"> for iOS isn't ready yet, <a href="/news/">stay tuned</a>!</p>
+	</div>
+	<div id="android" class="tab-pane">
+		<p class="alert alert-warning soon"><img class="fabuloos-inline" src="/img/fabuloos.svg" alt="fabuloos" onerror="swap(this)"> for Android isn't ready yet, <a href="/news/">stay tuned</a>!</p>
+	</div>
+	<div id="windows" class="tab-pane">
+		<p class="alert alert-warning soon"><img class="fabuloos-inline" src="/img/fabuloos.svg" alt="fabuloos" onerror="swap(this)"> for Windows isn't ready yet, <a href="/news/">stay tuned</a>!</p>
+	</div>
+</div>

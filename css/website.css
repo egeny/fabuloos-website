@@ -67,6 +67,11 @@ a {
 
 /* @group Classes */
 
+	.fabuloos-inline {
+		height: 1.4em;
+		margin-bottom: -.13em;
+	}
+
 	.for-reader {
 		position: absolute;
 		left: -2000em;
@@ -184,6 +189,8 @@ a {
 		#header .nav li { padding:0 4px; }
 
 			#header .nav a {
+				line-height: 30px;
+
 				text-shadow: none;
 				color: #EEE;
 			}
@@ -283,17 +290,19 @@ a {
 
 /* @end of #subheader */
 
-/* @group #how */
+/* @group #getting-started */
 
-	#ios,
-	#android,
-	#windows {
-		margin: 1.5em 0;
+	#getting-started li { font-size: 30px; }
+	#getting-started li > p { font-size: 14px; }
+
+	#getting-started .soon {
+		margin: 1.5em;
+
+		font-size: 1.5em;
 		text-align: center;
-		font-size: 3em;
 	}
 
-/* @end of #how */
+/* @end of #getting-started */
 
 /* @group #documentation */
 
