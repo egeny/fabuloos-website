@@ -1,2 +1,6 @@
 .DS_Store
 _site
+
+download/*.js
+download/*.swf
+download/*.zip
