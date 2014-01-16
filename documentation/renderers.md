@@ -1,8 +1,8 @@
 ---
 layout: documentation
 next:
-  label: Skins
-  url: skins.html
+  label: Plugins
+  url: plugins.html
 ---
 
 # Renderers

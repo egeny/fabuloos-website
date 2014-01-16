@@ -1,8 +1,8 @@
 ---
 layout: documentation
 next:
-  label: Properties
-  url: properties.html
+  label: Skins
+  url: skins.html
 ---
 
 # Plugins
