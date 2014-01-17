@@ -59,13 +59,23 @@ a {
 	.icon-github:before       { content: "\e60a"; }
 	.icon-twitter:before      { content: "\e60b"; }
 	.icon-reorder:before      { content: "\e60c"; }
+	.icon-ok:before           { content: "\e60d"; }
+	.icon-file:before         { content: "\e60e"; }
 
 	.icon-documentation:before { content: "\e602"; } /* Same as .icon-book */
 	.icon-news:before          { content: "\e603"; } /* Same as .icon-bullhorn */
+	.icon-ok:before            { color: #3C763D; }
 
 /* @end of font-face */
 
 /* @group Classes */
+
+	.alert.soon {
+		margin: 1.5em;
+
+		font-size: 1.5em;
+		text-align: center;
+	}
 
 	.btn-download {
 		background: -webkit-linear-gradient(top, #D21F2C, #AE2A2C);
@@ -90,15 +100,6 @@ a {
 	.for-reader {
 		position: absolute;
 		left: -2000em;
-	}
-
-	hr.section-line {
-		background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(215, 215, 215, .75), rgba(0, 0, 0, 0));
-		background:         linear-gradient(to right, rgba(0, 0, 0, 0), rgba(215, 215, 215, .75), rgba(0, 0, 0, 0));
-
-		height: 1px;
-		border: 0;
-		box-shadow: 0px -2px 4px rgba(136, 136, 136, .75);
 	}
 
 	/* @group Pygment styles */
@@ -166,7 +167,16 @@ a {
 
 	/* @end of Pygment styles */
 
-	.platform-chooser { margin-bottom: .75em; }
+	.platform-chooser { margin: 1.25em 0; }
+
+	hr.section-line {
+		background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(215, 215, 215, .75), rgba(0, 0, 0, 0));
+		background:         linear-gradient(to right, rgba(0, 0, 0, 0), rgba(215, 215, 215, .75), rgba(0, 0, 0, 0));
+
+		height: 1px;
+		border: 0;
+		box-shadow: 0px -2px 4px rgba(136, 136, 136, .75);
+	}
 
 /* @end of Classes */
 
@@ -296,14 +306,25 @@ a {
 	#getting-started li { font-size: 30px; }
 	#getting-started li > p { font-size: 14px; }
 
-	#getting-started .soon {
-		margin: 1.5em;
+/* @end of #getting-started */
 
-		font-size: 1.5em;
-		text-align: center;
+/* @group #download */
+
+	@media (min-width: 1200px) {
+		#download .col-lg-4 { padding-left: 60px; }
 	}
 
-/* @end of #getting-started */
+	#download small {
+		margin-bottom: 2em;
+		display: block;
+	}
+
+	#download dl dd {
+		padding-left: 1em;
+		margin-bottom: 10px;
+	}
+
+/* @end of #download */
 
 /* @group #documentation */
 
