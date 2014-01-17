@@ -1,3 +1,7 @@
+// Analytics
+ga("create", "UA-47203973-1", "fabuloos.org");
+ga("send", "pageview");
+
 $(document).ready(function() {
 	var
 		$links    = $("ul.nav-tabs a, div.platform-chooser a.btn"),

@@ -21,16 +21,13 @@ menu:
 <head>
 	<meta charset="UTF-8" />
 	<title>{{ title }}</title>
-	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="alternate" type="application/rss+xml" title="News from fabuloos.org" href="/rss.xml" />
 
 	<link rel="stylesheet" href="/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/css/website.css" />
-
-	<script src="/js/jquery-1.10.2.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/website.js"></script>
 
 	<script>
 		// A small utility function to swap a SVG with a PNG in case of error
@@ -73,50 +70,49 @@ menu:
 		</div><!-- end of .container -->
 	</header><!-- end of #header -->
 
-{% if page.url == "/download/index.html" or page.url contains "/documentation/" or page.url contains "/news/" or page.url == "/404.html" %}
-<div id="subheader">
-	<div class="container">
-	{% if page.url == "/download/index.html" %}
-		<h2>Download</h2>
-		<p class="lead">Start building media players with the last version of our SDK</p>
-	{% elsif page.url contains "/documentation/" %}
-		<h2>Documentation</h2>
-		<p class="lead">Everything you need to know about fabuloos</p>
-	{% elsif page.url contains "/news/" %}
-		<h2>News</h2>
-		<p class="lead">What's Up?</p>
-	{% elsif page.url == "/404.html" %}
-		<h2>404</h2>
-		<p class="lead">“Houston, we've had a problem here”</p>
+	{% if page.url == "/download/index.html" or page.url contains "/documentation/" or page.url contains "/news/" or page.url == "/404.html" %}
+	<div id="subheader">
+		<div class="container">
+		{% if page.url == "/download/index.html" %}
+			<h2>Download</h2>
+			<p class="lead">Start building media players with the last version of our SDK</p>
+		{% elsif page.url contains "/documentation/" %}
+			<h2>Documentation</h2>
+			<p class="lead">Everything you need to know about fabuloos</p>
+		{% elsif page.url contains "/news/" %}
+			<h2>News</h2>
+			<p class="lead">What's Up?</p>
+		{% elsif page.url == "/404.html" %}
+			<h2>404</h2>
+			<p class="lead">“Houston, we've had a problem here”</p>
+		{% endif %}
+		</div>
+	</div><!-- end of #subheader -->
 	{% endif %}
-	</div>
-</div><!-- end of #subheader -->
-{% endif %}
 
-{% if page.url == "/404.html" %}
-	{{ content }}
-{% else %}
-<div class="container">
-	{{ content }}
-</div><!-- end of .container -->
-{% endif %}
-
-<footer id="footer">
+	{% if page.url == "/404.html" %}
+		{{ content }}
+	{% else %}
 	<div class="container">
-		<a href="http://egeny.net" class="pull-left"><img width="120" height="17" src="/img/egeny.svg" alt="eGeny" onerror="swap(this)" /></a>
-		<p>Fabuloos is free, open source and will always be.<br/>Copyright <a href="http://egeny.net">eGeny, Inc.</a>, fabuloos is a trademark of eGeny, Inc. <a href="http://github.com/egeny/fabuloos-js/blob/master/LICENSE">view license</a>.</p>
-		<ul class="pull-right list-inline">
-			<li><a href="https://github.com/egeny/fabuloos-js/issues"><i class="icon-bug"></i><span class="for-reader"> Report a bug</span></a></li>
-			<li><a href="https://github.com/egeny/"><i class="icon-github"></i><span class="for-reader"> GitHub account</span></a></li>
-			<li><a href="http://twitter.com/_fabuloos"><i class="icon-twitter"></i><span class="for-reader"> Twitter account</span></a></li>
-		</ul>
-	</div>
-</footer><!-- end of #footer -->
+		{{ content }}
+	</div><!-- end of .container -->
+	{% endif %}
 
-<script src="//www.google-analytics.com/analytics.js"></script>
-<script>
-	ga("create", "UA-47203973-1", "fabuloos.org");
-	ga("send", "pageview");
-</script>
+	<footer id="footer">
+		<div class="container">
+			<a href="http://egeny.net" class="pull-left"><img width="120" height="17" src="/img/egeny.svg" alt="eGeny" onerror="swap(this)" /></a>
+			<p>Fabuloos is free, open source and will always be.<br/>Copyright <a href="http://egeny.net">eGeny, Inc.</a>, fabuloos is a trademark of eGeny, Inc. <a href="http://github.com/egeny/fabuloos-js/blob/master/LICENSE">view license</a>.</p>
+			<ul class="pull-right list-inline">
+				<li><a href="https://github.com/egeny/fabuloos-js/issues"><i class="icon-bug"></i><span class="for-reader"> Report a bug</span></a></li>
+				<li><a href="https://github.com/egeny/"><i class="icon-github"></i><span class="for-reader"> GitHub account</span></a></li>
+				<li><a href="http://twitter.com/_fabuloos"><i class="icon-twitter"></i><span class="for-reader"> Twitter account</span></a></li>
+			</ul>
+		</div>
+	</footer><!-- end of #footer -->
+
+	<script src="//www.google-analytics.com/analytics.js"></script>
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/website.js"></script>
 </body>
 </html>
