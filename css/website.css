@@ -314,15 +314,19 @@ a {
 		#download .col-lg-4 { padding-left: 60px; }
 	}
 
-	#download small {
-		margin-bottom: 2em;
-		display: block;
-	}
+	#download { margin-top: 2em; }
 
-	#download dl dd {
-		padding-left: 1em;
-		margin-bottom: 10px;
-	}
+		#download small {
+			margin-bottom: 2em;
+			display: block;
+		}
+
+		#download dl { border-left: 1px solid #CCC; }
+
+			#download dd {
+				padding-left: 1em;
+				margin-bottom: 10px;
+			}
 
 /* @end of #download */
 
