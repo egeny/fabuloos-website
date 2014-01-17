@@ -2,49 +2,60 @@
 layout: default
 ---
 
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div id="download" class="row">
+<p>Introduction</p>
 
-  <div class="col-xs-6 col-md-6 col-lg-3">
-    <div class="media">
-	  	<i class="icon-html5 pull-left" style="font-size:80px;margin-right:20px;color:#b1b1b1;"></i>
-      <div class="media-body">
-  			<h3 class="media-heading">JavaScript SDK</h3>
-        <p><a href="#" class="btn" role="button">Download the SDK</a></p>
-      </div>
-    </div>
-  </div>
+{% include platform-chooser.html %}
 
-  <div class="col-xs-6 col-md-6 col-lg-3">
-    <div class="media">
-      <i class="icon-apple pull-left" style="font-size:80px;margin-right:20px;color:#b1b1b1;"></i>
-      <div class="media-body">
-        <h3 class="media-heading">iOS SDK</h3>
-        <p>Coming soon</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-md-6 col-lg-3">
-    <div class="media">
-      <i class="icon-android pull-left" style="font-size:80px;margin-right:20px;color:#b1b1b1;"></i>
-      <div class="media-body">
-        <h3 class="media-heading">Android SDK</h3>
-        <p>Coming soon</p>
-      </div>
-    </div>
-  </div>   
-
-  <div class="col-xs-6 col-md-6 col-lg-3">
-    <div class="media">
-      <i class="icon-windows pull-left" style="font-size:80px;margin-right:20px;color:#b1b1b1;"></i>
-      <div class="media-body">
-        <h3 class="media-heading">Windows SDK</h3>
-        <p>Coming soon</p>
-      </div>
-    </div>
-  </div>
-
+<div id="download" class="tab-content">
+	<div id="browsers" class="row tab-pane active">
+		<p class="col-xs-3 col-md-4 col-lg-4 text-center">
+			<a href="https://github.com/egeny/fabuloos-js/releases/download/v1.0.0-alpha/fabuloos-1.0.0-alpha.zip" class="btn btn-lg btn-download"><i class="icon-download-alt"></i> Download</a>
+			<small>1.0.0-<strong>alpha</strong></small>
+			<span><i class="icon-github"></i> <a href="https://github.com/egeny/fabuloos-js/">Browse</a> or <a href="https://github.com/egeny/fabuloos-js/archive/master.zip">download</a> source code</span>
+		</p>
+		<dl class="col-xs-9 col-md-8 col-lg-7">
+			<dt>No dependency</dt>
+			<dd>You don't need <a href="http://jquery.com/">jQuery</a> or anything else, download, embed and start using!</dd>
+			<dt>Compatibility</dt>
+			<dd>
+				<ul class="list-unstyled">
+					<li><i class="icon-ok"></i> Modern browsers (Firefox, Chrome, Safari and Opera)</li>
+					<li><i class="icon-ok"></i> IE7+ (although we are considering dropping support for IE7)</li>
+				</ul>
+			</dd>
+			<dt>Renderers</dt>
+			<dd>
+				<ul class="list-unstyled">
+					<li><i class="icon-ok"></i> <a href="/documentation/renderers.html#htmlrenderer">HTMLRenderer</a></li>
+					<li><i class="icon-ok"></i> <a href="/documentation/renderers.html#fabuloosflashrenderer">FabuloosFlashRenderer</a></li>
+					<li><i class="icon-ok"></i> <a href="/documentation/renderers.html#youtuberenderer">YoutubeRenderer</a></li>
+				</ul>
+			</dd>
+			<dt>Plugins</dt>
+			<dd>
+				<ul class="list-unstyled">
+					<li><i class="icon-ok"></i> <a href="/documentation/plugins.html#playlist">Playlist plugin</a></li>
+				</ul>
+			</dd>
+			<dt>In the archive</dt>
+			<dd>
+				<ul class="list-unstyled">
+					<li><i class="icon-file"></i> <code>fabuloos-1.0.0-alpha.js</code> — The compiled source, suitable for <strong>development</strong>.</li>
+					<li><i class="icon-file"></i> <code>fabuloos-1.0.0-alpha.<strong>min.</strong>js</code> — The compressed source, perfect for <strong>production</strong>.</li>
+					<li><i class="icon-file"></i> <code>FabuloosFlashRenderer-1.0.0-alpha.swf</code> — The <a href="/documentation/renderers.html#fabuloosflashrenderer">fabuloos Flash fallback</a>.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<div id="ios" class="tab-pane">
+		<p class="alert alert-warning soon"><img class="fabuloos-inline" src="/img/fabuloos.svg" alt="fabuloos" onerror="swap(this)"> for iOS isn't ready yet, <a href="/news/">stay tuned</a>!</p>
+	</div>
+	<div id="android" class="tab-pane">
+		<p class="alert alert-warning soon"><img class="fabuloos-inline" src="/img/fabuloos.svg" alt="fabuloos" onerror="swap(this)"> for Android isn't ready yet, <a href="/news/">stay tuned</a>!</p>
+	</div>
+	<div id="windows" class="tab-pane">
+		<p class="alert alert-warning soon"><img class="fabuloos-inline" src="/img/fabuloos.svg" alt="fabuloos" onerror="swap(this)"> for Windows isn't ready yet, <a href="/news/">stay tuned</a>!</p>
+	</div>
 </div>
 
-<hr/>
+<p class="next"><span class="for-reader">Continue to </span><a href="/documentation/"><span>Documentation</span> &rarr;</a></p>
