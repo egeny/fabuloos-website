@@ -6,7 +6,7 @@ layout: default
 	<article>
 		<header>
 			<h1>{{ post.title }}</h1>
-			<p>
+			<p style="margin-top:10px;">
 				<span class="for-reader">Published the </span><span class="date">{{ post.date | date_to_long_string }}</span>
 				{% if post.author %} ● <span class="for-reader">by </span>
 					{% if post.author.url %}

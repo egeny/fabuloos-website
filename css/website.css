@@ -2,7 +2,7 @@ body { min-width: 740px; }
 
 a {
 	text-decoration: none;
-	color: #336699;
+	color: #0063ae;
 }
 
 /* Bootstrap overloads */
@@ -183,8 +183,8 @@ a {
 /* @group #header */
 
 	#header {
-		background: -webkit-linear-gradient(top, #181c4a, #080b22);
-		background:         linear-gradient(to bottom, #181c4a, #080b22);
+		background: -webkit-linear-gradient(top, #181c4a, #181c4a);
+		background:         linear-gradient(to bottom, #181c4a, #181c4a);
 
 		border: 0;
 		border-radius: 0;
