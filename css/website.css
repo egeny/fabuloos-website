@@ -183,8 +183,8 @@ a {
 /* @group #header */
 
 	#header {
-		background: -webkit-linear-gradient(top, #181c4a, #181c4a);
-		background:         linear-gradient(to bottom, #181c4a, #181c4a);
+		background: -webkit-linear-gradient(top, #0063ae, #0063ae);
+		background:         linear-gradient(to bottom, #0063ae, #0063ae);
 
 		border: 0;
 		border-radius: 0;
@@ -329,6 +329,13 @@ a {
 			}
 
 /* @end of #download */
+
+/* @group #featured */
+
+	#featured h3 {
+		font-weight: normal;
+	}
+
 
 /* @group #documentation */
 
