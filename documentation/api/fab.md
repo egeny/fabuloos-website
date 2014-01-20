@@ -2,7 +2,6 @@
 layout: function
 name: fab
 description: The fabuloos function
-tags: core
 signatures:
   -
     params:

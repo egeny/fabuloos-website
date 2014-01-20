@@ -2,6 +2,7 @@
 layout: method
 name: renderer
 description: Change or get the renderer
+tags: core
 signatures:
   -
     params:
@@ -19,7 +20,7 @@ signatures:
       description: Return the current renderer.
 ---
 
-Get the current renderer's instance or ask to change for another renderer.  
+Get the current [renderer](/documentation/renderers.html)'s instance or ask to change for another renderer.  
 Changing for another renderer won't check if it can play the source.
 
 {% alert %}
@@ -35,5 +36,3 @@ player.renderer(FabuloosFlashRenderer); // Ask to change for a FabuloosFlashRend
 Depending on the way you compiled fabuloos, the renderer might not be exposed on `window`.  
 So, you'll have to use the long notation: `Renderer.FabuloosFlashRenderer`
 {% endalert %}
-
-{% include renderers.md %}

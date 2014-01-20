@@ -2,7 +2,7 @@
 layout: method
 name: sources
 description: Analyze the sources against the renderers
-tags: core, sources
+tags: core
 signatures:
   -
     params:
@@ -43,7 +43,7 @@ It will keep the result internally since it may be useful later.
 
 {% alert warning %}
 This method will **not** change the source. It will only analyze them.  
-If you want to change the source, call [`.src()`](/documentation/api/src.html).
+If you want to change the source, call [`.src()`](src.html).
 {% endalert %}
 
 ## Example:

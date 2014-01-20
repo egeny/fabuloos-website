@@ -2,7 +2,7 @@
 layout: method
 name: init
 description: Initialize an instance
-tags: core, instance
+tags: core
 signatures:
   -
     params:
@@ -28,7 +28,7 @@ Usually you don't have to call this method.
 ```js
 var player = fab.init("player"); // player is based on the element having "player" for ID
 
-player.init(); // player is now a standalone player, not related to an element
+player.init(); // player is now a standalone player, not related to any element
 ```
 
 You can extend this method when developping a plugin if you have to handle thing at initialization time:
@@ -49,5 +49,4 @@ fab.extend({
     return this._super(config); // Remember to return the instance to allow chaining
   }
 });
-
 ```

@@ -2,6 +2,7 @@
 layout: method
 name: attach
 description: Attach all listeners to the renderer
+tags: event
 signatures:
   -
     params: ~

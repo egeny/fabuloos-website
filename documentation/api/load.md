@@ -2,6 +2,7 @@
 layout: method
 name: load
 description: Load the current source
+tags: core
 signatures:
   -
     params: ~
@@ -11,7 +12,7 @@ signatures:
 ---
 
 Explicitly ask the player to load the source.  
-Calling this method depend on the value of the `preload`.
+Calling this method depend on the value of the `preload` property.
 
 ```js
 player.config({

@@ -2,6 +2,7 @@
 layout: method
 name: get
 description: Get a player's property
+tags: getter, property
 signatures:
   -
     params:
@@ -14,16 +15,15 @@ signatures:
       description: Return the property's value.
 ---
 
-Return the current value of a property.  
+Return the current value of a [property](/documentation/properties.html).  
 If there is no renderer, this method will return `undefined`.
 
 ## Example:
 ```js
-player.get("autoplay"); // Return `true` of `false`
+player.get("autoplay"); // Return `true` or `false`
 ```
 
 {% alert %}
-Some properties are badly or not implemented for now. Give us some time to standardize all these properties.
+Some properties are badly or not implemented for now.  
+Give us some time to standardize them all.
 {% endalert %}
-
-{% include properties.md %}

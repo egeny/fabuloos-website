@@ -2,6 +2,7 @@
 layout: method
 name: src
 description: Get the source or set a new source
+tags: getter, setter, property
 signatures:
   -
     params:
@@ -37,8 +38,8 @@ signatures:
       description: Return the current source.
 ---
 
-Changing the source may change the renderer.  
-You can provide more informations by passing an `object` having a property `type` or event a property `renderer`.
+Changing the source may change the [renderer](/documentation/renderers.html).  
+You can provide more informations by passing an `object` having a property `type` or even a property `renderer`.
 
 In this case, the renderer will be changed first.  
 If it cannot play the source, too bad for you.

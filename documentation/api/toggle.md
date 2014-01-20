@@ -2,6 +2,7 @@
 layout: method
 name: toggle
 description: Toggle a player's property's value
+tags: property
 signatures:
   -
     params:
@@ -14,7 +15,7 @@ signatures:
       description: Return the current instance to allow chaining.
 ---
 
-Toggle the value of a property.  
+Toggle the value of a [property](/documentation/properties.html).  
 Well… That's it!
 
 ## Example:
@@ -23,7 +24,6 @@ player.toggle("autoplay"); // `autoplay` will be set to `true` or `false`, nobod
 ```
 
 {% alert %}
-Some properties are badly or not implemented for now. Give us some time to standardize all these properties.
+Some properties are badly or not implemented for now.  
+Give us some time to standardize them all.
 {% endalert %}
-
-{% include properties.md %}

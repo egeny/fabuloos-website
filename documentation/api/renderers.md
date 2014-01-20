@@ -2,6 +2,7 @@
 layout: method
 name: renderers
 description: Define the list of supported renderers
+tags: core
 signatures:
   -
     params:
@@ -28,8 +29,7 @@ signatures:
       description: Return the available renderers.
 ---
 
-Get the available renderers.
-Set the supported renderers, it will check if the renderer is supported on this platform.
+Get the available [renderers](/documentation/renderers.html) or set the supported renderers. It will check if the renderer is supported on this platform.
 
 {% alert %}
 There is only a few case when you need to manually launch this method.  
@@ -50,5 +50,3 @@ player.renderers(); // [HTMLRenderer, YoutubeRenderer]
 Depending on the way you compiled fabuloos, the renderer might not be exposed on `window`.  
 So, you'll have to use the long notation: `Renderer.FabuloosFlashRenderer`
 {% endalert %}
-
-{% include renderers.md %}

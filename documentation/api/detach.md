@@ -2,6 +2,7 @@
 layout: method
 name: detach
 description: Detach all listeners from the renderer
+tags: event
 signatures:
   -
     params: ~

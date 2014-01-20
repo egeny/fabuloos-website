@@ -2,6 +2,7 @@
 layout: method
 name: play
 description: Launch the playback
+tags: core
 signatures:
   -
     params: ~
@@ -10,7 +11,7 @@ signatures:
       description: Return the current instance to allow chaining.
 ---
 
-Well… Play the playback.
+Well… Launch the playback.
 
 {% alert %}
 This method does nothing if there is no renderer. (Duh!)
@@ -18,5 +19,5 @@ This method does nothing if there is no renderer. (Duh!)
 
 {% alert info %}
 Launching the playback doesn't always result to a playback (the client have to buffer the media).  
-That's why there is a `playing` event.
+That's why there are a [`play`](/documentation/events.html) and [`playing`](/documentation/events.html) event.
 {% endalert %}

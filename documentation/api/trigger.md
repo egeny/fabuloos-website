@@ -2,6 +2,7 @@
 layout: method
 name: trigger
 description: Trigger the listeners for a type
+tags: event
 signatures:
   -
     params:
@@ -16,7 +17,7 @@ signatures:
       description: Return the current instance to allow chaining.
 ---
 
-Manually trigger an event.
+Manually trigger an [event](/documentation/events.html).
 It is also used internally to trigger the events.
 
 ```js
@@ -24,5 +25,3 @@ player.trigger("durationchange"); // Well… trigger the durationchange event
 
 player.trigger("foo bar"); // Trigger the "foo" and "bar" events
 ```
-
-{% include events.md %}

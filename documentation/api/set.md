@@ -2,6 +2,7 @@
 layout: method
 name: set
 description: Set a player's property
+tags: setter, property
 signatures:
   -
     params:
@@ -27,7 +28,7 @@ signatures:
       description: Return the current instance to allow chaining.
 ---
 
-Set a value for a player's property.
+Set a value for a player's [property](/documentation/properties.html).
 If there is no renderer, this method will store the value in the config which will be passed to a new renderer.
 
 ## Example:
@@ -41,7 +42,6 @@ player.set({
 ```
 
 {% alert %}
-Some properties are badly or not implemented for now. Give us some time to standardize all these properties.
+Some properties are badly or not implemented for now.  
+Give us some time to standardize them all.
 {% endalert %}
-
-{% include properties.md %}

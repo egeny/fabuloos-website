@@ -2,6 +2,7 @@
 layout: method
 name: width
 description: Get or set the width or the player
+tags: getter, setter, property, size
 signatures:
   -
     params:

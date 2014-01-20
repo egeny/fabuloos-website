@@ -2,7 +2,7 @@
 layout: method
 name: "on"
 description: Register an handler for a given event
-related: ["off", trigger]
+tags: event
 signatures:
   -
     params:
@@ -43,7 +43,7 @@ player.on({
 ```
 
 {% alert info %}
-You can register some for some events directly from the config.
+You can register for some events directly from the config.
 {% endalert %}
 
 ```js

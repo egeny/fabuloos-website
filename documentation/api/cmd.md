@@ -2,6 +2,7 @@
 layout: method
 name: cmd
 description: Launch a method on the instance
+tags: core
 signatures:
   -
     params:
@@ -16,7 +17,7 @@ signatures:
       description: The other arguments to pass to the method
     return:
       type: "*"
-      description: Return the result of the method or undefined if the method doesn't exists
+      description: Return the result of the method or `undefined` if the method doesn't exists
 ---
 
 This method allows you to programmatically launch a method.  

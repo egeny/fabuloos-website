@@ -2,6 +2,7 @@
 layout: method
 name: config
 description: Get or set the configuration
+tags: core, getter, setter, property
 signatures:
   -
     params: ~
@@ -20,10 +21,10 @@ signatures:
 ---
 
 This method allows you get or set the instance configuration.  
-You can define all the properties/values you want.
+You can define all the [properties](/documentation/properties.html) you want.
 
 If the property doesn't exists it will just be stored in the instance so you can use it later.  
-If the property exists in the API (for instance: `autoplay`) it will automatically call its setter.
+If the property exists in the API (for instance: [`on`](on.html)) it will call it passing the value.
 
 ## Example:
 ```js
@@ -35,4 +36,12 @@ player.config({
 	src:  "http://example.org/video.mp4",
 	type: "video/mp4"
 });
+
+// Set the autoplay to false, register an handler for the playing event.
+player.config({
+  autoplay: false,
+  on: {
+    playing: function() { console.log("playing"); }
+  }
+})
 ```

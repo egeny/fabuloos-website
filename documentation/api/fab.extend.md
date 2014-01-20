@@ -35,7 +35,7 @@ fab.extend({
 
 fab("player").foo(); // Display "foo" in the console
 
-// If you want to “surcharge” the foo method, just override it
+// If you want to “overload” the foo method, just override it
 fab.extend({
   foo: function() { console.log("bar"); }
 });
