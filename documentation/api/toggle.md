@@ -2,7 +2,7 @@
 layout: method
 name: toggle
 description: Toggle a player's property's value
-tags: property
+tags: [property]
 signatures:
   -
     params:

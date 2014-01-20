@@ -2,7 +2,7 @@
 layout: method
 name: renderer
 description: Change or get the renderer
-tags: core
+tags: [core]
 signatures:
   -
     params:

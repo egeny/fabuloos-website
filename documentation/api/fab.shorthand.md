@@ -2,7 +2,7 @@
 layout: function
 name: fab.shorthand
 description: Create a closure calling a method on the renderer
-tags: utility
+tags: [utility]
 signatures:
   -
     params:

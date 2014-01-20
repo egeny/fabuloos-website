@@ -2,7 +2,7 @@
 layout: method
 name: height
 description: Get or set the height of the player
-tags: getter, setter, property, size
+tags: [getter, setter, property, size]
 signatures:
   -
     params:

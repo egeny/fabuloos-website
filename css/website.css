@@ -19,6 +19,9 @@ a {
 .nav-tabs a:hover,
 .nav-tabs a:focus { color: #111; }
 
+.table-striped tbody tr:target td { background: #FCF8E3; }
+.table-striped tbody tr.success td { background: #DFF0D8; }
+
 /* @group font-face */
 
 	@font-face {
@@ -185,8 +188,7 @@ a {
 /* @group #header */
 
 	#header {
-		background: -webkit-linear-gradient(top, #181818, #181818);
-		background:         linear-gradient(to bottom, #181818, #181818);
+		background: #181818;
 
 		border: 0;
 		border-radius: 0;
@@ -303,12 +305,29 @@ a {
 
 /* @end of #subheader */
 
+/* @group #featured */
+
+	#featured h3 { font-weight: normal; }
+
+/* @end of #featured */
+
 /* @group #getting-started */
 
 	#getting-started li { font-size: 30px; }
 	#getting-started li > p { font-size: 14px; }
 
 /* @end of #getting-started */
+
+/* @group #contribute */
+
+	#contribute img { margin-bottom: .5em; }
+
+	#contribute .small {
+		font-size: 10px;
+		color: #666;
+	}
+
+/* @end of #contribute */
 
 /* @group #download */
 
@@ -331,13 +350,6 @@ a {
 			}
 
 /* @end of #download */
-
-/* @group #featured */
-
-	#featured h3 {
-		font-weight: normal;
-	}
-
 
 /* @group #documentation */
 
@@ -400,7 +412,10 @@ a {
 			font-weight: lighter;
 		}
 
-		article header p { font-size: .75em; }
+		article header p {
+			margin-top: 10px;
+			font-size: .75em;
+		}
 
 /* @end of #news */
 

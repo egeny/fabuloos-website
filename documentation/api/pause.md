@@ -2,7 +2,7 @@
 layout: method
 name: pause
 description: Pause the playback
-tags: core
+tags: [core]
 signatures:
   -
     params: ~

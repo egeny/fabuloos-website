@@ -2,7 +2,7 @@
 layout: function
 name: fab.extend
 description: Extend some objects or the fabuloos' prototype
-tags: utility
+tags: [utility]
 signatures:
   -
     params:

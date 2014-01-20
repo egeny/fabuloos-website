@@ -2,7 +2,7 @@
 layout: method
 name: renderers
 description: Define the list of supported renderers
-tags: core
+tags: [core]
 signatures:
   -
     params:

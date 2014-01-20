@@ -2,7 +2,7 @@
 layout: method
 name: load
 description: Load the current source
-tags: core
+tags: [core]
 signatures:
   -
     params: ~

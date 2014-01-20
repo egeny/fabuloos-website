@@ -2,7 +2,7 @@
 layout: method
 name: src
 description: Get the source or set a new source
-tags: getter, setter, property
+tags: [getter, setter, property]
 signatures:
   -
     params:

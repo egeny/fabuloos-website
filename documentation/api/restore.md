@@ -2,7 +2,7 @@
 layout: method
 name: restore
 description: Restore the initial element
-tags: core, element
+tags: [core, element]
 signatures:
   -
     params: ~

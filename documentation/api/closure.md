@@ -2,7 +2,7 @@
 layout: method
 name: closure
 description: Create a closure to launch a method
-tags: core
+tags: [core]
 signatures:
   -
     params:
