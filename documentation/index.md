@@ -5,7 +5,7 @@ next:
   url: getting-started.html
 ---
 
-# What is fabuloos?
+# What is Fabuloos?
 
 {% aside %}
 A big step forward for standardizing media playback across web browsers and devices.
