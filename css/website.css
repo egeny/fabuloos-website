@@ -183,8 +183,8 @@ a {
 /* @group #header */
 
 	#header {
-		background: -webkit-linear-gradient(top, #0063ae, #0063ae);
-		background:         linear-gradient(to bottom, #0063ae, #0063ae);
+		background: -webkit-linear-gradient(top, #181818, #181818);
+		background:         linear-gradient(to bottom, #181818, #181818);
 
 		border: 0;
 		border-radius: 0;
