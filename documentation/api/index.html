@@ -2,29 +2,79 @@
 layout: documentation
 ---
 
-<h2>API</h2>
+<h1>API</h1>
 
-<p>
-{% for page in site.pages %}
-{% if page.layout == "method" %}
-<a href="{{ page.url }}">{{ page.name }}</a>, 
-{% endif %}
-{% endfor %}
-<p>
+<p>Fabuloos' API is pretty straightforward.<br/>
+Before you find the methods you need, here is some tips:</p>
 
-<p>
-{% for page in site.pages %}
-{% if page.layout == "function" %}
-<a href="{{ page.url }}">{{ page.name }}</a>, 
-{% endif %}
-{% endfor %}
-</p>
+<hr/>
 
-{% comment %}
-## Core
+<p>Most of the methods support the <strong>chaining</strong>, which means you can write something like this:</p>
+
+{% highlight js %}
+fab("player").src("/videos/clip.mp4").autoplay(true)
+{% endhighlight %}
+
+<hr/>
+
+<p>Every <a href="/documentation/properties.html">properties</a> have its own method to get or set its value. For example, <code>.autoplay()</code> will return the current autoplay value while <code>.autoplay(true)</code> will define the autoplay's value.</p>
+
+<hr/>
+
+<p>And the most important: <strong>Have fun</strong>!</p>
+
+<h2><i class="icon-star"></i> <a href="fabuloos.html">fabuloos</a>, <a href="fab.html">fab</a> <small>• The fabuloos function</small></h2>
+
+<h2>Core <small>• Internal stuff</small></h2>
+<ul>
 {% for page in site.pages %}
 {% if page.tags contains "core" %}
-[{{ page.name }}]({{ page.url }})
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
 {% endif %}
 {% endfor %}
-{% endcomment %}
+</ul>
+
+<h2>Properties <small>• Tweak your player</small></h2>
+<ul>
+{% for page in site.pages %}
+{% if page.tags contains "property" %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h2>Events <small>• React</small></h2>
+<ul>
+{% for page in site.pages %}
+{% if page.tags contains "event" %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h2>Size <small>• Because size matters</small></h2>
+<ul>
+{% for page in site.pages %}
+{% if page.tags contains "size" %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h2>Element <small>• Where goes your player?</small></h2>
+<ul>
+{% for page in site.pages %}
+{% if page.tags contains "element" %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h2>Utilities <small>• Static functions for developers</small></h2>
+<ul>
+{% for page in site.pages %}
+{% if page.tags contains "utility" %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
+{% endif %}
+{% endfor %}
+</ul>
