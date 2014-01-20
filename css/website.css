@@ -18,6 +18,8 @@ a {
 .nav-tabs a:hover,
 .nav-tabs a:focus { color: #111; }
 
+#events tr:target td { background: #FCF8E3; }
+
 /* @group font-face */
 
 	@font-face {
