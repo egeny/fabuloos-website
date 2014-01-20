@@ -7,14 +7,8 @@ next:
 
 <h1>Events</h1>
 
-<h2>Fabuloos' events</h2>
+<h2 id="fabuloos-events">Fabuloos' events</h2>
 <table id="fabuloos-events" class="table table-striped">
-	<thead>
-		<tr>
-			<th>Event</th>
-			<th>Description</th>
-		</tr>
-	</thead>
 	<tbody>
 		<tr id="renderer.changing">
 			<td><code>renderer.changing</code></td>
@@ -24,100 +18,119 @@ next:
 			<td><code>renderer.ready</code></td>
 			<td>The renderer finished loading and its API is now ready.</td>
 		</tr>
+		<tr id="renderer.error">
+			<td><code>renderer.error</code></td>
+			<td>An error occurred in the renderer.</td>
+		</tr>
+		<tr id="renderer.unsupported">
+			<td><code>renderer.unsupported</code></td>
+			<td>The renderer the player is trying to use is not supported.</td>
+		</tr>
+		<tr id="no.renderer">
+			<td><code>no.renderer</code></td>
+			<td>No renderer was found for the source the player is trying to load.</td>
+		</tr>
 		<tr class="success">
 			<td class="text-center text-success" colspan="2">More to come!</td>
 		</tr>
 	</tbody>
 </table>
 
-<h2>Regular HTML5 events</h2>
-<table id="html5-events" class="table table-striped">
-	<thead>
-		<tr>
-			<th>Event</th>
-			<th>Description</th>
-		</tr>
-	</thead>
+{% alert %}
+Some of the HTML5's media events aren't still correctly dispatched.  
+Give us some time to fix this.
+{% endalert %}
+
+<h2 id="playback-events">Playback events</h2>
+<table class="table table-striped">
 	<tbody>
-		<tr id="loadstart">
-			<td><code>loadstart</code></td>
-			<td>The user agent begins looking for media data, as part of the resource selection algorithm.</td>
-		</tr>
-		<tr id="progress">
-			<td><code>progress</code></td>
-			<td>The user agent is fetching media data.</td>
-		</tr>
-		<tr id="suspend">
-			<td><code>suspend</code></td>
-			<td>The user agent is intentionally not currently fetching media data, but does not have the entire media resource downloaded.</td>
-		</tr>
-		<tr id="abort">
-			<td><code>abort</code></td>
-			<td>The user agent stops fetching the media data before it is completely downloaded, but not due to an error.</td>
-		</tr>
-		<tr id="error">
-			<td><code>error</code></td>
-			<td>An error occurs while fetching the media data.</td>
-		</tr>
-		<tr id="emptied">
-			<td><code>emptied</code></td>
-			<td>A media element whose <code>networkState</code> was previously not in the <code>NETWORK_EMPTY</code> state has just switched to that state (either because of a fatal error during load that's about to be reported, or because the <code>load()</code> method was invoked while the resource selection algorithm was already running).</td>
-		</tr>
-		<tr id="stalled">
-			<td><code>stalled</code></td>
-			<td>The user agent is trying to fetch media data, but data is unexpectedly not forthcoming.</td>
-		</tr>
 		<tr id="play">
 			<td><code>play</code></td>
-			<td>Playback has begun. Fired after the <code>play()</code> method has returned, or when the <code>autoplay</code> attribute has caused playback to begin.</td>
-		</tr>
-		<tr id="pause">
-			<td><code>pause</code></td>
-			<td>Playback has been paused. Fired after the <code>pause()</code> method has returned.</td>
-		</tr>
-		<tr id="loadedmetadata">
-			<td><code>loadedmetadata</code></td>
-			<td>The user agent has just determined the duration and dimensions of the media resource</td>
-		</tr>
-		<tr id="loadeddata">
-			<td><code>loadeddata</code></td>
-			<td>The user agent can render the media data at the current playback position for the first time.</td>
-		</tr>
-		<tr id="waiting">
-			<td><code>waiting</code></td>
-			<td>Playback has stopped because the next frame is not available, but the user agent expects that frame to become available in due course.</td>
+			<td>The player is trying to launch the playback. It doesn't means the playback actually started (see <a href="#playing"><code>playing</code></a>).</td>
 		</tr>
 		<tr id="playing">
 			<td><code>playing</code></td>
-			<td>Playback has started.</td>
+			<td>The playback has started.</td>
+		</tr>
+		<tr id="pause">
+			<td><code>pause</code></td>
+			<td>The playback has been paused. Either because the <a href="/documentation/api/pause.html"><code>pause()</code></a> method was fired, because the player is buffering (see <a href="#waiting"><code>waiting</code></a>) or because the payback ended.</td>
+		</tr>
+		<tr id="waiting">
+			<td><code>waiting</code></td>
+			<td>The playback has stopped because the next frame is not available.</td>
 		</tr>
 		<tr id="canplay">
 			<td><code>canplay</code></td>
-			<td>The user agent can resume playback of the media data, but estimates that if playback were to be started now, the media resource could not be rendered at the current playback rate up to its end without having to stop for further buffering of content.</td>
+			<td>The player can resume playback, but estimates that if playback were to be started now, the source could not be played to its end without having to stop for further buffering.</td>
 		</tr>
 		<tr id="canplaythrough">
 			<td><code>canplaythrough</code></td>
-			<td>The user agent estimates that if playback were to be started now, the media resource could be rendered at the current playback rate all the way to its end without having to stop for further buffering.</td>
+			<td>The player estimates that if playback were to be started now, the source could played all the way to its end without having to stop for further buffering.</td>
 		</tr>
 		<tr id="seeking">
 			<td><code>seeking</code></td>
-			<td>The <code>seeking</code> IDL attribute changed to true and the seek operation is taking long enough that the user agent has time to fire the event.</td>
+			<td>The user asked to seek.</td>
 		</tr>
 		<tr id="seeked">
 			<td><code>seeked</code></td>
-			<td>The <code>seeking</code> IDL attribute changed to false.</td>
+			<td>The player seeked to the asked position.</td>
 		</tr>
 		<tr id="timeupdate">
 			<td><code>timeupdate</code></td>
-			<td>The current playback position changed as part of normal playback or in an especially interesting way, for example discontinuously.</td>
+			<td>The current playback position changed.</td>
 		</tr>
 		<tr id="ended">
 			<td><code>ended</code></td>
-			<td>Playback has stopped because the end of the media resource was reached.</td>
+			<td>The playback has stopped because the end of the source was reached.</td>
 		</tr>
-		<tr id="ratechange">
-			<td><code>ratechange</code></td>
-			<td>Either the <code>defaultPlaybackRate</code> or the <code>playbackRate</code> attribute has just been updated.</td>
+	</tbody>
+</table>
+
+<h2 id="network-events">Network events</h2>
+<table class="table table-striped">
+	<tbody>
+		<tr id="loadstart">
+			<td><code>loadstart</code></td>
+			<td>The player started loading the source.</td>
+		</tr>
+		<tr id="loadeddata">
+			<td><code>loadeddata</code></td>
+			<td>The player can render the media at the current playback position for the first time.</td>
+		</tr>
+		<tr id="loadedmetadata">
+			<td><code>loadedmetadata</code></td>
+			<td>The player has just determined the duration and dimensions of the source.</td>
+		</tr>
+		<tr id="progress">
+			<td><code>progress</code></td>
+			<td>The player is buffering the source.</td>
+		</tr>
+		<tr id="suspend">
+			<td><code>suspend</code></td>
+			<td>The player stopped buffering but does not have finished downloading the source.</td>
+		</tr>
+		<tr id="abort">
+			<td><code>abort</code></td>
+			<td>The player stops fetching the media data before it is completely downloaded, but not due to an error.</td>
+		</tr>
+		<tr id="emptied">
+			<td><code>emptied</code></td>
+			<td>The source is emptied. Happens when the player starts loading another source.</td>
+		</tr>
+		<tr id="stalled">
+			<td><code>stalled</code></td>
+			<td>The player is trying to buffer but data is unexpectedly not forthcoming.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2 id="other-events">Other events</h2>
+<table class="table table-striped">
+	<tbody>
+		<tr id="error">
+			<td><code>error</code></td>
+			<td>An error occurred.</td>
 		</tr>
 		<tr id="durationchange">
 			<td><code>durationchange</code></td>
@@ -125,7 +138,7 @@ next:
 		</tr>
 		<tr id="volumechange">
 			<td><code>volumechange</code></td>
-			<td>Either the <code>volume</code> attribute or the <code>muted</code> attribute has changed. Fired after the relevant attribute's setter has returned.</td>
+			<td>Either the <code>volume</code> attribute or the <code>muted</code> attribute has changed.</td>
 		</tr>
 	</tbody>
 </table>
