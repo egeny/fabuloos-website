@@ -13,6 +13,7 @@ a {
 		padding: 10px 15px;
 		display: block;
 	}
+.panel .panel-heading { color: #777; }
 
 .nav-tabs a { color: #333; }
 .nav-tabs a:hover,
@@ -427,7 +428,7 @@ a {
 		margin-top: 20px;
 
 		font-size: .714em;
-		color: #464646;
+		color: #181818;
 	}
 
 		#footer a:hover {
@@ -447,6 +448,6 @@ a {
 
 			#footer ul { font-size: 24px; }
 
-				#footer ul a { color: #555; }
+				#footer ul a { color: #181818; }
 
 /* @end of #footer */
