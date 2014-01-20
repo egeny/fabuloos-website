@@ -2,7 +2,7 @@
 layout: method
 name: destroy
 description: Destroy the instance
-tags: core
+tags: [core]
 signatures:
   -
     params: ~

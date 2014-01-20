@@ -2,7 +2,7 @@
 layout: method
 name: set
 description: Set a player's property
-tags: setter, property
+tags: [setter, property]
 signatures:
   -
     params:

@@ -2,7 +2,7 @@
 layout: method
 name: trigger
 description: Trigger the listeners for a type
-tags: event
+tags: [event]
 signatures:
   -
     params:

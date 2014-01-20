@@ -2,7 +2,7 @@
 layout: method
 name: size
 description: Measure or set the size of the player
-tags: size
+tags: [size]
 signatures:
   -
     params:

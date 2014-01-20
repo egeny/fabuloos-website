@@ -2,7 +2,7 @@
 layout: method
 name: config
 description: Get or set the configuration
-tags: core, getter, setter, property
+tags: [core, getter, setter, property]
 signatures:
   -
     params: ~

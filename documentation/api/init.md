@@ -2,7 +2,7 @@
 layout: method
 name: init
 description: Initialize an instance
-tags: core
+tags: [core]
 signatures:
   -
     params:

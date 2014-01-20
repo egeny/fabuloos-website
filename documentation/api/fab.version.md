@@ -2,7 +2,7 @@
 layout: property
 name: fab.version
 description: The version of the fabuloos' script
-tags: utility
+tags: [utility]
 type: string
 ---
 

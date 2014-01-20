@@ -2,7 +2,7 @@
 layout: method
 name: get
 description: Get a player's property
-tags: getter, property
+tags: [getter, property]
 signatures:
   -
     params:

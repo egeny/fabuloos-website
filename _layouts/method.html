@@ -24,6 +24,12 @@ layout: documentation
 
 <div class="content">{{ content }}</div>
 
-{% if page.related %}
-<p>Voir aussi: {% for related in page.related %}<a href="/documentation/api/{{ related }}.html">{{ related }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+<h2>See also</h2>
+<ul>
+{% assign tag = page.tags | first %}
+{% for page in site.pages %}
+{% if page.tags contains tag %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
 {% endif %}
+{% endfor %}
+</ul>

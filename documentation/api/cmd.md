@@ -2,7 +2,7 @@
 layout: method
 name: cmd
 description: Launch a method on the instance
-tags: core
+tags: [core]
 signatures:
   -
     params:

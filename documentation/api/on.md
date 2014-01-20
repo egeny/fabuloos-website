@@ -2,7 +2,7 @@
 layout: method
 name: "on"
 description: Register an handler for a given event
-tags: event
+tags: [event]
 signatures:
   -
     params:

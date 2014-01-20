@@ -2,7 +2,7 @@
 layout: method
 name: play
 description: Launch the playback
-tags: core
+tags: [core]
 signatures:
   -
     params: ~
