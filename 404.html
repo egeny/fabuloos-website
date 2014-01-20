@@ -2,4 +2,9 @@
 layout: default
 ---
 
-<video id="clip" width="604" height="360" src="/videos/clip.mp4" autoplay loop></video>
+<video id="clip" width="604" height="360" autoplay loop>
+	<source src="/videos/clip.mp4" type="video/mp4" />
+	<source src="/videos/clip.webm" type="video/webm" />
+</video>
+<script src="/js/fabuloos-1.0.0-alpha.min.js"></script>
+<script>fab("clip");</script>
