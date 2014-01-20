@@ -1,0 +1,249 @@
+---
+layout: documentation
+next:
+  label: Events
+  url: events.html
+---
+
+<h1>Properties</h1>
+
+<p>Every property have its own accessor method which you can call to get or set the value:</p>
+
+{% highlight js %}
+player.autoplay();     // Get the autoplay's value
+player.autoplay(true); // Set the autoplay's value
+{% endhighlight %}
+
+{% alert %}
+Some properties aren't correctly mapped in the renderers.  
+Give us some time to fix this.
+{% endalert %}
+
+<h2 id="getters">Getters</h2>
+<table class="table table-striped">
+	<tbody>
+		<tr id="get-autoplay">
+			<td><code>autoplay</code></td>
+			<td>Is the player launching the playback automatically?</td>
+		</tr>
+		<tr id="get-buffered">
+			<td><code>buffered</code></td>
+			<td>The buffered ranges of the media.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-controls">
+			<td><code>controls</code></td>
+			<td>Are the native controls displayed?</td>
+		</tr>
+		<tr id="get-currentSrc">
+			<td><code>currentSrc</code></td>
+			<td>The source currently playing, may be different from <a href="#get-src"><code>src</code></a>.</td>
+		</tr>
+		<tr id="get-currentTime">
+			<td><code>currentTime</code></td>
+			<td>The current position of the playback in seconds.</td>
+		</tr>
+		<tr id="get-defaultPlaybackRate">
+			<td><code>defaultPlaybackRate</code></td>
+			<td>The default playback speed.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-duration">
+			<td><code>duration</code></td>
+			<td>The duration of the media.<br/>
+				Might be <code>NaN</code> if the source's metadata wasn't fetched yet.<br/>
+				Might be <code>Infinity</code> if you're trying to play a live stream.
+			</td>
+		</tr>
+		<tr id="get-ended">
+			<td><code>ended</code></td>
+			<td>Does the player ended the playback?<br/>
+				Will always be <code>false</code> if <a href="#get-loop"><code>loop</code></a> is <code>true</code>.
+			</td>
+		</tr>
+		<tr id="get-error">
+			<td><code>error</code></td>
+			<td>The current error of the player.<br/>
+				<code>null</code> means no error.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-height">
+			<td><a href="/documentation/api/height.html"><code>height</code></a></td>
+			<td>The current height of the player.</td>
+		</tr>
+		<tr id="get-loop">
+			<td><code>loop</code></td>
+			<td>Is the player have to start playing the media back when it ended?</td>
+		</tr>
+		<tr id="get-muted">
+			<td><code>muted</code></td>
+			<td>Is the player currently muted?</td>
+		</tr>
+		<tr id="get-networkState">
+			<td><code>networkState</code></td>
+			<td>The current network state.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-paused">
+			<td><code>paused</code></td>
+			<td>Is the player currently paused?</td>
+		</tr>
+		<tr id="get-playbackRate">
+			<td><code>playbackRate</code></td>
+			<td>The current playback speed.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-played">
+			<td><code>played</code></td>
+			<td>The range of seconds played.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-poster">
+			<td><code>poster</code></td>
+			<td>The poster image to use before launching the playback of the video.</td>
+		</tr>
+		<tr id="get-preload">
+			<td><code>preload</code></td>
+			<td>The preloading mode.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-readyState">
+			<td><code>readyState</code></td>
+			<td>The current player's state.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-seekable">
+			<td><code>seekable</code></td>
+			<td>The range of seconds seekable.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="get-seeking">
+			<td><code>seeking</code></td>
+			<td>Is the player currently seeking?</td>
+		</tr>
+		<tr id="get-src">
+			<td><a href="/documentation/api/src.html"><code>src</code></a></td>
+			<td>The source currently playing.</td>
+		</tr>
+		<tr id="get-videoHeight">
+			<td><code>videoHeight</code></td>
+			<td>The height of the video's source.</td>
+		</tr>
+		<tr id="get-videoWidth">
+			<td><code>videoWidth</code></td>
+			<td>The width of the video's source.</td>
+		</tr>
+		<tr id="get-volume">
+			<td><code>volume</code></td>
+			<td>The current volume between <code>0</code> and <code>1</code>.<br/>
+				While <a href="#get-muted"><code>muted</code></a> the volume still have a value.
+			</td>
+		</tr>
+		<tr id="get-width">
+			<td><a href="/documentation/api/width.html"><code>width</code></a></td>
+			<td>The current width of the player.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2 id="setters">Setters</h2>
+<table class="table table-striped">
+	<tbody>
+		<tr id="set-autoplay">
+			<td><code>autoplay</code></td>
+			<td>Do the player launch the playback automatically?</td>
+		</tr>
+		<tr id="set-controls">
+			<td><code>controls</code></td>
+			<td><code>true</code> to display the native controls.<br/>
+				<code>false</code> to disable the controls.<br/>
+			</td>
+		</tr>
+		<tr id="set-currentTime">
+			<td><code>currentTime</code></td>
+			<td>Seek to a given position.</td>
+		</tr>
+		<tr id="set-defaultPlaybackRate">
+			<td><code>defaultPlaybackRate</code></td>
+			<td>Set the default playback speed.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="set-height">
+			<td><a href="/documentation/api/height.html"><code>height</code></a></td>
+			<td>Set the height of the player.</td>
+		</tr>
+		<tr id="set-loop">
+			<td><code>loop</code></td>
+			<td>Do the player have to start playing the media back when it ended?</td>
+		</tr>
+		<tr id="set-muted">
+			<td><code>muted</code></td>
+			<td>Mute or unmute the player.</td>
+		</tr>
+		<tr id="set-playbackRate">
+			<td><code>playbackRate</code></td>
+			<td>Set the current playback speed.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="set-poster">
+			<td><code>poster</code></td>
+			<td>Set the poster image to use before launching the playback of the video.</td>
+		</tr>
+		<tr id="set-preload">
+			<td><code>preload</code></td>
+			<td>Set the preloading mode.<br/>
+				<span class="alert-warning">Currently badly implemented, we recommend to <strong>not</strong> use this property for now</span>
+			</td>
+		</tr>
+		<tr id="set-src">
+			<td><a href="/documentation/api/src.html"><code>src</code></a></td>
+			<td>Set the source to play.</td>
+		</tr>
+		<tr id="set-volume">
+			<td><code>volume</code></td>
+			<td>Set the volume between <code>0</code> and <code>1</code>.<br/>
+				While <a href="#get-muted"><code>muted</code></a> the volume still have a value.
+			</td>
+		</tr>
+		<tr id="set-width">
+			<td><a href="/documentation/api/width.html"><code>width</code></a></td>
+			<td>Set the width of the player.</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h2 id="togglers">Togglers</h2>
+<table class="table table-striped">
+	<tbody>
+		<tr id="toggle-autoplay">
+			<td><code>autoplay</code></td>
+			<td>Toggle the autoplay's value.</td>
+		</tr>
+		<tr id="toggle-controls">
+			<td><code>controls</code></td>
+			<td>Toggle the native or custom controls.<br/>
+				This is not really useful and may not work on every renderers.
+			</td>
+		</tr>
+		<tr id="toggle-loop">
+			<td><code>loop</code></td>
+			<td>Toggle the loop's value.</td>
+		</tr>
+		<tr id="toggle-muted">
+			<td><code>muted</code></td>
+			<td>Toggle the muted value.</td>
+		</tr>
+	</tbody>
+</table>
