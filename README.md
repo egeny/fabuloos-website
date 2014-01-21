@@ -1,4 +1,4 @@
-# [![fabuloos](img/fabuloos.svg)](http://fabuloos.org)
+# [![fabuloos](https://github.com/egeny/fabuloos-website/raw/master/img/fabuloos.svg)](http://fabuloos.org)
 
 This repository contains the fabuloos’ website ([fabuloos.org](http://fabuloos.org)).
 
