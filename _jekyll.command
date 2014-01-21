@@ -20,26 +20,5 @@ if ! gem list jekyll -i > /dev/null 2>&1; then
 	fi
 fi
 
-# Ask what will please the user and launch the command
-PS3="What do you want to do: "
-options=("Build" "Build & watch" "Serve & watch")
-select opt in "${options[@]}"
-do
-	case $opt in
-		"Build")
-			jekyll build
-			break
-		;;
-		"Build & watch")
-			jekyll build --watch
-			break
-		;;
-		"Serve & watch")
-			jekyll serve --watch
-			break
-		;;
-		*)
-			break
-		;;
-	esac
-done
+echo "Use CTRL + C to stop."
+jekyll serve --watch
