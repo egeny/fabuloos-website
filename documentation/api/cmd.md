@@ -17,7 +17,7 @@ signatures:
       description: The other arguments to pass to the method
     return:
       type: "*"
-      description: Return the result of the method or `undefined` if the method doesn't exists
+      description: Return the result of the method or `undefined` if the method doesn’t exists
 ---
 
 This method allows you to programmatically launch a method.  
@@ -29,7 +29,7 @@ This method is a neat version of `player["cmd"]`.
 ```js
 player.cmd("play"); // Launch the "play" method, will return the current instance
 
-// Launch the "currentTime" method, will return the player's current time
+// Launch the "currentTime" method, will return the player’s current time
 player.cmd("currentTime");
 
  // Launch the "src" method with an argument, will return the current instance

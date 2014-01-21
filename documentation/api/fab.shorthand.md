@@ -30,7 +30,7 @@ This will create a method `pause` and a method `play` on the player.
 When calling these methods, the closure will first check if there is a renderer, and if there is actually a function having the name provided as parameter during the first call.
 
 {% alert %}
-For now, the arguments passed to the closure aren't passed to the renderer's method.
+For now, the arguments passed to the closure aren’t passed to the renderer’s method.
 {% endalert %}
 
 ```js

@@ -33,7 +33,7 @@ Get the available [renderers](/documentation/renderers.html) or set the supporte
 
 {% alert %}
 There is only a few case when you need to manually launch this method.  
-Actually, I'm trying to find a use case but cannot.
+Actually, I’m trying to find a use case but cannot.
 {% endalert %}
 
 When needed, this method is called automatically using the registered renderers (`Renderer.supported`).
@@ -48,5 +48,5 @@ player.renderers(); // [HTMLRenderer, YoutubeRenderer]
 
 {% alert %}
 Depending on the way you compiled fabuloos, the renderer might not be exposed on `window`.  
-So, you'll have to use the long notation: `Renderer.FabuloosFlashRenderer`
+So, you’ll have to use the long notation: `Renderer.FabuloosFlashRenderer`
 {% endalert %}

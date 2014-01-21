@@ -20,14 +20,14 @@ menu:
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<meta charset="UTF-8" />
-	<title>{{ title }}</title>
+	<title>{{ site.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="alternate" type="application/rss+xml" title="News from fabuloos.org" href="/rss.xml" />
 
 	<link rel="stylesheet" href="/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="/css/website.css" />
+	<link rel="stylesheet" href="/css/website.min.css" />
 
 	<script>
 		// A small utility function to swap a SVG with a PNG in case of error
@@ -39,7 +39,7 @@ menu:
 </head>
 
 <body>
-	<header id="header" class="navbar" role="navigation">
+	<header id="header" class="navbar">
 		<div class="container">
 			<div class="navbar-header">
 				<h1><a href="/"><img width="120" height="40" src="/img/fabuloos-white.svg" alt="fabuloos" onerror="swap(this)" /></a></h1>
@@ -81,10 +81,10 @@ menu:
 			<p class="lead">Everything you need to know about fabuloos</p>
 		{% elsif page.url contains "/news/" %}
 			<h2>News</h2>
-			<p class="lead">What's Up?</p>
+			<p class="lead">What’s Up?</p>
 		{% elsif page.url == "/404.html" %}
 			<h2>404</h2>
-			<p class="lead">“Houston, we've had a problem here”</p>
+			<p class="lead">“Houston, we’ve had a problem here”</p>
 		{% endif %}
 		</div>
 	</div><!-- end of #subheader -->
@@ -113,6 +113,6 @@ menu:
 	<script src="//www.google-analytics.com/analytics.js"></script>
 	<script src="/js/jquery-1.10.2.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/website.js"></script>
+	<script src="/js/website.min.js"></script>
 </body>
 </html>

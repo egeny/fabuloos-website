@@ -52,7 +52,7 @@ player.sources("http://example.org/video.mp4");
 // Will determine that the MIME type for this source is "video/mp4"
 // Will then search inside available renderers for the one capable of handling this MIME type
 
-// Sometimes, your URL doesn't have an extension or you want to force a renderer:
+// Sometimes, your URL doesn’t have an extension or you want to force a renderer:
 player.sources({
   src:  "http://example.org/video",
   type: "application/vnd.apple.mpegurl" // Tell fabuloos that this URL is an HTTP Live Stream

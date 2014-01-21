@@ -1,7 +1,7 @@
 ---
 layout: method
 name: toggle
-description: Toggle a player's property's value
+description: Toggle a player’s property’s value
 tags: [property]
 signatures:
   -
@@ -16,7 +16,7 @@ signatures:
 ---
 
 Toggle the value of a [property](/documentation/properties.html).  
-Well… That's it!
+Well… That’s it!
 
 ## Example:
 ```js

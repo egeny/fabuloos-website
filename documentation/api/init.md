@@ -21,7 +21,7 @@ This method is the first called when you try to create a player. It handle the i
 Calling this method on an existing instance will reset it.
 
 {% alert info %}
-Usually you don't have to call this method.
+Usually you don’t have to call this method.
 {% endalert %}
 
 ## Example:

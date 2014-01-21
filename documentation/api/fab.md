@@ -11,7 +11,7 @@ signatures:
       description: The ID attribute of the element to enhance (might be `<audio>`, `<video>` or any element).
     return:
       type: fabuloos
-      description: Return a new fabuloos instance or an instance from the instances' cache.
+      description: Return a new fabuloos instance or an instance from the instances’ cache.
   -
     params:
     -
@@ -20,7 +20,7 @@ signatures:
       description: The element to enhance (might be `<audio>`, `<video>` or any element).
     return:
       type: fabuloos
-      description: Return a new fabuloos instance or an instance from the instances' cache.
+      description: Return a new fabuloos instance or an instance from the instances’ cache.
   -
     params:
     -
@@ -32,7 +32,7 @@ signatures:
         You can specify a string or an Element, just as the previous signatures.
     return:
       type: fabuloos
-      description: Return a new fabuloos instance or an instance from the instances' cache.
+      description: Return a new fabuloos instance or an instance from the instances’ cache.
   -
     params: ~
     return:
@@ -47,7 +47,7 @@ To base the player on an element you can pass an id (with ou without `#`) or a D
 Creating a player will call the [`.init()`](/documentation/api/init.html) method.
 
 {% alert %}
-Please note fabuloos doesn't use a query selector. Using `player` and `#player` will work but not `.player` or more complex query string.
+Please note fabuloos doesn’t use a query selector. Using `player` and `#player` will work but not `.player` or more complex query string.
 {% endalert %}
 
 ## Example:

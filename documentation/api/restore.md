@@ -11,7 +11,7 @@ signatures:
       description: Return the current instance to allow chaining.
 ---
 
-Restore the initial element (the one replaced by the renderer's markup).
+Restore the initial element (the one replaced by the renderer’s markup).
 
 ```js
 var player = fab("player");

@@ -14,5 +14,5 @@ signatures:
 Well… Pause the playback.
 
 {% alert %}
-This method does nothing if there is no renderer. (Although, if there is no renderer there is no playback. Well, you'd get it.)
+This method does nothing if there is no renderer. (Although, if there is no renderer there is no playback. Well, you’d get it.)
 {% endalert %}

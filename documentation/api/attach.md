@@ -14,7 +14,7 @@ signatures:
 This method attach all registered listeners to the current renderer.
 
 {% alert %}
-You shouldn't call this method, its purpose is for internal use only.
+You shouldn’t call this method, its purpose is for internal use only.
 {% endalert %}
 
 ## Example:
@@ -22,7 +22,7 @@ You shouldn't call this method, its purpose is for internal use only.
 player.on("click", function() { console.log("Clicked!"); }); // Listen for the "click" event
 player.detach(); // Detach all listeners
 
-// Clicking won't trigger the "click" event
+// Clicking won’t trigger the "click" event
 
 player.attach()
 

@@ -1,7 +1,7 @@
 ---
 layout: function
 name: fab.extend
-description: Extend some objects or the fabuloos' prototype
+description: Extend some objects or the fabuloos’ prototype
 tags: [utility]
 signatures:
   -
@@ -25,10 +25,10 @@ signatures:
 ---
 
 Basically, this function merge some objects.  
-When passing just one object, it will be merge to the fabuloos' prototype and a `_super` property will be created if necessary:
+When passing just one object, it will be merge to the fabuloos’ prototype and a `_super` property will be created if necessary:
 
 ```js
-// Add a foo method to the fabuloos' prototype:
+// Add a foo method to the fabuloos’ prototype:
 fab.extend({
   foo: function() { console.log("foo"); }
 });
@@ -42,7 +42,7 @@ fab.extend({
 
 fab("player").foo(); // Display "bar" in the console
 
-// The first method (displaying "foo") is dumped since the last once doesn't call _super
+// The first method (displaying "foo") is dumped since the last once doesn’t call _super
 // Now if you prefer to simulate inheritance:
 fab.extend({
   foo: function() {
@@ -88,7 +88,7 @@ function MyClass() {}
 
 MyClass.extend = fab.extend; // Create a reference to extend on MyClass
 
-// This will add the method foo to MyClass' prototype
+// This will add the method foo to MyClass’ prototype
 MyClass.extend({
   foo: function() { console.log("foo"); }
 });

@@ -1,7 +1,7 @@
 ---
 layout: method
 name: set
-description: Set a player's property
+description: Set a player’s property
 tags: [setter, property]
 signatures:
   -
@@ -13,7 +13,7 @@ signatures:
     -
       name: value
       type: "*"
-      description: The new property's value.
+      description: The new property’s value.
     return:
       type: fabuloos
       description: Return the current instance to allow chaining.
@@ -28,7 +28,7 @@ signatures:
       description: Return the current instance to allow chaining.
 ---
 
-Set a value for a player's [property](/documentation/properties.html).
+Set a value for a player’s [property](/documentation/properties.html).
 If there is no renderer, this method will store the value in the config which will be passed to a new renderer.
 
 ## Example:

@@ -6,6 +6,8 @@ a {
 }
 
 /* Bootstrap overloads */
+.panel .panel-heading { color: #777; }
+
 .panel .list-group-item { padding: 0; }
 .panel .list-group-item.active { background: #F9F9F9; }
 
@@ -13,13 +15,12 @@ a {
 		padding: 10px 15px;
 		display: block;
 	}
-.panel .panel-heading { color: #777; }
 
 .nav-tabs a { color: #333; }
 .nav-tabs a:hover,
 .nav-tabs a:focus { color: #111; }
 
-.table-striped tbody tr:target td { background: #FCF8E3; }
+.table-striped tbody tr:target td  { background: #FCF8E3; }
 .table-striped tbody tr.success td { background: #DFF0D8; }
 
 /* @group font-face */
@@ -261,17 +262,17 @@ a {
 	}
 
 	.jumbotron:before {
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiI+DQoJPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYsMEgwdjZDMCwyLjY4NywyLjY4NiwwLDYsMHoiIC8+DQo8L3N2Zz4=);
+		background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiI+DQoJPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYsMEgwdjZDMCwyLjY4NywyLjY4NiwwLDYsMHoiIC8+DQo8L3N2Zz4=");
 		top: 0;
 	}
 
 	.jumbotron:after {
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiI+DQoJPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTAsMHY2aDZDMi42ODcsNiwwLDMuMzE0LDAsMHoiIC8+DQo8L3N2Zz4=);
+		background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiI+DQoJPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTAsMHY2aDZDMi42ODcsNiwwLDMuMzE0LDAsMHoiIC8+DQo8L3N2Zz4=");
 		bottom: 0;
 	}
 
 		#earth {
-			/* Set a background and a size to prevent displaying the jumbotron's background image */
+			/* Set a background and a size to prevent displaying the jumbotron’s background image */
 			background: #000;
 			width:  300px;
 			height: 400px;

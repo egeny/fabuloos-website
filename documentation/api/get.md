@@ -1,7 +1,7 @@
 ---
 layout: method
 name: get
-description: Get a player's property
+description: Get a player’s property
 tags: [getter, property]
 signatures:
   -
@@ -9,10 +9,10 @@ signatures:
     -
       name: property
       type: string
-      description: The property's value to get.
+      description: The property’s value to get.
     return:
       type: "* | undefined"
-      description: Return the property's value.
+      description: Return the property’s value.
 ---
 
 Return the current value of a [property](/documentation/properties.html).  
