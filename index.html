@@ -14,7 +14,7 @@ layout: default
 	</div>
 
 	<script src="/js/fabuloos-1.0.0-alpha.min.js"></script>
-	<script>fab("earth");</script>
+	<script>fab("earth").on("playing", function() { this.element().className = "playing"; });</script>
 </div><!-- end of #jumbotron -->
 
 <section id="featured" class="row">
