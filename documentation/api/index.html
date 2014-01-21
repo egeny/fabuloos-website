@@ -52,6 +52,15 @@ fab("player").src("/videos/clip.mp4").autoplay(true)
 {% endfor %}
 </ul>
 
+<h2>Timed <small>• Tick, Tick</small></h2>
+<ul>
+{% for page in site.pages %}
+{% if page.tags contains "timed" %}
+	<li><a href="{{ page.url }}">{{ page.name }}</a> — {{ page.description }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
 <h2>Size <small>• Because size matters</small></h2>
 <ul>
 {% for page in site.pages %}
