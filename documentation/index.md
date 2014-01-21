@@ -16,7 +16,7 @@ There are a lot of options to play a video (to list a few: [JWPlayer](http://www
 We think it is important to provide the same experience anywhere, anytime on any devices. Regardless of the platform, coders face the same problem: differents implementations in the ecosystem. This fragmentation leads to an huge waste of time and some complex workaround. The time you spend not thinking about your product and the experience you want to offer should always be your first concern. Fabuloos wants to leverage the concept of media player for every platform (in web-terms, fabuloos is a [polyfill](http://en.wikipedia.org/wiki/Polyfill)).
 
 {% aside %}
-The fabuloos initiative intends to create an unique and intuitive API for media playback no matter the development environment.
+The fabuloos initiative intends to create a unique and intuitive API for media playback no matter the development environment.
 {% endaside %}
 
 Our starting point was the [W3C’s HTML5 specification](http://dev.w3.org/html5/spec-author-view/video.html) but we think it for developpers (W3C’s specifications targets browser vendors). We are aiming the same behaviour and same code, no matter the platform.

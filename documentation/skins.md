@@ -7,14 +7,6 @@ next:
 
 # Skins
 
-The default Fabuloos skin is made using HTML and CSS, so there's no need to learn a complicated skinning language to update colors or even create an entirely new skin. 
+Some solutions embed the skin and give you some options to tweak it. This is nice but it won’t fit with your design. We think skins are an essential aspect of a media player and should be treated like it deserve.
 
-All of the icons (play, pause, etc.) use the new custom font, which allows the icons to be scaled and colored just like any other text font.
-
-When you create a new skin, you can either override styles in the default skin:
-
-{% highlight css %} .fab-skin-one { background: #fff; }{% endhighlight %}
-
-Or remove the 'fab-skin-one' class from the video tag and create a new skin from scratch.
-
-More custom skins will be available for download soon.
+We’ll come back soon with some tools and guidelines.
