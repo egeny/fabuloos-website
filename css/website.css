@@ -1,5 +1,3 @@
-body { min-width: 740px; }
-
 a {
 	text-decoration: none;
 	color: #0063AE;
@@ -174,6 +172,11 @@ a {
 	/* @end of Pygment styles */
 
 	.platform-chooser { margin: 1.25em 0; }
+		.platform-chooser a { padding: 4px 8px; font-size: 12px; }
+
+	@media (min-width: 480px) {
+		.platform-chooser a { padding: 6px 12px; font-size: 14px; }
+	}
 
 	hr.section-line {
 		background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(215, 215, 215, .75), rgba(0, 0, 0, 0));
@@ -238,8 +241,6 @@ a {
 		background: #000 url(img/earth.jpg) no-repeat;
 
 		padding: 40px 20px;
-		padding-left: 296px;
-
 		margin-bottom: 20px;
 
 		overflow: hidden;
@@ -294,6 +295,10 @@ a {
 				line-height: 1.3;
 			}
 
+	@media (min-width: 768px) {
+		.container .jumbotron { padding-left: 296px; }
+	}
+
 /* @end of #jumbotron */
 
 /* @group #subheader */
@@ -315,6 +320,16 @@ a {
 
 /* @end of #featured */
 
+/* @group #how */
+
+	#how .nav a { font-size: 12px; padding: 4px 6px; }
+
+	@media (min-width: 480px) {
+		#how .nav a { font-size: 14px; padding: 10px 15px; }
+	}
+
+/* @end of #how */
+
 /* @group #getting-started */
 
 	#getting-started li { font-size: 30px; }
@@ -335,10 +350,6 @@ a {
 
 /* @group #download */
 
-	@media (min-width: 1200px) {
-		#download .col-lg-4 { padding-left: 60px; }
-	}
-
 	#download { margin-top: 2em; }
 
 		#download small {
@@ -346,12 +357,19 @@ a {
 			display: block;
 		}
 
-		#download dl { border-left: 1px solid #CCC; }
+		#download dl { padding-top: 1em; }
 
 			#download dd {
 				padding-left: 1em;
 				margin-bottom: 10px;
 			}
+
+	@media (min-width: 768px) {
+		#download dl {
+			padding-top: 0;
+			border-left: 1px solid #CCC;
+		}
+	}
 
 /* @end of #download */
 
@@ -403,7 +421,6 @@ a {
 /* @group #news */
 
 	article {
-		width: 640px;
 		padding-bottom: 50px;
 		border-bottom: 1px dotted #EEE;
 		margin: 0 auto 60px;
@@ -420,6 +437,10 @@ a {
 			margin-top: 10px;
 			font-size: .75em;
 		}
+
+	@media (min-width: 768px) {
+		article { width: 640px; }
+	}
 
 /* @end of #news */
 
@@ -461,12 +482,18 @@ a {
 		}
 
 			#footer p {
-				display: inline-block;
+				margin: 1.5em 0;
 				text-transform: uppercase;
 			}
 
 			#footer ul { font-size: 24px; }
 
 				#footer ul a { color: #181818; }
+
+	@media (min-width: 768px) {
+		#footer .container > a  { float: left; }
+		#footer p  { margin: 0; display: inline-block; }
+		#footer ul { float: right; }
+	}
 
 /* @end of #footer */
