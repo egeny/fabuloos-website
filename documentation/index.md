@@ -19,9 +19,9 @@ We think it is important to provide the same experience anywhere, anytime on any
 The Fabuloos initiative intends to create a unique and intuitive API for media playback no matter the development environment.
 {% endaside %}
 
-Our starting point was the [W3C’s HTML5 specification](http://dev.w3.org/html5/spec-author-view/video.html) but we think it for developpers (W3C’s specifications targets browser vendors). We are aiming the same behaviour and same code, no matter the platform.
+Our starting point was the [W3C’s HTML5 specification](http://dev.w3.org/html5/spec-author-view/video.html) but we think it for developers (W3C’s specifications targets browser vendors). We are aiming the same behaviour and same code, no matter the platform.
 
-Fabuloos hides the complexity of playback technologies and offer the developper a unique and intuitive API. It allows you to assemble exactly the player you need, in a fast and reliable way. You keep full control of your media by using your preferred hosting and encoding services. You code once and can change, for example, from Youtube to something else with no effort. Even better, with fabuloos’ API you can start building interactions between your player and your application.
+Fabuloos conceals the complexity of playback technologies and offer the developer a unique and intuitive API. It allows you to assemble exactly the player you need, in a fast and reliable way. You keep full control of your media by using your preferred hosting and encoding services. You code once and can change, for example, from Youtube to something else with no effort. Even better, with fabuloos’ API you can start building interactions between your player and your application.
 
 {% aside %}
 A new way to build top-quality media players, based on open standards, and that works everywhere.
