@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div id="demo" class="row">
+	<div class="col-md-7 col-sm-7">
+		<video id="example" width="100%" height="360" src="/videos/clip.mp4"></video>
+	</div>
+	<div class="col-md-5 col-sm-5">
+		<h3>Control via JS</h3>
+		<p class="lead">Thanks to Fabuloos, you can directly control your video player on your page. You can <a id="play" href="#">play the video</a> or <a id="pause" href="#">stop it</a> in the text. Maybe you also want to <a id="controls" href="#">display the controls</a> or <a id="switch" href="#">change the source</a>, it's up to you.</p>
+	</div>
+</div><!-- end of #demo1 -->
+
+<hr/>
+
+
+<script src="/js/fabuloos-1.0.0-alpha.min.js"></script>
+
+<script>
+
+var fabPlay = document.getElementById('play');
+var fabPause = document.getElementById('pause');
+var fabControls = document.getElementById('controls');
+var fabSwitch = document.getElementById('switch');
+
+fabPlay.addEventListener('click', function() {
+    fab('example').play();
+}, false);
+
+fabPause.addEventListener('click', function() {
+    fab('example').pause();
+}, false);
+
+fabControls.addEventListener('click', function() {
+    fab('example').set('controls', true);
+}, false);
+
+fabSwitch.addEventListener('click', function() {
+    fab('example').src('http://0.0.0.0:4000/videos/clip2.mp4');
+}, false);
+
+</script>
