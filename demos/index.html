@@ -8,7 +8,7 @@ layout: default
 	</div>
 	<div class="col-md-5 col-sm-5">
 		<h3>Control via JS</h3>
-		<p class="lead">Thanks to Fabuloos, you can directly control your video player on your page. You can <a id="play" href="#">play the video</a> or <a id="pause" href="#">stop it</a> in the text. Maybe you also want to <a id="controls" href="#">display the controls</a> or <a id="switch" href="#">change the source</a>, it's up to you.</p>
+		<p class="lead">Thanks to Fabuloos, you can directly control your video player on your page. You can <a id="play" href="#play">play the video</a> or <a id="pause" href="#pause">stop it</a> in the text. Maybe you also want to <a id="switch" href="#switch">change the source</a> in one click, it's up to you.</p>
 	</div>
 </div><!-- end of #demo1 -->
 
@@ -19,25 +19,14 @@ layout: default
 
 <script>
 
-var fabPlay = document.getElementById('play');
-var fabPause = document.getElementById('pause');
-var fabControls = document.getElementById('controls');
-var fabSwitch = document.getElementById('switch');
+var btnPlay = document.getElementById('play');
+var btnPause = document.getElementById('pause');
+var btnSwitch = document.getElementById('switch');
 
-fabPlay.addEventListener('click', function() {
-    fab('example').play();
-}, false);
+btnPlay.addEventListener('click', function() {fab('example').play();}, false);
 
-fabPause.addEventListener('click', function() {
-    fab('example').pause();
-}, false);
+btnPause.addEventListener('click', function() {fab('example').pause();}, false);
 
-fabControls.addEventListener('click', function() {
-    fab('example').set('controls', true);
-}, false);
-
-fabSwitch.addEventListener('click', function() {
-    fab('example').src('http://0.0.0.0:4000/videos/clip2.mp4');
-}, false);
+btnSwitch.addEventListener('click', function() {fab('example').src('/videos/clip2.mp4');}, false);
 
 </script>
